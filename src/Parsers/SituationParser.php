@@ -6,7 +6,6 @@ namespace Swis\Melvin\Parsers;
 
 use DateTime;
 use stdClass;
-use Swis\Melvin\Enums\ActivityType;
 use Swis\Melvin\Enums\Delay;
 use Swis\Melvin\Enums\EventType;
 use Swis\Melvin\Enums\Impact;

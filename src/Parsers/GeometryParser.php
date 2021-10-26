@@ -28,7 +28,7 @@ class GeometryParser
 
         try {
             return GeoJson::jsonUnserialize($object);
-        } catch (GeoJsonException | InvalidArgumentException $e) {
+        } catch (GeoJsonException|InvalidArgumentException $e) {
             throw new ParseException('Failed to parse geometry', 0, $e);
         }
     }
