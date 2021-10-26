@@ -78,14 +78,14 @@ This package is [Treeware](https://treeware.earth). If you use it in production,
 [ico-version]: https://img.shields.io/packagist/v/swisnl/melvin.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-treeware]: https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/swisnl/melvin/master.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/com/swisnl/melvin/master.svg?style=flat-square
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/swisnl/melvin.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/swisnl/melvin.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/swisnl/melvin.svg?style=flat-square
 [ico-swis]: https://img.shields.io/badge/%F0%9F%9A%80-made%20by%20SWIS-%23D9021B.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/swisnl/melvin
-[link-travis]: https://travis-ci.org/swisnl/melvin
+[link-travis]: https://travis-ci.com/github/swisnl/melvin
 [link-scrutinizer]: https://scrutinizer-ci.com/g/swisnl/melvin/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/swisnl/melvin
 [link-downloads]: https://packagist.org/packages/swisnl/melvin
