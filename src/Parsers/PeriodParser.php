@@ -30,7 +30,7 @@ class PeriodParser
             $object->id,
             ($object->name ?? '') ?: sprintf('Uitvoerperiode %d', $index + 1),
             new DateTime($object->startDateActual ?? $object->startDate),
-            new DateTime($object->endDateActual ?? $object->endDate),
+            ($endDate = $object->endDateActual ?? $object->endDate ?? null) ? new DateTime($endDate) : null,
             ($object->repeating ?? '') === 'WEEKLY',
             $repeatingAt,
             ($object->status ?? null) ? PeriodStatus::from($object->status) : null,

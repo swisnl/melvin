@@ -15,7 +15,7 @@ class Period
 
     public DateTime $startDate;
 
-    public DateTime $endDate;
+    public ?DateTime $endDate;
 
     public bool $repeating;
 
@@ -33,7 +33,7 @@ class Period
         int $id,
         string $name,
         DateTime $startDate,
-        DateTime $endDate,
+        ?DateTime $endDate,
         bool $repeating,
         ?Week $repeatingAt,
         ?PeriodStatus $status,
