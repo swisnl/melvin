@@ -6,6 +6,7 @@ namespace Swis\Melvin\Parsers;
 
 use DateTime;
 use stdClass;
+use Swis\Melvin\Enums\ActivityType;
 use Swis\Melvin\Enums\Delay;
 use Swis\Melvin\Enums\EventType;
 use Swis\Melvin\Enums\Impact;
@@ -86,6 +87,7 @@ class SituationParser
             str_contains($object->properties->type, '_EXTERNAL'),
             $this->geometryParser->parse($object->geometry),
             $this->getName($object),
+            $this->getActivityType($object),
             ($object->properties->workObject ?? '') ? WorkObject::from($object->properties->workObject) : null,
             $object->properties->impact !== 'EMPTY' ? Impact::from($object->properties->impact) : null,
             $object->properties->project,
@@ -149,5 +151,16 @@ class SituationParser
                 )
             )
         );
+    }
+
+    protected function getActivityType(stdClass $object): ActivityType
+    {
+        $eventType = ($object->properties->eventType ?? '') ? EventType::from($object->properties->eventType) : null;
+
+        if ($eventType) {
+            return ActivityType::EVENT();
+        }
+
+        return ActivityType::WORK();
     }
 }

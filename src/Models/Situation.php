@@ -6,6 +6,7 @@ namespace Swis\Melvin\Models;
 
 use DateTime;
 use GeoJson\Geometry\Geometry;
+use Swis\Melvin\Enums\ActivityType;
 use Swis\Melvin\Enums\Delay;
 use Swis\Melvin\Enums\EventType;
 use Swis\Melvin\Enums\Impact;
@@ -23,6 +24,8 @@ class Situation
     public Geometry $geometry;
 
     public string $name;
+
+    public ?ActivityType $activityType;
 
     public ?WorkObject $workObject;
 
@@ -85,6 +88,7 @@ class Situation
         bool $external,
         Geometry $geometry,
         string $name,
+        ?ActivityType $activityType,
         ?WorkObject $workObject,
         ?Impact $impact,
         bool $project,
@@ -112,6 +116,7 @@ class Situation
         $this->external = $external;
         $this->geometry = $geometry;
         $this->name = $name;
+        $this->activityType = $activityType;
         $this->workObject = $workObject;
         $this->impact = $impact;
         $this->project = $project;
