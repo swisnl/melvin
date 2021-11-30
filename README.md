@@ -9,23 +9,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Made by SWIS][ico-swis]][link-swis]
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
-
-## Structure
-
-If any of the following are applicable to your project, then the directory structure should follow industry best practices by being named the following.
-
-```
-bin/        
-build/
-docs/
-config/
-src/
-tests/
-vendor/
-```
-
+This is a (slightly opinionated) client for the [Melvin](https://melvin.ndw.nu) API by NDW. Please note that the Melvin API requires authentication, and we can't provide you with credentials.
 
 ## Install
 
@@ -35,11 +19,32 @@ Via Composer
 $ composer require swisnl/melvin
 ```
 
+N.B. Make sure you have installed a PSR-18 HTTP Client and PSR-17 HTTP Factories before you install this package or install one at the same time e.g. `composer require swisnl/json-api-client guzzlehttp/guzzle:^7.3`.
+
+### HTTP Client
+
+We are decoupled from any HTTP messaging client with the help of [PSR-18 HTTP Client](https://www.php-fig.org/psr/psr-18/) and [PSR-17 HTTP Factories](https://www.php-fig.org/psr/psr-17/).
+This requires an extra package providing [psr/http-client-implementation](https://packagist.org/providers/psr/http-client-implementation) and [psr/http-factory-implementation](https://packagist.org/providers/psr/http-factory-implementation).
+To use Guzzle 7, for example, simply require `guzzlehttp/guzzle`:
+
+``` bash
+composer require guzzlehttp/guzzle:^7.3
+```
+
 ## Usage
 
 ``` php
-$client = new Swis\Melvin\Client(new GuzzleHttp\Client(), 'user', 'password');
-echo $client->echoPhrase('Hello, League!');
+use Swis\Melvin\Client;
+use Swis\Melvin\SituationFilterParameters;
+
+$client = Client::create('username', 'password');
+$params = (new SituationFilterParameters())->setAreaIds([409]);
+
+$situations = $client->situations()->export($params);
+
+foreach ($situations as $situation) {
+  // Do stuff with the situation
+}
 ```
 
 ## Change log
