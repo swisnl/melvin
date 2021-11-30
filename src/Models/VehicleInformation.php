@@ -8,9 +8,9 @@ class VehicleInformation
 {
     public ?float $heightCharacteristic;
 
-    public ?int $lengthCharacteristic;
+    public ?float $lengthCharacteristic;
 
-    public function __construct(?float $heightCharacteristic, ?int $lengthCharacteristic)
+    public function __construct(?float $heightCharacteristic, ?float $lengthCharacteristic)
     {
         $this->heightCharacteristic = $heightCharacteristic;
         $this->lengthCharacteristic = $lengthCharacteristic;
