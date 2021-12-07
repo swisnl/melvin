@@ -287,8 +287,8 @@ class SituationFilterParameters implements JsonSerializable
     {
         return array_filter(
             [
-                'startPeriod' => $this->startPeriod ? $this->startPeriod->format(DateTimeInterface::ATOM) : null,
-                'endPeriod' => $this->endPeriod ? $this->endPeriod->format(DateTimeInterface::ATOM) : null,
+                'startPeriod' => $this->startPeriod ? $this->startPeriod->format('Y-m-d\TH:i:s\Z') : null,
+                'endPeriod' => $this->endPeriod ? $this->endPeriod->format('Y-m-d\TH:i:s\Z') : null,
                 'sources' => $this->sources,
                 'areaIds' => $this->areaIds,
                 'areaBuffer' => $this->areaBuffer,
