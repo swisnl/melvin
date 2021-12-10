@@ -115,8 +115,8 @@ class SituationParser
 
     protected function getName(stdClass $object): string
     {
-        if (property_exists($object->properties, 'name')) {
-            return $object->properties->name;
+        if (property_exists($object->properties, 'name') && trim($object->properties->name)) {
+            return trim($object->properties->name);
         }
 
         $eventName = ($object->properties->eventName ?? '') ?: null;
