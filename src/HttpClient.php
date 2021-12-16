@@ -133,10 +133,20 @@ class HttpClient
      */
     protected function getToken(): string
     {
-        if (isset($this->token)) {
-            return $this->token;
+        if (!isset($this->token)) {
+            $this->token = $this->fetchToken();
         }
 
+        return $this->token;
+    }
+
+    /**
+     * @throws \JsonException
+     * @throws \Swis\Melvin\Exceptions\AuthenticationException
+     * @throws \Swis\Melvin\Exceptions\RequestException
+     */
+    protected function fetchToken(): string
+    {
         $request = $this->createRequest(
             'POST',
             'authenticate/login',
@@ -148,8 +158,6 @@ class HttpClient
             throw new AuthenticationException('Failed to authenticate');
         }
 
-        $this->token = $result->userToken;
-
-        return $this->token;
+        return $result->userToken;
     }
 }
