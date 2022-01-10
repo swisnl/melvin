@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Swis\Melvin\Parsers;
 
 use DateTime;
+use DateTimeZone;
 use stdClass;
 use Swis\Melvin\Enums\ActivityType;
 use Swis\Melvin\Enums\Delay;
@@ -104,7 +105,7 @@ class SituationParser
             $roadAuthority,
             $location,
             array_map([$this->periodParser, 'parse'], $object->properties->periods, array_keys($object->properties->periods)),
-            ($object->properties->createdAt ?? null) ? new DateTime($object->properties->createdAt) : null,
+            ($object->properties->createdAt ?? null) ? new DateTime($object->properties->createdAt, new DateTimeZone('UTC')) : null,
             $createdBy,
             $lastChangedBy,
             array_map([$this->attachmentParser, 'parse'], $object->properties->attachments ?? [], array_keys($object->properties->attachments ?? [])),
