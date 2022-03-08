@@ -31,6 +31,8 @@ class Situation
 
     public ?Impact $impact;
 
+    public ?string $impactDescription;
+
     public bool $project;
 
     public Source $source;
@@ -66,6 +68,8 @@ class Situation
 
     public ?Person $createdBy;
 
+    public ?DateTime $lastChangedAt;
+
     public ?Person $lastChangedBy;
 
     /**
@@ -91,6 +95,7 @@ class Situation
         ?ActivityType $activityType,
         ?WorkObject $workObject,
         ?Impact $impact,
+        ?string $impactDescription,
         bool $project,
         Source $source,
         bool $published,
@@ -107,6 +112,7 @@ class Situation
         array $periods,
         ?DateTime $createdAt,
         ?Person $createdBy,
+        ?DateTime $lastChangedAt,
         ?Person $lastChangedBy,
         array $attachments,
         array $restrictions,
@@ -119,6 +125,7 @@ class Situation
         $this->activityType = $activityType;
         $this->workObject = $workObject;
         $this->impact = $impact;
+        $this->impactDescription = $impactDescription;
         $this->project = $project;
         $this->source = $source;
         $this->published = $published;
@@ -135,6 +142,7 @@ class Situation
         $this->periods = $periods;
         $this->createdAt = $createdAt;
         $this->createdBy = $createdBy;
+        $this->lastChangedAt = $lastChangedAt;
         $this->lastChangedBy = $lastChangedBy;
         $this->attachments = $attachments;
         $this->restrictions = $restrictions;

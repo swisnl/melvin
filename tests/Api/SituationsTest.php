@@ -14,6 +14,6 @@ class SituationsTest extends TestCase
 
         $situations = $client->situations()->export();
 
-        $this->assertCount(109, $situations);
+        $this->assertCount(510, $situations);
     }
 }

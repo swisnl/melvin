@@ -53,7 +53,7 @@ class RestrictionParser
         return new Restriction(
             $object->id,
             str_contains($object->properties->type, '_EXTERNAL'),
-            $this->geometryParser->parse($object->geometry),
+            $object->geometry ? $this->geometryParser->parse($object->geometry) : null,
             ($object->properties->name ?? '') ?: sprintf('Beperking %d', $index + 1),
             Direction::from($object->properties->direction),
             property_exists($object->properties, 'transportMode') ? TransportMode::from($object->properties->transportMode) : null,

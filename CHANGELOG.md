@@ -6,7 +6,14 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 
 ## Unreleased
 
-- Nothing
+### Fixed
+- Do not guess activityType, but use the new field from the API.
+- Improve parsing of createdAt timestamps.
+- Treat restriction geometry as optional.
+
+### Added
+- Add lastChangedAt timestamp.
+- Add impactDescription.
 
 ## [1.0.1] - 2022-01-10
 
