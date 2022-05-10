@@ -16,7 +16,7 @@ class Restriction
 
     public bool $external;
 
-    public Geometry $geometry;
+    public ?Geometry $geometry;
 
     public string $name;
 
@@ -51,7 +51,7 @@ class Restriction
     public function __construct(
         string $id,
         bool $external,
-        Geometry $geometry,
+        ?Geometry $geometry,
         string $name,
         Direction $direction,
         ?TransportMode $transportMode,

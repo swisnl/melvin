@@ -11,6 +11,7 @@ use Swis\Melvin\Enums\ActivityType;
 use Swis\Melvin\Enums\Delay;
 use Swis\Melvin\Enums\EventType;
 use Swis\Melvin\Enums\Impact;
+use Swis\Melvin\Enums\ImpactDescription;
 use Swis\Melvin\Enums\PersonType;
 use Swis\Melvin\Enums\RoadAuthorityType;
 use Swis\Melvin\Enums\SituationStatus;
@@ -66,6 +67,9 @@ class SituationParser
                 PersonType::from($createdBy->type)
             );
         }
+        if ($createdAt = $object->properties->createdAt ?? $object->properties->createdBy->createdAt ?? null) {
+            $createdAt = new DateTime($createdAt, new DateTimeZone('UTC'));
+        }
 
         if ($lastChangedBy = $object->properties->lastChangedBy ?? null) {
             $lastChangedBy = new Person(
@@ -75,6 +79,9 @@ class SituationParser
                 PersonType::from($lastChangedBy->type)
             );
         }
+        if ($lastChangedAt = $object->properties->lastChangeAt ?? $object->properties->lastChangedBy->lastChangeAt ?? null) {
+            $lastChangedAt = new DateTime($lastChangedAt, new DateTimeZone('UTC'));
+        }
 
         $location = new Location(
             $object->properties->location->city,
@@ -83,14 +90,19 @@ class SituationParser
             $object->properties->location->comment ?? ''
         );
 
+        if ($impactDescription = $object->properties->impactDescription ?? null) {
+            $impactDescription = ImpactDescription::isValid($impactDescription) ? ImpactDescription::from($impactDescription)->getLabel() : $impactDescription;
+        }
+
         return new Situation(
             $object->id,
             str_contains($object->properties->type, '_EXTERNAL'),
             $this->geometryParser->parse($object->geometry),
             $this->getName($object),
-            $this->getActivityType($object),
+            ($object->activityType ?? '') ? ActivityType::from($object->activityType) : ActivityType::WORK(),
             ($object->properties->workObject ?? '') ? WorkObject::from($object->properties->workObject) : null,
             $object->properties->impact !== 'EMPTY' ? Impact::from($object->properties->impact) : null,
+            $impactDescription,
             $object->properties->project,
             Source::from($object->properties->source),
             $object->properties->published,
@@ -105,8 +117,9 @@ class SituationParser
             $roadAuthority,
             $location,
             array_map([$this->periodParser, 'parse'], $object->properties->periods, array_keys($object->properties->periods)),
-            ($object->properties->createdAt ?? null) ? new DateTime($object->properties->createdAt, new DateTimeZone('UTC')) : null,
+            $createdAt,
             $createdBy,
+            $lastChangedAt,
             $lastChangedBy,
             array_map([$this->attachmentParser, 'parse'], $object->properties->attachments ?? [], array_keys($object->properties->attachments ?? [])),
             array_map([$this->restrictionParser, 'parse'], $restrictions, array_keys($restrictions)),
@@ -152,16 +165,5 @@ class SituationParser
                 )
             )
         );
-    }
-
-    protected function getActivityType(stdClass $object): ActivityType
-    {
-        $eventType = ($object->properties->eventType ?? '') ? EventType::from($object->properties->eventType) : null;
-
-        if ($eventType) {
-            return ActivityType::EVENT();
-        }
-
-        return ActivityType::WORK();
     }
 }
