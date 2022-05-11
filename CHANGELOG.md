@@ -6,6 +6,10 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 
 ## Unreleased
 
+Nothing.
+
+## [1.1.0] - 2022-05-11
+
 ### Fixed
 - Do not guess activityType, but use the new field from the API.
 - Improve parsing of createdAt timestamps.
