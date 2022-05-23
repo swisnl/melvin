@@ -14,6 +14,6 @@ class AreasTest extends TestCase
 
         $areas = $client->areas()->all();
 
-        $this->assertCount(383, $areas);
+        $this->assertCount(391, $areas);
     }
 }

@@ -6,7 +6,8 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 
 ## Unreleased
 
-Nothing.
+### Fixed
+- Add ROAD_AUTHORITY to AreaType enum.
 
 ## [1.1.0] - 2022-05-11
 
