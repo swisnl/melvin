@@ -7,6 +7,11 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+## [1.2.0] - 2022-05-27
+
+### Fixed
+- Use new NDW Keycloak authentication server. Please note, this fix introduces a small breaking change as the constructor arguments of the `HttpClient` have changed.
+
 ## [1.1.1] - 2022-05-23
 
 ### Fixed
