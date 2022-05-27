@@ -16,9 +16,9 @@ class Client
         $this->httpClient = $httpClient;
     }
 
-    public static function create(string $username, string $password): self
+    public static function create(string $username, string $password, string $clientId = 'melvin-frontend-test'): self
     {
-        return new self(new HttpClient($username, $password));
+        return new self(new HttpClient($username, $password, $clientId));
     }
 
     public function getHttpClient(): HttpClient

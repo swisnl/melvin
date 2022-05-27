@@ -18,6 +18,6 @@ abstract class TestCase extends BaseTestCase
             (new ResponseBuilder(__DIR__.'/_fixtures'))->setStrictMode(true)
         );
 
-        return new Client(new HttpClient('foo', 'bar', $httpClient));
+        return new Client(new HttpClient('foo', 'bar', 'client-id', $httpClient));
     }
 }

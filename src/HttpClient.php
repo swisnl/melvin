@@ -18,9 +18,13 @@ class HttpClient
 {
     private string $baseUrl = 'https://melvin.ndw.nu/melvinservice/rest/';
 
+    private string $tokenUrl = 'https://keycloak.ndwcloud.nu/auth/realms/ndw/protocol/openid-connect/token';
+
     private string $username;
 
     private string $password;
+
+    private string $clientId;
 
     private string $token;
 
@@ -33,11 +37,12 @@ class HttpClient
     public function __construct(
         string $username,
         string $password,
+        string $clientId = 'melvin-frontend-test',
         ?ClientInterface $httpClient = null,
         ?RequestFactoryInterface $requestFactory = null,
         ?StreamFactoryInterface $streamFactory = null
     ) {
-        $this->authenticate($username, $password);
+        $this->authenticate($username, $password, $clientId);
         $this->httpClient = $httpClient ?: Psr18ClientDiscovery::find();
         $this->requestFactory = $requestFactory ?: Psr17FactoryDiscovery::findRequestFactory();
         $this->streamFactory = $streamFactory ?: Psr17FactoryDiscovery::findStreamFactory();
@@ -55,7 +60,7 @@ class HttpClient
     public function request(string $method, string $uri, $body = null)
     {
         $request = $this->createRequest($method, $uri, $body)
-            ->withHeader('melvin-user-token', $this->getToken());
+            ->withHeader('Authorization', sprintf('Bearer %s', $this->getToken()));
 
         return $this->sendRequest($request);
     }
@@ -63,13 +68,15 @@ class HttpClient
     /**
      * @param string $username
      * @param string $password
+     * @param string $clientId
      *
      * @return $this
      */
-    public function authenticate(string $username, string $password): self
+    public function authenticate(string $username, string $password, string $clientId = 'melvin-frontend-test'): self
     {
         $this->username = $username;
         $this->password = $password;
+        $this->clientId = $clientId;
 
         return $this;
     }
@@ -82,6 +89,18 @@ class HttpClient
     public function setBaseUrl(string $baseUrl): self
     {
         $this->baseUrl = $baseUrl;
+
+        return $this;
+    }
+
+    /**
+     * @param string $tokenUrl
+     *
+     * @return $this
+     */
+    public function setTokenUrl(string $tokenUrl): self
+    {
+        $this->tokenUrl = $tokenUrl;
 
         return $this;
     }
@@ -147,17 +166,22 @@ class HttpClient
      */
     protected function fetchToken(): string
     {
-        $request = $this->createRequest(
-            'POST',
-            'authenticate/login',
-            ['username' => $this->username, 'password' => $this->password]
-        );
-        $result = $this->sendRequest($request);
+        $body = [
+            'client_id' => $this->clientId,
+            'grant_type' => 'password',
+            'username' => $this->username,
+            'password' => $this->password,
+        ];
+        $request = $this->requestFactory->createRequest('POST', $this->tokenUrl)
+            ->withHeader('Content-Type', 'application/x-www-form-urlencoded')
+            ->withBody($this->streamFactory->createStream(http_build_query($body)));
 
-        if ($result->result !== 'SUCCESS') {
-            throw new AuthenticationException('Failed to authenticate');
+        try {
+            $result = $this->sendRequest($request);
+        } catch (RequestException $exception) {
+            throw new AuthenticationException('Failed to authenticate', 0, $exception);
         }
 
-        return $result->userToken;
+        return $result->access_token;
     }
 }

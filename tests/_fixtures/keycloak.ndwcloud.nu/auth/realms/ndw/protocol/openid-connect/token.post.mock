@@ -1,0 +1,10 @@
+{
+    "access_token": "foo-bar",
+    "expires_in": 1800,
+    "refresh_expires_in": 3600,
+    "refresh_token": "foo-baz",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "0e47ab5e-6283-473e-9272-fe7eab4a479f",
+    "scope": "profile email"
+}
