@@ -10,11 +10,11 @@ class RoadAuthority
 {
     public int $id;
 
-    public RoadAuthorityType $type;
+    public ?RoadAuthorityType $type;
 
     public string $name;
 
-    public function __construct(int $id, RoadAuthorityType $type, string $name)
+    public function __construct(int $id, ?RoadAuthorityType $type, string $name)
     {
         $this->id = $id;
         $this->type = $type;
