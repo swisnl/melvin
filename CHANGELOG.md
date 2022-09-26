@@ -9,6 +9,7 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ### Fixed
 - Add UNKNOWN to WorkType enum.
 - Make RoadAuthorityType nullable on RoadAuthority.
+- Treat situation impact and url as optional.
 
 ## [1.2.0] - 2022-05-27
 
