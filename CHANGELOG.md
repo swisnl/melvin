@@ -5,7 +5,9 @@ All notable changes to `swisnl\melvin` will be documented in this file.
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 ## Unreleased
-- Nothing.
+
+### Fixed
+- Add UNKNOWN to WorkType enum.
 
 ## [1.2.0] - 2022-05-27
 

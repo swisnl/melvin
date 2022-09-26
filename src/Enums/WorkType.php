@@ -28,6 +28,7 @@ use MyCLabs\Enum\Enum;
  * @method static WorkType ELECTROMECHANIC()
  * @method static WorkType DIVING()
  * @method static WorkType EVENT()
+ * @method static WorkType UNKNOWN()
  * @method static WorkType OTHER()
  */
 final class WorkType extends Enum
@@ -53,6 +54,7 @@ final class WorkType extends Enum
     private const ELECTROMECHANIC = 'ELECTROMECHANIC';
     private const DIVING = 'DIVING';
     private const EVENT = 'EVENT';
+    private const UNKNOWN = 'UNKNOWN';
     private const OTHER = 'OTHER';
 
     public function getLabel(): string
@@ -79,6 +81,7 @@ final class WorkType extends Enum
             'ELECTROMECHANIC' => 'Kunstwerk - Electromechanisch',
             'DIVING' => 'Duikwerkzaamheden',
             'EVENT' => 'Evenement',
+            'UNKNOWN' => 'Onbekend',
             'OTHER' => 'Overig',
         ][$this->getKey()];
     }
