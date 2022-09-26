@@ -47,7 +47,7 @@ class Situations extends AbstractApi
             function (array $situation) {
                 return $this->situationParser->parse(
                     $situation['SITUATION'][0],
-                    $situation['RESTRICTION'],
+                    $situation['RESTRICTION'] ?? [],
                     $situation['DETOUR'] ?? []
                 );
             },
