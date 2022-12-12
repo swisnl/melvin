@@ -7,6 +7,7 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 
 ### Changed
+- Allow setting null for period start or end.
 - Explicitly add Accept header.
 
 ## [1.2.1] - 2022-09-27

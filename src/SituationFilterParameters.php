@@ -52,12 +52,12 @@ class SituationFilterParameters implements JsonSerializable
     protected ?bool $includeDetours = null;
 
     /**
-     * @param \DateTimeInterface $start
-     * @param \DateTimeInterface $end
+     * @param \DateTimeInterface|null $start
+     * @param \DateTimeInterface|null $end
      *
      * @return $this
      */
-    public function setPeriod(DateTimeInterface $start, DateTimeInterface $end): self
+    public function setPeriod(?DateTimeInterface $start, ?DateTimeInterface $end): self
     {
         $this->startPeriod = $start;
         $this->endPeriod = $end;
