@@ -112,7 +112,8 @@ class HttpClient
      */
     protected function createRequest(string $method, string $uri, $body = null): RequestInterface
     {
-        $request = $this->requestFactory->createRequest($method, $this->baseUrl.ltrim($uri, '/'));
+        $request = $this->requestFactory->createRequest($method, $this->baseUrl.ltrim($uri, '/'))
+            ->withHeader('Accept', 'application/json');
 
         if ($body !== null) {
             $request = $request->withBody($this->streamFactory->createStream(json_encode($body, JSON_THROW_ON_ERROR)))
