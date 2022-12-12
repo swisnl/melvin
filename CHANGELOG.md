@@ -5,6 +5,9 @@ All notable changes to `swisnl\melvin` will be documented in this file.
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 ## Unreleased
+- Nothing
+
+## [1.3.0] - 2022-12-12
 
 ### Changed
 - Allow setting null for period start or end.
