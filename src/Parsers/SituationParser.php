@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Parsers;
 
-use DateTime;
-use DateTimeZone;
-use stdClass;
 use Swis\Melvin\Enums\ActivityType;
 use Swis\Melvin\Enums\Delay;
 use Swis\Melvin\Enums\EventType;
@@ -49,7 +46,7 @@ class SituationParser
         $this->detourParser = $detourParser;
     }
 
-    public function parse(stdClass $object, array $restrictions, array $detours = []): Situation
+    public function parse(\stdClass $object, array $restrictions, array $detours = []): Situation
     {
         if ($roadAuthority = $object->properties->roadAuthority ?? null) {
             $roadAuthority = new RoadAuthority(
@@ -68,7 +65,7 @@ class SituationParser
             );
         }
         if ($createdAt = $object->properties->createdAt ?? $object->properties->createdBy->createdAt ?? null) {
-            $createdAt = new DateTime($createdAt, new DateTimeZone('UTC'));
+            $createdAt = new \DateTime($createdAt, new \DateTimeZone('UTC'));
         }
 
         if ($lastChangedBy = $object->properties->lastChangedBy ?? null) {
@@ -80,7 +77,7 @@ class SituationParser
             );
         }
         if ($lastChangedAt = $object->properties->lastChangeAt ?? $object->properties->lastChangedBy->lastChangeAt ?? null) {
-            $lastChangedAt = new DateTime($lastChangedAt, new DateTimeZone('UTC'));
+            $lastChangedAt = new \DateTime($lastChangedAt, new \DateTimeZone('UTC'));
         }
 
         $location = new Location(
@@ -127,7 +124,7 @@ class SituationParser
         );
     }
 
-    protected function getName(stdClass $object): string
+    protected function getName(\stdClass $object): string
     {
         if (property_exists($object->properties, 'name') && trim($object->properties->name)) {
             return trim($object->properties->name);

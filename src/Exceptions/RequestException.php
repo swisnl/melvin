@@ -6,7 +6,6 @@ namespace Swis\Melvin\Exceptions;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use Throwable;
 
 class RequestException extends \RuntimeException implements Exception
 {
@@ -18,7 +17,7 @@ class RequestException extends \RuntimeException implements Exception
         string $message,
         RequestInterface $request,
         ResponseInterface $response = null,
-        Throwable $previous = null
+        \Throwable $previous = null
     ) {
         $code = $response ? $response->getStatusCode() : 0;
         parent::__construct($message, $code, $previous);
@@ -29,7 +28,7 @@ class RequestException extends \RuntimeException implements Exception
     public static function create(
         RequestInterface $request,
         ResponseInterface $response = null,
-        Throwable $previous = null
+        \Throwable $previous = null
     ): self {
         if (!$response) {
             return new self(

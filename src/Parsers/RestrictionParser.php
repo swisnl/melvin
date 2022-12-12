@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Parsers;
 
-use stdClass;
 use Swis\Melvin\Enums\Direction;
 use Swis\Melvin\Enums\RestrictionType;
 use Swis\Melvin\Enums\RoadManagementType;
@@ -24,7 +23,7 @@ class RestrictionParser
         $this->geometryParser = $geometryParser;
     }
 
-    public function parse(stdClass $object, int $index): Restriction
+    public function parse(\stdClass $object, int $index): Restriction
     {
         if ($emergencyServices = $object->properties->emergencyServices ?? $object->properties->emergency ?? null) {
             $emergencyServices = $this->parseExtraInfo($emergencyServices);
@@ -71,7 +70,7 @@ class RestrictionParser
         );
     }
 
-    protected function parseExtraInfo(stdClass $object): RestrictionExtraInfo
+    protected function parseExtraInfo(\stdClass $object): RestrictionExtraInfo
     {
         $passageAllowed = $object->passageAllowed ?? null;
 

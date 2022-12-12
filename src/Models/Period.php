@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Models;
 
-use DateTime;
 use Swis\Melvin\Enums\PeriodStatus;
 
 class Period
@@ -13,9 +12,9 @@ class Period
 
     public string $name;
 
-    public DateTime $startDate;
+    public \DateTime $startDate;
 
-    public ?DateTime $endDate;
+    public ?\DateTime $endDate;
 
     public bool $repeating;
 
@@ -32,8 +31,8 @@ class Period
     public function __construct(
         int $id,
         string $name,
-        DateTime $startDate,
-        ?DateTime $endDate,
+        \DateTime $startDate,
+        ?\DateTime $endDate,
         bool $repeating,
         ?Week $repeatingAt,
         ?PeriodStatus $status,

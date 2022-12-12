@@ -4,16 +4,13 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Parsers;
 
-use DateTime;
-use DateTimeZone;
-use stdClass;
 use Swis\Melvin\Enums\PeriodStatus;
 use Swis\Melvin\Models\Period;
 use Swis\Melvin\Models\Week;
 
 class PeriodParser
 {
-    public function parse(stdClass $object, int $index): Period
+    public function parse(\stdClass $object, int $index): Period
     {
         if ($repeatingAt = $object->repeatingAt ?? null) {
             $repeatingAt = new Week(
@@ -30,8 +27,8 @@ class PeriodParser
         return new Period(
             $object->id,
             ($object->name ?? '') ?: sprintf('Uitvoerperiode %d', $index + 1),
-            new DateTime($object->startDateActual ?? $object->startDate, new DateTimeZone('UTC')),
-            ($endDate = $object->endDateActual ?? $object->endDate ?? null) ? new DateTime($endDate, new DateTimeZone('UTC')) : null,
+            new \DateTime($object->startDateActual ?? $object->startDate, new \DateTimeZone('UTC')),
+            ($endDate = $object->endDateActual ?? $object->endDate ?? null) ? new \DateTime($endDate, new \DateTimeZone('UTC')) : null,
             ($object->repeating ?? '') === 'WEEKLY',
             $repeatingAt,
             ($object->status ?? null) ? PeriodStatus::from($object->status) : null,

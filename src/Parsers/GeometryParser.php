@@ -7,13 +7,11 @@ namespace Swis\Melvin\Parsers;
 use GeoJson\Exception\Exception as GeoJsonException;
 use GeoJson\GeoJson;
 use GeoJson\Geometry\Geometry;
-use InvalidArgumentException;
-use stdClass;
 use Swis\Melvin\Exceptions\ParseException;
 
 class GeometryParser
 {
-    public function parse(stdClass $object): Geometry
+    public function parse(\stdClass $object): Geometry
     {
         if ($object->type === 'MultiLineString') {
             $object->coordinates = array_values(
@@ -28,7 +26,7 @@ class GeometryParser
 
         try {
             return GeoJson::jsonUnserialize($object);
-        } catch (GeoJsonException|InvalidArgumentException $e) {
+        } catch (GeoJsonException|\InvalidArgumentException $e) {
             throw new ParseException('Failed to parse geometry', 0, $e);
         }
     }

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Models;
 
-use DateTime;
 use GeoJson\Geometry\Geometry;
 use Swis\Melvin\Enums\ActivityType;
 use Swis\Melvin\Enums\Delay;
@@ -64,11 +63,11 @@ class Situation
      */
     public array $periods;
 
-    public ?DateTime $createdAt;
+    public ?\DateTime $createdAt;
 
     public ?Person $createdBy;
 
-    public ?DateTime $lastChangedAt;
+    public ?\DateTime $lastChangedAt;
 
     public ?Person $lastChangedBy;
 
@@ -110,9 +109,9 @@ class Situation
         ?RoadAuthority $roadAuthority,
         Location $location,
         array $periods,
-        ?DateTime $createdAt,
+        ?\DateTime $createdAt,
         ?Person $createdBy,
-        ?DateTime $lastChangedAt,
+        ?\DateTime $lastChangedAt,
         ?Person $lastChangedBy,
         array $attachments,
         array $restrictions,

@@ -4,19 +4,17 @@ declare(strict_types=1);
 
 namespace Swis\Melvin;
 
-use DateTimeInterface;
-use JsonSerializable;
 use Swis\Melvin\Enums\ActivityType;
 use Swis\Melvin\Enums\RestrictionType;
 use Swis\Melvin\Enums\SituationStatus;
 use Swis\Melvin\Enums\Source;
 use Swis\Melvin\Exceptions\InvalidArgumentException;
 
-class SituationFilterParameters implements JsonSerializable
+class SituationFilterParameters implements \JsonSerializable
 {
-    protected ?DateTimeInterface $startPeriod = null;
+    protected ?\DateTimeInterface $startPeriod = null;
 
-    protected ?DateTimeInterface $endPeriod = null;
+    protected ?\DateTimeInterface $endPeriod = null;
 
     /**
      * @var \Swis\Melvin\Enums\Source[]|null
@@ -57,7 +55,7 @@ class SituationFilterParameters implements JsonSerializable
      *
      * @return $this
      */
-    public function setPeriod(?DateTimeInterface $start, ?DateTimeInterface $end): self
+    public function setPeriod(?\DateTimeInterface $start, ?\DateTimeInterface $end): self
     {
         $this->startPeriod = $start;
         $this->endPeriod = $end;

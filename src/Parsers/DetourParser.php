@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Parsers;
 
-use stdClass;
 use Swis\Melvin\Enums\BoatType;
 use Swis\Melvin\Enums\Direction;
 use Swis\Melvin\Enums\TransportMode;
@@ -20,7 +19,7 @@ class DetourParser
         $this->geometryParser = $geometryParser;
     }
 
-    public function parse(stdClass $object, int $index): Detour
+    public function parse(\stdClass $object, int $index): Detour
     {
         return new Detour(
             $object->id,
