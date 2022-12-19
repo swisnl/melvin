@@ -55,7 +55,7 @@ class RestrictionParser
             $object->geometry ? $this->geometryParser->parse($object->geometry) : null,
             ($object->properties->name ?? '') ?: sprintf('Beperking %d', $index + 1),
             Direction::from($object->properties->direction),
-            property_exists($object->properties, 'transportMode') ? TransportMode::from($object->properties->transportMode) : null,
+            !empty($object->properties->transportMode) ? TransportMode::from($object->properties->transportMode) : null,
             RestrictionType::from($object->properties->restrictionType),
             array_map([VehicleType::class, 'from'], $object->properties->vehicleTypes ?? $object->properties->vehicles ?? []),
             $emergencyServices,

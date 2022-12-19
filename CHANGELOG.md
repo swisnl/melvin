@@ -5,7 +5,9 @@ All notable changes to `swisnl\melvin` will be documented in this file.
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 ## Unreleased
-- Nothing
+
+### Fixed
+- Check if properties aren't empty before using them.
 
 ## [1.3.1] - 2022-12-12
 

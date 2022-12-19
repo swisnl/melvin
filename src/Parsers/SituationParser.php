@@ -126,7 +126,7 @@ class SituationParser
 
     protected function getName(\stdClass $object): string
     {
-        if (property_exists($object->properties, 'name') && trim($object->properties->name)) {
+        if (isset($object->properties->name) && trim($object->properties->name)) {
             return trim($object->properties->name);
         }
 
