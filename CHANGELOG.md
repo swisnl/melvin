@@ -5,7 +5,9 @@ All notable changes to `swisnl\melvin` will be documented in this file.
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 ## Unreleased
-- Nothing
+
+### Fixed
+- Use new NDW Keycloak authentication server.
 
 ## [1.3.2] - 2022-12-19
 

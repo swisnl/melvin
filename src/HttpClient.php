@@ -18,7 +18,7 @@ class HttpClient
 {
     private string $baseUrl = 'https://melvin.ndw.nu/melvinservice/rest/';
 
-    private string $tokenUrl = 'https://keycloak.ndwcloud.nu/auth/realms/ndw/protocol/openid-connect/token';
+    private string $tokenUrl = 'https://iam.ndw.nu/auth/realms/ndw/protocol/openid-connect/token';
 
     private string $username;
 
