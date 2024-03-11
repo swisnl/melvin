@@ -10,7 +10,7 @@ use Swis\Melvin\Models\Week;
 
 class PeriodParser
 {
-    public function parse(\stdClass $object, int $index): Period
+    public function parse(\stdClass $object, int $index, int $situationId): Period
     {
         if ($repeatingAt = $object->repeatingAt ?? null) {
             $repeatingAt = new Week(
@@ -23,9 +23,8 @@ class PeriodParser
                 $repeatingAt[6]
             );
         }
-
         return new Period(
-            $object->id,
+            $object->id ?? $situationId,
             ($object->name ?? '') ?: sprintf('Uitvoerperiode %d', $index + 1),
             new \DateTime($object->startDateActual ?? $object->startDate, new \DateTimeZone('UTC')),
             ($endDate = $object->endDateActual ?? $object->endDate ?? null) ? new \DateTime($endDate, new \DateTimeZone('UTC')) : null,

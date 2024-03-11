@@ -48,9 +48,11 @@ class SituationParser
 
     public function parse(\stdClass $object, array $restrictions, array $detours = []): Situation
     {
+        $situationId = (int)$object->id;
+
         if ($roadAuthority = $object->properties->roadAuthority ?? null) {
             $roadAuthority = new RoadAuthority(
-                $roadAuthority->id,
+                $roadAuthority->id ?? $situationId,
                 $roadAuthority->type !== 'EMPTY' ? RoadAuthorityType::from($roadAuthority->type) : null,
                 $roadAuthority->name
             );
@@ -113,7 +115,7 @@ class SituationParser
             SituationStatus::from($object->properties->status),
             $roadAuthority,
             $location,
-            array_map([$this->periodParser, 'parse'], $object->properties->periods, array_keys($object->properties->periods)),
+            array_map([$this->periodParser, 'parse'], $object->properties->periods, array_keys($object->properties->periods), array_fill(0, count($object->properties->periods), $situationId)),
             $createdAt,
             $createdBy,
             $lastChangedAt,
