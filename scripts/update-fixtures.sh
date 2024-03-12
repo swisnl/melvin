@@ -38,6 +38,6 @@ main() {
 }
 
 (
-  set -eu pipefail
+  set -euo pipefail
   main
 )
