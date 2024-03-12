@@ -23,6 +23,7 @@ class PeriodParser
                 $repeatingAt[6]
             );
         }
+
         return new Period(
             $object->id ?? $situationId,
             ($object->name ?? '') ?: sprintf('Uitvoerperiode %d', $index + 1),

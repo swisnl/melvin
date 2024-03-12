@@ -48,7 +48,7 @@ class SituationParser
 
     public function parse(\stdClass $object, array $restrictions, array $detours = []): Situation
     {
-        $situationId = (int)$object->id;
+        $situationId = (int) $object->id;
 
         if ($roadAuthority = $object->properties->roadAuthority ?? null) {
             $roadAuthority = new RoadAuthority(

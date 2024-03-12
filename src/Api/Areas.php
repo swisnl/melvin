@@ -11,7 +11,7 @@ class Areas extends AbstractApi
 {
     protected AreaParser $areaParser;
 
-    public function __construct(Client $client, AreaParser $areaParser = null)
+    public function __construct(Client $client, ?AreaParser $areaParser = null)
     {
         parent::__construct($client);
 

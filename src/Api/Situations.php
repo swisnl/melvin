@@ -17,7 +17,7 @@ class Situations extends AbstractApi
 {
     protected SituationParser $situationParser;
 
-    public function __construct(Client $client, SituationParser $situationParser = null)
+    public function __construct(Client $client, ?SituationParser $situationParser = null)
     {
         parent::__construct($client);
 
@@ -34,7 +34,7 @@ class Situations extends AbstractApi
     /**
      * @return \Swis\Melvin\Models\Situation[]
      */
-    public function export(SituationFilterParameters $parameters = null): array
+    public function export(?SituationFilterParameters $parameters = null): array
     {
         $result = $this->getHttpClient()->request('POST', 'export', $parameters);
 
