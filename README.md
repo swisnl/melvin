@@ -15,8 +15,8 @@ This is a (slightly opinionated) client for the [Melvin](https://melvin.ndw.nu) 
 
 Via Composer
 
-``` bash
-$ composer require swisnl/melvin
+```bash
+composer require swisnl/melvin
 ```
 
 N.B. Make sure you have installed a PSR-18 HTTP Client and PSR-17 HTTP Factories before you install this package or install one at the same time e.g. `composer require swisnl/json-api-client guzzlehttp/guzzle:^7.3`.
@@ -27,13 +27,13 @@ We are decoupled from any HTTP messaging client with the help of [PSR-18 HTTP Cl
 This requires an extra package providing [psr/http-client-implementation](https://packagist.org/providers/psr/http-client-implementation) and [psr/http-factory-implementation](https://packagist.org/providers/psr/http-factory-implementation).
 To use Guzzle 7, for example, simply require `guzzlehttp/guzzle`:
 
-``` bash
+```bash
 composer require guzzlehttp/guzzle:^7.3
 ```
 
 ## Usage
 
-``` php
+```php
 use Swis\Melvin\Client;
 use Swis\Melvin\SituationFilterParameters;
 
@@ -53,8 +53,8 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 
 ## Testing
 
-``` bash
-$ composer test
+```bash
+composer test
 ```
 
 ## Contributing
