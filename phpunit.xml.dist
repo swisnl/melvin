@@ -22,8 +22,12 @@
     </report>
   </coverage>
   <testsuites>
-    <testsuite name="Melvin Test Suite">
+    <testsuite name="default">
       <directory>tests</directory>
+      <exclude>tests/Integration</exclude>
+    </testsuite>
+    <testsuite name="integration">
+      <directory>tests/Integration</directory>
     </testsuite>
   </testsuites>
   <logging>
