@@ -3,10 +3,10 @@ name: Run integration tests
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 5 * * *'
+    - cron: '30 5 * * 1-5'
 
 jobs:
-  php-tests:
+  php-integration-tests:
     runs-on: ubuntu-latest
 
     steps:
