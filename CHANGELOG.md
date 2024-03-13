@@ -5,7 +5,9 @@ All notable changes to `swisnl\melvin` will be documented in this file.
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 ## Unreleased
-- Nothing
+
+### Changed
+- Drop PHP <8 support.
 
 ## [1.3.3] - 2023-02-09
 
