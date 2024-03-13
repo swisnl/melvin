@@ -1,0 +1,986 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Root",
+    "definitions": {
+        "Root": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "features": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Feature"
+                    }
+                }
+            },
+            "required": [
+                "features",
+                "type"
+            ],
+            "title": "Root"
+        },
+        "Feature": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "$ref": "#/definitions/FeatureType"
+                },
+                "properties": {
+                    "$ref": "#/definitions/Properties"
+                },
+                "geometry": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/Geometry"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "id": {
+                    "type": "string",
+                    "format": "integer"
+                }
+            },
+            "required": [
+                "geometry",
+                "id",
+                "properties",
+                "type"
+            ],
+            "title": "Feature"
+        },
+        "Geometry": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "$ref": "#/definitions/GeometryType"
+                },
+                "coordinates": {
+                    "type": "array",
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "array",
+                                "items": {
+                                    "anyOf": [
+                                        {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "number"
+                                            }
+                                        },
+                                        {
+                                            "type": "number"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "number"
+                            }
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "coordinates",
+                "type"
+            ],
+            "title": "Geometry"
+        },
+        "Properties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "workObject": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/WorkObject"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "impact": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/Impact"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "situationId": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "project": {
+                    "type": "boolean"
+                },
+                "source": {
+                    "$ref": "#/definitions/Source"
+                },
+                "published": {
+                    "type": "boolean"
+                },
+                "type": {
+                    "$ref": "#/definitions/PropertiesType"
+                },
+                "url": {
+                    "$ref": "#/definitions/URLUnion"
+                },
+                "impactDescription": {
+                    "$ref": "#/definitions/ImpactDescriptionUnion"
+                },
+                "delay": {
+                    "$ref": "#/definitions/Delay"
+                },
+                "createdBy": {
+                    "$ref": "#/definitions/Person"
+                },
+                "workType": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/WorkType"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "periods": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Period"
+                    }
+                },
+                "location": {
+                    "$ref": "#/definitions/Location"
+                },
+                "lastChangedBy": {
+                    "$ref": "#/definitions/Person"
+                },
+                "activityType": {
+                    "$ref": "#/definitions/ActivityType"
+                },
+                "roadAuthority": {
+                    "$ref": "#/definitions/RoadAuthority"
+                },
+                "situationRecordId": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "addition": {
+                    "type": "string"
+                },
+                "status": {
+                    "$ref": "#/definitions/SituationStatus"
+                },
+                "eventType": {
+                    "$ref": "#/definitions/EventType"
+                },
+                "eventName": {
+                    "type": "string"
+                },
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Attachment"
+                    }
+                },
+                "urlDescription": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "lastChangeAt": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "createdAt": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "name": {
+                    "type": "string"
+                },
+                "restrictionType": {
+                    "$ref": "#/definitions/RestrictionType"
+                },
+                "transportMode": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/TransportMode"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "vehicles": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/VehicleType"
+                    }
+                },
+                "emergency": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/RestrictionExtraInfo"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "direction": {
+                    "$ref": "#/definitions/Direction"
+                },
+                "publicTransport": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/RestrictionExtraInfo"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "maximumSpeed": {
+                    "type": "integer"
+                },
+                "vehicleInformation": {
+                    "$ref": "#/definitions/VehicleInformation"
+                },
+                "vehicleTypes": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/VehicleType"
+                    }
+                },
+                "emergencyServices": {
+                    "$ref": "#/definitions/RestrictionExtraInfo"
+                },
+                "roadManagementTypes": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/RoadManagementType"
+                    }
+                },
+                "roadManagementType": {
+                    "$ref": "#/definitions/RoadManagementType"
+                },
+                "laneInformation": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/LaneInformation"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "boatTypes": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/BoatType"
+                    }
+                }
+            },
+            "required": [
+                "type"
+            ],
+            "title": "Properties"
+        },
+        "Attachment": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                }
+            },
+            "required": [
+                "name",
+                "url"
+            ],
+            "title": "Attachment"
+        },
+        "Person": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "firstName": {
+                    "type": "string"
+                },
+                "prefix": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "type": {
+                    "$ref": "#/definitions/PersonType"
+                },
+                "createdAt": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "lastChangeAt": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "firstName",
+                "prefix",
+                "lastName",
+                "type"
+            ],
+            "title": "Person"
+        },
+        "RestrictionExtraInfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "passageAllowed": {
+                    "$ref": "#/definitions/PassageAllowed"
+                },
+                "description": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "type": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/RestrictionExtraInfoType"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "description",
+                "passageAllowed",
+                "type"
+            ],
+            "title": "RestrictionExtraInfo"
+        },
+        "LaneInformation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "numberOfLanesRestricted": {
+                    "type": "integer"
+                },
+                "numberOfOperationalLanes": {
+                    "type": "integer"
+                },
+                "originalNumberOfLanes": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "numberOfLanesRestricted",
+                "numberOfOperationalLanes",
+                "originalNumberOfLanes"
+            ],
+            "title": "LaneInformation"
+        },
+        "Location": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "city": {
+                    "type": "string"
+                },
+                "road": {
+                    "type": "string"
+                },
+                "district": {
+                    "type": "string"
+                },
+                "comment": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "city",
+                "district",
+                "road"
+            ],
+            "title": "Location"
+        },
+        "Period": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "startDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "endDate": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "startDateActual": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "status": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/PeriodStatus"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "overrunning": {
+                    "anyOf": [
+                        {
+                            "type": "boolean"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "order": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "endDateActual": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "repeating": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/Repeating"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "repeatingAt": {
+                    "anyOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "boolean"
+                            }
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "parentId": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "id",
+                "startDate"
+            ],
+            "title": "Period"
+        },
+        "RoadAuthority": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "$ref": "#/definitions/RoadAuthorityType"
+                },
+                "id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "type"
+            ],
+            "title": "RoadAuthority"
+        },
+        "VehicleInformation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "heightCharacteristic": {
+                    "anyOf": [
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "lengthCharacteristic": {
+                    "anyOf": [
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            },
+            "title": "VehicleInformation"
+        },
+        "URLUnion": {
+            "anyOf": [
+                {
+                    "type": "string",
+                    "format": "uri"
+                },
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
+            ],
+            "title": "URLUnion"
+        },
+        "ImpactDescriptionUnion": {
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/ImpactDescription"
+                },
+                {
+                    "type": "string"
+                }
+            ],
+            "title": "ImpactDescriptionUnion"
+        },
+        "ImpactDescription": {
+            "type": "string",
+            "enum": [
+                "NONE",
+                "SLOW_TRAFFIC_RESTRICTION",
+                "ROAD_CLOSED_ONE_DIRECTION",
+                "ROAD_CLOSED_BOTH_WAYS",
+                "REDUCED_NUMBER_OF_LANES",
+                "SPEED_REDUCTION",
+                "ROADWORK_ON_JUNCTION",
+                "OTHER"
+            ],
+            "title": "ImpactDescription"
+        },
+        "GeometryType": {
+            "type": "string",
+            "enum": [
+                "Point",
+                "MultiLineString",
+                "LineString"
+            ],
+            "title": "GeometryType"
+        },
+        "ActivityType": {
+            "type": "string",
+            "enum": [
+                "WORK",
+                "EVENT",
+                "WATERWAY",
+                "WATERWAY_EVENT"
+            ],
+            "title": "ActivityType"
+        },
+        "BoatType": {
+            "type": "string",
+            "enum": [
+                "PROFESSIONAL",
+                "RECREATIONAL",
+                "STANDING_MAST"
+            ],
+            "title": "BoatType"
+        },
+        "PersonType": {
+            "type": "string",
+            "enum": [
+                "CONTRACTOR",
+                "ROADAUTHORITY"
+            ],
+            "title": "PersonType"
+        },
+        "Delay": {
+            "type": "string",
+            "enum": [
+                "NONE",
+                "LESS_5_MIN",
+                "BETWEEN_5_AND_10_MIN",
+                "BETWEEN_10_AND_30_MIN",
+                "MORE_30_MIN",
+                "BETWEEN_30_AND_60_MIN",
+                "BETWEEN_1_AND_2_HOURS",
+                "BETWEEN_2_AND_4_HOURS",
+                "BETWEEN_4_AND_8_HOURS",
+                "MORE_8_HOURS"
+            ],
+            "title": "Delay"
+        },
+        "Direction": {
+            "type": "string",
+            "enum": [
+                "A_B",
+                "BOTH"
+            ],
+            "title": "Direction"
+        },
+        "PassageAllowed": {
+            "type": "string",
+            "enum": [
+                "",
+                "true",
+                "false",
+                "YES",
+                "NO"
+            ],
+            "title": "PassageAllowed"
+        },
+        "RestrictionExtraInfoType": {
+            "type": "string",
+            "enum": [
+                "",
+                "EMERGENCY_SERVICES"
+            ],
+            "title": "RestrictionExtraInfoType"
+        },
+        "Impact": {
+            "type": "string",
+            "enum": [
+                "NONE",
+                "LITTLE",
+                "AVERAGE",
+                "BIG",
+                "HUGE",
+                "EMPTY"
+            ],
+            "title": "Impact"
+        },
+        "Repeating": {
+            "type": "string",
+            "enum": [
+                "WEEKLY"
+            ],
+            "title": "Repeating"
+        },
+        "PeriodStatus": {
+            "type": "string",
+            "enum": [
+                "INITIAL",
+                "PROBABLY_STARTED",
+                "STARTED",
+                "OVERRUNNING",
+                "PROBABLY_ENDED",
+                "ENDED"
+            ],
+            "title": "PeriodStatus"
+        },
+        "RestrictionType": {
+            "type": "string",
+            "enum": [
+                "NONE",
+                "SPEED",
+                "COMPLETE"
+            ],
+            "title": "RestrictionType"
+        },
+        "RoadAuthorityType": {
+            "type": "string",
+            "enum": [
+                "MUNICIPALITY",
+                "SUBMUNICIPALITY",
+                "ROAD_AUTHORITY",
+                "TUNNEL_AUTHORITY",
+                "WATER_AUTHORITY",
+                "POLDER_AUTHORITY",
+                "PROVINCE",
+                "MISCELLANEOUS",
+                "UNKNOWN",
+                "EMPTY"
+            ],
+            "title": "RoadAuthorityType"
+        },
+        "RoadManagementType": {
+            "type": "string",
+            "enum": [
+                "UNKNOWN",
+                "SPEED_RESTRICTION",
+                "DISPLACEMENT",
+                "NARROW_LANES",
+                "CLOSURES",
+                "CLOSED_LANES",
+                "ROAD_CLOSED_ONE_DIRECTION",
+                "JUNCTION_CONNECTING_CARRIAGEWAY_CLOSED",
+                "JUNCTION_ENTRY_CLOSED",
+                "JUNCTION_EXIT_CLOSED",
+                "HARD_SHOULDER_USAGE"
+            ],
+            "title": "RoadManagementType"
+        },
+        "Source": {
+            "type": "string",
+            "enum": [
+                "MELVIN",
+                "SPIN",
+                "LTC"
+            ],
+            "title": "Source"
+        },
+        "SituationStatus": {
+            "type": "string",
+            "enum": [
+                "UNKNOWN",
+                "START",
+                "INITIAL",
+                "CONCEPT",
+                "FINAL",
+                "DELETED"
+            ],
+            "title": "SituationStatus"
+        },
+        "TransportMode": {
+            "type": "string",
+            "enum": [
+                "CAR",
+                "BIKE",
+                "WALK",
+                "BOAT"
+            ],
+            "title": "TransportMode"
+        },
+        "PropertiesType": {
+            "type": "string",
+            "enum": [
+                "SITUATION",
+                "EXTERNAL_SITUATION",
+                "RESTRICTION",
+                "EXTERNAL_RESTRICTION",
+                "DETOUR",
+                "EXTERNAL_DETOUR"
+            ],
+            "title": "PropertiesType"
+        },
+        "VehicleType": {
+            "type": "string",
+            "enum": [
+                "CAR",
+                "VAN",
+                "PEDESTRIAN",
+                "BIKE",
+                "SCOOTER",
+                "AGRICULTURAL_VEHICLE"
+            ],
+            "title": "VehicleType"
+        },
+        "WorkObject": {
+            "type": "string",
+            "enum": [
+                "BRIDGE",
+                "GUIDE",
+                "BARRIER",
+                "CROSSING",
+                "ROADSIDE_EQUIPMENT",
+                "OTHER",
+                "ROUNDABOUT",
+                "RAILWAY_CROSSING",
+                "TRAMWAY",
+                "TUNNEL",
+                "TRAFFIC_LIGHTS",
+                "LIGHTING",
+                "VIADUCT",
+                "WATER_DRAINAGE",
+                "ROAD",
+                ""
+            ],
+            "title": "WorkObject"
+        },
+        "WorkType": {
+            "type": "string",
+            "enum": [
+                "CONSTRUCTION",
+                "MAINTENANCE",
+                "ASPHALTING",
+                "ROADMARKING",
+                "ROADSIDE_MAINTENANCE",
+                "CABLES",
+                "PRUNING",
+                "SEWERAGE",
+                "DEMOLITION",
+                "WIDENING",
+                "OVERHEAD_WORKS",
+                "WATERWAY_MAINTENANCE",
+                "WATERWAY_PRUNING",
+                "DREDGING",
+                "BRAKING",
+                "DOCKING",
+                "CONCRETE_MAINTENANCE",
+                "ENGINEERING_MAINTENANCE",
+                "ELECTROMECHANIC",
+                "DIVING",
+                "EVENT",
+                "UNKNOWN",
+                "OTHER"
+            ],
+            "title": "WorkType"
+        },
+        "FeatureType": {
+            "type": "string",
+            "enum": [
+                "Feature"
+            ],
+            "title": "FeatureType"
+        },
+        "EventType": {
+            "type": "string",
+            "enum": [
+                "UNKNOWN",
+                "FAIR",
+                "CONCERT",
+                "FESTIVAL",
+                "FUNFAIR",
+                "MARKET",
+                "MARATHON",
+                "SPORTSMEETING",
+                "FOOTBALLMATCH",
+                "BICYCLERACE",
+                "WATERSPORTSMEETING",
+                "OTHER"
+            ],
+            "title": "EventType"
+        }
+    }
+}

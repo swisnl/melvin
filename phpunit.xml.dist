@@ -25,9 +25,13 @@
     <testsuite name="default">
       <directory>tests</directory>
       <exclude>tests/Integration</exclude>
+      <exclude>tests/Schema</exclude>
     </testsuite>
     <testsuite name="integration">
       <directory>tests/Integration</directory>
+    </testsuite>
+    <testsuite name="schema">
+      <directory>tests/Schema</directory>
     </testsuite>
   </testsuites>
   <logging>

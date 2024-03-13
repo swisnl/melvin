@@ -37,4 +37,7 @@ jobs:
         env:
           MELVIN_USERNAME: ${{ secrets.MELVIN_USERNAME }}
           MELVIN_PASSWORD: ${{ secrets.MELVIN_PASSWORD }}
-        run: vendor/bin/phpunit --testsuite=integration --fail-on-skipped
+        run: |
+          sh scripts/update-fixtures.sh
+          vendor/bin/phpunit --testsuite=schema
+          vendor/bin/phpunit --testsuite=integration --fail-on-skipped
