@@ -30,10 +30,10 @@ jobs:
           restore-keys: php-8.1-composer-prefer-stable-
 
       - name: Install dependencies
-        env:
-          MELVIN_USERNAME: ${{ secrets.MELVIN_USERNAME }}
-          MELVIN_PASSWORD: ${{ secrets.MELVIN_PASSWORD }}
         run: composer update --prefer-stable --prefer-dist --no-interaction
 
       - name: Execute tests
+        env:
+          MELVIN_USERNAME: ${{ secrets.MELVIN_USERNAME }}
+          MELVIN_PASSWORD: ${{ secrets.MELVIN_PASSWORD }}
         run: vendor/bin/phpunit --testsuite=integration --fail-on-skipped
