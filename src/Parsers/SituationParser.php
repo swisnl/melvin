@@ -22,28 +22,13 @@ use Swis\Melvin\Models\Situation;
 
 class SituationParser
 {
-    protected GeometryParser $geometryParser;
-
-    protected PeriodParser $periodParser;
-
-    protected AttachmentParser $attachmentParser;
-
-    protected RestrictionParser $restrictionParser;
-
-    protected DetourParser $detourParser;
-
     public function __construct(
-        GeometryParser $geometryParser,
-        PeriodParser $periodParser,
-        AttachmentParser $attachmentParser,
-        RestrictionParser $restrictionParser,
-        DetourParser $detourParser
+        protected GeometryParser $geometryParser,
+        protected PeriodParser $periodParser,
+        protected AttachmentParser $attachmentParser,
+        protected RestrictionParser $restrictionParser,
+        protected DetourParser $detourParser
     ) {
-        $this->geometryParser = $geometryParser;
-        $this->periodParser = $periodParser;
-        $this->attachmentParser = $attachmentParser;
-        $this->restrictionParser = $restrictionParser;
-        $this->detourParser = $detourParser;
     }
 
     public function parse(\stdClass $object, array $restrictions, array $detours = []): Situation

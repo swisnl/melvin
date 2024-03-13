@@ -12,11 +12,8 @@ use Swis\Melvin\Models\Detour;
 
 class DetourParser
 {
-    protected GeometryParser $geometryParser;
-
-    public function __construct(GeometryParser $geometryParser)
+    public function __construct(protected GeometryParser $geometryParser)
     {
-        $this->geometryParser = $geometryParser;
     }
 
     public function parse(\stdClass $object, int $index): Detour

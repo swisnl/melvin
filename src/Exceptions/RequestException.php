@@ -9,20 +9,14 @@ use Psr\Http\Message\ResponseInterface;
 
 class RequestException extends \RuntimeException implements Exception
 {
-    private RequestInterface $request;
-
-    private ?ResponseInterface $response;
-
     public function __construct(
         string $message,
-        RequestInterface $request,
-        ?ResponseInterface $response = null,
+        private RequestInterface $request,
+        private ?ResponseInterface $response = null,
         ?\Throwable $previous = null
     ) {
         $code = $response ? $response->getStatusCode() : 0;
         parent::__construct($message, $code, $previous);
-        $this->request = $request;
-        $this->response = $response;
     }
 
     public static function create(

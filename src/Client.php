@@ -9,11 +9,8 @@ use Swis\Melvin\Api\Situations;
 
 class Client
 {
-    protected HttpClient $httpClient;
-
-    public function __construct(HttpClient $httpClient)
+    public function __construct(protected HttpClient $httpClient)
     {
-        $this->httpClient = $httpClient;
     }
 
     public static function create(string $username, string $password, string $clientId = 'melvin-frontend-test'): self

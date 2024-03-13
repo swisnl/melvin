@@ -16,11 +16,8 @@ use Swis\Melvin\Models\VehicleInformation;
 
 class RestrictionParser
 {
-    protected GeometryParser $geometryParser;
-
-    public function __construct(GeometryParser $geometryParser)
+    public function __construct(protected GeometryParser $geometryParser)
     {
-        $this->geometryParser = $geometryParser;
     }
 
     public function parse(\stdClass $object, int $index): Restriction
