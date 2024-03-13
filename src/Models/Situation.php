@@ -16,135 +16,48 @@ use Swis\Melvin\Enums\WorkType;
 
 class Situation
 {
-    public string $id;
-
-    public bool $external;
-
-    public Geometry $geometry;
-
-    public string $name;
-
-    public ?ActivityType $activityType;
-
-    public ?WorkObject $workObject;
-
-    public ?Impact $impact;
-
-    public ?string $impactDescription;
-
-    public bool $project;
-
-    public Source $source;
-
-    public bool $published;
-
-    public ?string $url;
-
-    public ?string $urlDescription;
-
-    public Delay $delay;
-
-    public ?WorkType $workType;
-
-    public ?EventType $eventType;
-
-    public ?string $eventName;
-
-    public ?string $addition;
-
-    public SituationStatus $status;
-
-    public ?RoadAuthority $roadAuthority;
-
-    public Location $location;
-
-    /**
-     * @var \Swis\Melvin\Models\Period[]
-     */
-    public array $periods;
-
-    public ?\DateTime $createdAt;
-
-    public ?Person $createdBy;
-
-    public ?\DateTime $lastChangedAt;
-
-    public ?Person $lastChangedBy;
-
-    /**
-     * @var \Swis\Melvin\Models\Attachment[]
-     */
-    public array $attachments;
-
-    /**
-     * @var \Swis\Melvin\Models\Restriction[]
-     */
-    public array $restrictions;
-
-    /**
-     * @var \Swis\Melvin\Models\Detour[]
-     */
-    public array $detours;
-
     public function __construct(
-        string $id,
-        bool $external,
-        Geometry $geometry,
-        string $name,
-        ?ActivityType $activityType,
-        ?WorkObject $workObject,
-        ?Impact $impact,
-        ?string $impactDescription,
-        bool $project,
-        Source $source,
-        bool $published,
-        ?string $url,
-        ?string $urlDescription,
-        Delay $delay,
-        ?WorkType $workType,
-        ?EventType $eventType,
-        ?string $eventName,
-        ?string $addition,
-        SituationStatus $status,
-        ?RoadAuthority $roadAuthority,
-        Location $location,
-        array $periods,
-        ?\DateTime $createdAt,
-        ?Person $createdBy,
-        ?\DateTime $lastChangedAt,
-        ?Person $lastChangedBy,
-        array $attachments,
-        array $restrictions,
-        array $detours
+        public string $id,
+        public bool $external,
+        public Geometry $geometry,
+        public string $name,
+        public ?ActivityType $activityType,
+        public ?WorkObject $workObject,
+        public ?Impact $impact,
+        public ?string $impactDescription,
+        public bool $project,
+        public Source $source,
+        public bool $published,
+        public ?string $url,
+        public ?string $urlDescription,
+        public Delay $delay,
+        public ?WorkType $workType,
+        public ?EventType $eventType,
+        public ?string $eventName,
+        public ?string $addition,
+        public SituationStatus $status,
+        public ?RoadAuthority $roadAuthority,
+        public Location $location,
+        /**
+         * @var \Swis\Melvin\Models\Period[]
+         */
+        public array $periods,
+        public ?\DateTime $createdAt,
+        public ?Person $createdBy,
+        public ?\DateTime $lastChangedAt,
+        public ?Person $lastChangedBy,
+        /**
+         * @var \Swis\Melvin\Models\Attachment[]
+         */
+        public array $attachments,
+        /**
+         * @var \Swis\Melvin\Models\Restriction[]
+         */
+        public array $restrictions,
+        /**
+         * @var \Swis\Melvin\Models\Detour[]
+         */
+        public array $detours
     ) {
-        $this->id = $id;
-        $this->external = $external;
-        $this->geometry = $geometry;
-        $this->name = $name;
-        $this->activityType = $activityType;
-        $this->workObject = $workObject;
-        $this->impact = $impact;
-        $this->impactDescription = $impactDescription;
-        $this->project = $project;
-        $this->source = $source;
-        $this->published = $published;
-        $this->url = $url;
-        $this->urlDescription = $urlDescription;
-        $this->delay = $delay;
-        $this->workType = $workType;
-        $this->eventType = $eventType;
-        $this->eventName = $eventName;
-        $this->addition = $addition;
-        $this->status = $status;
-        $this->roadAuthority = $roadAuthority;
-        $this->location = $location;
-        $this->periods = $periods;
-        $this->createdAt = $createdAt;
-        $this->createdBy = $createdBy;
-        $this->lastChangedAt = $lastChangedAt;
-        $this->lastChangedBy = $lastChangedBy;
-        $this->attachments = $attachments;
-        $this->restrictions = $restrictions;
-        $this->detours = $detours;
     }
 }
