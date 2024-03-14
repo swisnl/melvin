@@ -27,7 +27,8 @@ class SituationParser
         protected PeriodParser $periodParser,
         protected AttachmentParser $attachmentParser,
         protected RestrictionParser $restrictionParser,
-        protected DetourParser $detourParser
+        protected DetourParser $detourParser,
+        protected ContactParser $contactParser
     ) {
     }
 
@@ -107,7 +108,11 @@ class SituationParser
             $lastChangedBy,
             array_map([$this->attachmentParser, 'parse'], $object->properties->attachments ?? [], array_keys($object->properties->attachments ?? [])),
             array_map([$this->restrictionParser, 'parse'], $restrictions, array_keys($restrictions)),
-            array_map([$this->detourParser, 'parse'], $detours, array_keys($detours))
+            array_map([$this->detourParser, 'parse'], $detours, array_keys($detours)),
+            ($object->properties->permitId ?? '') ?: null,
+            ($object->properties->referenceId ?? '') ?: null,
+            $object->properties->remarks,
+            array_map([$this->contactParser, 'parse'], $object->properties->contacts ?? []),
         );
     }
 

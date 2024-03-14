@@ -6,6 +6,7 @@ namespace Swis\Melvin\Api;
 
 use Swis\Melvin\Client;
 use Swis\Melvin\Parsers\AttachmentParser;
+use Swis\Melvin\Parsers\ContactParser;
 use Swis\Melvin\Parsers\DetourParser;
 use Swis\Melvin\Parsers\GeometryParser;
 use Swis\Melvin\Parsers\PeriodParser;
@@ -27,7 +28,8 @@ class Situations extends AbstractApi
             new PeriodParser(),
             new AttachmentParser(),
             new RestrictionParser($geometryParser),
-            new DetourParser($geometryParser)
+            new DetourParser($geometryParser),
+            new ContactParser()
         );
     }
 

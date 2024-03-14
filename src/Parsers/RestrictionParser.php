@@ -42,7 +42,9 @@ class RestrictionParser
         if ($vehicleInformation = (array) ($object->properties->vehicleInformation ?? []) ? $object->properties->vehicleInformation : null) {
             $vehicleInformation = new VehicleInformation(
                 $vehicleInformation->heightCharacteristic ?? null,
-                $vehicleInformation->lengthCharacteristic ?? null
+                $vehicleInformation->lengthCharacteristic ?? null,
+                $vehicleInformation->widthCharacteristic ?? null,
+                $vehicleInformation->grossWeightCharacteristic ?? null,
             );
         }
 

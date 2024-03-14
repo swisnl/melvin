@@ -57,7 +57,17 @@ class Situation
         /**
          * @var \Swis\Melvin\Models\Detour[]
          */
-        public array $detours
+        public array $detours,
+        public ?string $permitId,
+        public ?string $referenceId,
+        /**
+         * @var string[]
+         */
+        public array $remarks,
+        /**
+         * @var \Swis\Melvin\Models\Contact[]
+         */
+        public array $contacts
     ) {
     }
 }
