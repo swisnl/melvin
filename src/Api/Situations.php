@@ -12,6 +12,7 @@ use Swis\Melvin\Parsers\GeometryParser;
 use Swis\Melvin\Parsers\PeriodParser;
 use Swis\Melvin\Parsers\RestrictionParser;
 use Swis\Melvin\Parsers\SituationParser;
+use Swis\Melvin\Parsers\UrlParser;
 use Swis\Melvin\SituationFilterParameters;
 
 class Situations extends AbstractApi
@@ -29,7 +30,8 @@ class Situations extends AbstractApi
             new AttachmentParser(),
             new RestrictionParser($geometryParser),
             new DetourParser($geometryParser),
-            new ContactParser()
+            new ContactParser(),
+            new UrlParser()
         );
     }
 

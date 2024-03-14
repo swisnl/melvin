@@ -28,7 +28,8 @@ class SituationParser
         protected AttachmentParser $attachmentParser,
         protected RestrictionParser $restrictionParser,
         protected DetourParser $detourParser,
-        protected ContactParser $contactParser
+        protected ContactParser $contactParser,
+        protected UrlParser $urlParser
     ) {
     }
 
@@ -91,7 +92,7 @@ class SituationParser
             $object->properties->project,
             Source::from($object->properties->source),
             $object->properties->published,
-            ($object->properties->url ?? '') ?: null,
+            $this->urlParser->parse($object->properties->url ?? ''),
             ($object->properties->urlDescription ?? '') ?: null,
             Delay::from($object->properties->delay),
             ($object->properties->workType ?? '') ? WorkType::from($object->properties->workType) : null,
