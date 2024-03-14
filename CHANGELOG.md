@@ -5,6 +5,9 @@ All notable changes to `swisnl\melvin` will be documented in this file.
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 ## Unreleased
+- Nothing.
+
+## [1.4.0] - 2024-03-14
 
 ### Added
 - Add permitId, referenceId, remarks and contacts to Situation.
