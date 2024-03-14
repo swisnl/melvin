@@ -12,7 +12,7 @@ class UrlParser
         'n.v.t',
     ];
 
-    public function parse(?string $url): ?string
+    public function parse(string $url): ?string
     {
         if (in_array($url, self::EMPTY_VALUES, true)) {
             return null;
