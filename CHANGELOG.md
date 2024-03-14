@@ -6,8 +6,18 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 
 ## Unreleased
 
+### Added
+- Add permitId, referenceId, remarks and contacts to Situation.
+- Add widthCharacteristic and grossWeightCharacteristic to Restriction VehicleInformation.
+
 ### Changed
 - Drop PHP <8 support.
+- Cleanup invalid URLs.
+- Sort periods on start date.
+- Omit "Overall date" period.
+
+### Fixed
+- Use situation id as fallback for RoadAuthority without id.
 
 ## [1.3.3] - 2023-02-09
 
