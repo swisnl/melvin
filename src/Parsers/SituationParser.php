@@ -158,7 +158,8 @@ class SituationParser
      */
     protected function getPeriods(array $objects): array
     {
-        $filtered = array_values(array_filter($objects, static fn (\stdClass $object) => $object->id));
+        $filtered = array_filter($objects, static fn (\stdClass $object) => $object->id);
+        usort($filtered, static fn (\stdClass $a, \stdClass $b) => ($a->startDateActual ?? $a->startDate) <=> ($b->startDateActual ?? $b->startDate));
 
         return array_map([$this->periodParser, 'parse'], $filtered, array_keys($filtered));
     }
