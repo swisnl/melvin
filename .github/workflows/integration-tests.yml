@@ -38,6 +38,6 @@ jobs:
           MELVIN_USERNAME: ${{ secrets.MELVIN_USERNAME }}
           MELVIN_PASSWORD: ${{ secrets.MELVIN_PASSWORD }}
         run: |
-          sh scripts/update-fixtures.sh
+          bash scripts/update-fixtures.sh
           vendor/bin/phpunit --testsuite=schema
           vendor/bin/phpunit --testsuite=integration --fail-on-skipped
