@@ -7,6 +7,11 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+## [1.4.1] - 2024-04-05
+
+### Fixed
+- Add MISCELLANEOUS to AreaType enum.
+
 ## [1.4.0] - 2024-03-14
 
 ### Added
