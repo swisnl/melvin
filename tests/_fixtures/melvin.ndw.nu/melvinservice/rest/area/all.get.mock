@@ -100,11 +100,6 @@
     "name": "Eemsdelta"
   },
   {
-    "id": 876,
-    "type": "UNKNOWN",
-    "name": "North Sea Port"
-  },
-  {
     "id": 460,
     "type": "SUBMUNICIPALITY",
     "name": "'s-Gravenhage (Segbroek)"
@@ -238,6 +233,11 @@
     "id": 307,
     "type": "ROAD_AUTHORITY",
     "name": "Oost-Nederland District Oost"
+  },
+  {
+    "id": 876,
+    "type": "MISCELLANEOUS",
+    "name": "North Sea Port"
   },
   {
     "id": 38,
