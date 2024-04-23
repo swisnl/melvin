@@ -202,7 +202,14 @@
                     ]
                 },
                 "addition": {
-                    "type": "string"
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 },
                 "status": {
                     "$ref": "#/definitions/SituationStatus"
