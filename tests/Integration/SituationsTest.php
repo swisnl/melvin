@@ -13,31 +13,34 @@ use Swis\Melvin\SituationFilterParameters;
 
 final class SituationsTest extends TestCase
 {
-    private Client $client;
-
-    public static function setUpBeforeClass(): void
-    {
-        if (!getenv('MELVIN_USERNAME') || !getenv('MELVIN_PASSWORD')) {
-            self::markTestSkipped('Missing Melvin credentials.');
-        }
-    }
+    private static Client $client;
 
     #[DataProvider('areaIdProvider')]
     public function testSituations(int $areaId): void
     {
+        if (!getenv('MELVIN_USERNAME') || !getenv('MELVIN_PASSWORD')) {
+            self::markTestSkipped('Missing Melvin credentials.');
+        }
+
         $params = (new SituationFilterParameters())
             ->setIncludeDetours(true)
             ->setAreaIds([$areaId]);
 
-        $situations = $this->client()->situations()->export($params);
+        $situations = self::client()->situations()->export($params);
 
         $this->assertNotEmpty($situations);
     }
 
     public static function areaIdProvider(): \Generator
     {
+        if (!getenv('MELVIN_USERNAME') || !getenv('MELVIN_PASSWORD')) {
+            yield 'skipped' => [0];
+
+            return;
+        }
+
         $areas = array_filter(
-            $this->client()->areas()->all(),
+            self::client()->areas()->all(),
             static fn (Area $area) => $area->type->equals(AreaType::PROVINCE())
         );
 
@@ -46,12 +49,10 @@ final class SituationsTest extends TestCase
         }
     }
 
-    private function client(): Client
+    private static function client(): Client
     {
-        if (!isset($this->client)) {
-            $this->client = Client::create(getenv('MELVIN_USERNAME'), getenv('MELVIN_PASSWORD'));
-        }
+        self::$client ??= Client::create(getenv('MELVIN_USERNAME'), getenv('MELVIN_PASSWORD'));
 
-        return $this->client;
+        return self::$client;
     }
 }
