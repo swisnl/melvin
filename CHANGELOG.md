@@ -10,6 +10,9 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ### Added
 - Add changedById to Contact.
 
+### Changed
+- Drop PHP <8.1 support.
+
 ## [1.4.1] - 2024-04-05
 
 ### Fixed
