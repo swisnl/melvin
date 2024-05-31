@@ -37,7 +37,7 @@ class SituationsTest extends TestCase
         $this->assertNotEmpty($situations);
     }
 
-    public function areaIdProvider(): \Generator
+    public static function areaIdProvider(): \Generator
     {
         $areas = array_filter(
             $this->client()->areas()->all(),
