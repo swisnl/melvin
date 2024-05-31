@@ -11,7 +11,7 @@ use Swis\Melvin\Enums\AreaType;
 use Swis\Melvin\Models\Area;
 use Swis\Melvin\SituationFilterParameters;
 
-class SituationsTest extends TestCase
+final class SituationsTest extends TestCase
 {
     private Client $client;
 
