@@ -8,7 +8,7 @@ use Opis\JsonSchema\Errors\ErrorFormatter;
 use Opis\JsonSchema\Validator;
 use PHPUnit\Framework\TestCase;
 
-class SituationsTest extends TestCase
+final class SituationsTest extends TestCase
 {
     private const SCHEMA_ID = 'https://github.com/swisnl/melvin/schema.json';
 

@@ -4,43 +4,43 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Tests\Integration;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Swis\Melvin\Client;
 use Swis\Melvin\Enums\AreaType;
 use Swis\Melvin\Models\Area;
 use Swis\Melvin\SituationFilterParameters;
 
-class SituationsTest extends TestCase
+final class SituationsTest extends TestCase
 {
-    private Client $client;
+    private static Client $client;
 
-    public static function setUpBeforeClass(): void
+    #[DataProvider('areaIdProvider')]
+    public function testSituations(int $areaId): void
     {
         if (!getenv('MELVIN_USERNAME') || !getenv('MELVIN_PASSWORD')) {
             self::markTestSkipped('Missing Melvin credentials.');
         }
-    }
 
-    /**
-     * @dataProvider areaIdProvider
-     *
-     * @param int $areaId
-     */
-    public function testSituations(int $areaId): void
-    {
         $params = (new SituationFilterParameters())
             ->setIncludeDetours(true)
             ->setAreaIds([$areaId]);
 
-        $situations = $this->client()->situations()->export($params);
+        $situations = self::client()->situations()->export($params);
 
         $this->assertNotEmpty($situations);
     }
 
-    public function areaIdProvider(): \Generator
+    public static function areaIdProvider(): \Generator
     {
+        if (!getenv('MELVIN_USERNAME') || !getenv('MELVIN_PASSWORD')) {
+            yield 'skipped' => [0];
+
+            return;
+        }
+
         $areas = array_filter(
-            $this->client()->areas()->all(),
+            self::client()->areas()->all(),
             static fn (Area $area) => $area->type->equals(AreaType::PROVINCE())
         );
 
@@ -49,12 +49,10 @@ class SituationsTest extends TestCase
         }
     }
 
-    private function client(): Client
+    private static function client(): Client
     {
-        if (!isset($this->client)) {
-            $this->client = Client::create(getenv('MELVIN_USERNAME'), getenv('MELVIN_PASSWORD'));
-        }
+        self::$client ??= Client::create(getenv('MELVIN_USERNAME'), getenv('MELVIN_PASSWORD'));
 
-        return $this->client;
+        return self::$client;
     }
 }

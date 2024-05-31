@@ -6,7 +6,7 @@ namespace Swis\Melvin\Tests\Api;
 
 use Swis\Melvin\Tests\TestCase;
 
-class AreasTest extends TestCase
+final class AreasTest extends TestCase
 {
     public function testAll(): void
     {
