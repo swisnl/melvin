@@ -1029,7 +1029,8 @@
                 "CAR",
                 "BIKE",
                 "WALK",
-                "BOAT"
+                "BOAT",
+                "RAIL"
             ],
             "title": "TransportMode"
         },
