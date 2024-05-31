@@ -18,7 +18,8 @@ class Contact
         public string $function,
         public string $publicPhone,
         public bool $active,
-        public int $createdById
+        public int $createdById,
+        public int $changedById
     ) {
     }
 }

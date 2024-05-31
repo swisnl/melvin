@@ -448,10 +448,14 @@
                 },
                 "createdById": {
                     "type": "integer"
+                },
+                "changedById": {
+                    "type": "integer"
                 }
             },
             "required": [
                 "active",
+                "changedById",
                 "contactId",
                 "createdById",
                 "email",

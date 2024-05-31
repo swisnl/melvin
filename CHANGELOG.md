@@ -7,6 +7,9 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+### Added
+- Add changedById to Contact.
+
 ## [1.4.1] - 2024-04-05
 
 ### Fixed

@@ -22,7 +22,8 @@ class ContactParser
             $object->function,
             $object->publicPhone,
             $object->active,
-            $object->createdById
+            $object->createdById,
+            $object->changedById
         );
     }
 }
