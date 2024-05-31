@@ -30,7 +30,7 @@ main() {
     -H "Accept: application/json" \
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer ${token}" \
-    -d '{"areaIds": [443], "areaBuffer": 0, "includeDetours": true}' \
+    -d '{"areaIds": [409], "areaBuffer": 0, "includeDetours": true}' \
     -s \
     | jq > tests/_fixtures/melvin.ndw.nu/melvinservice/rest/export.post.mock
 
