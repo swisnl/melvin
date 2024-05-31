@@ -22,9 +22,6 @@ final class SituationsTest extends TestCase
         }
     }
 
-    /**
-     * @param int $areaId
-     */
     #[DataProvider('areaIdProvider')]
     public function testSituations(int $areaId): void
     {
