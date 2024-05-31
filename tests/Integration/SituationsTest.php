@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Tests\Integration;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Swis\Melvin\Client;
 use Swis\Melvin\Enums\AreaType;
@@ -22,10 +23,9 @@ class SituationsTest extends TestCase
     }
 
     /**
-     * @dataProvider areaIdProvider
-     *
      * @param int $areaId
      */
+    #[DataProvider('areaIdProvider')]
     public function testSituations(int $areaId): void
     {
         $params = (new SituationFilterParameters())
