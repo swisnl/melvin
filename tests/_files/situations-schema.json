@@ -979,6 +979,7 @@
                 "WATER_AUTHORITY",
                 "POLDER_AUTHORITY",
                 "PROVINCE",
+                "RAILWAY",
                 "MISCELLANEOUS",
                 "UNKNOWN",
                 "EMPTY"

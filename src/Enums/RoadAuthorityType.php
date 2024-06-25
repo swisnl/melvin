@@ -14,6 +14,7 @@ use MyCLabs\Enum\Enum;
  * @method static RoadAuthorityType WATER_AUTHORITY()
  * @method static RoadAuthorityType POLDER_AUTHORITY()
  * @method static RoadAuthorityType PROVINCE()
+ * @method static RoadAuthorityType RAILWAY()
  * @method static RoadAuthorityType MISCELLANEOUS()
  * @method static RoadAuthorityType UNKNOWN()
  */
@@ -26,6 +27,7 @@ final class RoadAuthorityType extends Enum
     private const WATER_AUTHORITY = 'WATER_AUTHORITY';
     private const POLDER_AUTHORITY = 'POLDER_AUTHORITY';
     private const PROVINCE = 'PROVINCE';
+    private const RAILWAY = 'RAILWAY';
     private const MISCELLANEOUS = 'MISCELLANEOUS';
     private const UNKNOWN = 'UNKNOWN';
 
@@ -39,6 +41,7 @@ final class RoadAuthorityType extends Enum
             'WATER_AUTHORITY' => 'Waterschap',
             'POLDER_AUTHORITY' => 'Hoogheemraadschap',
             'PROVINCE' => 'Provincie',
+            'RAILWAY' => 'Spoorbeheerder',
             'MISCELLANEOUS' => 'Diversen',
             'UNKNOWN' => 'Onbekend',
         ][$this->getKey()];

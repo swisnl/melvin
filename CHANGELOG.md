@@ -11,6 +11,7 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 - Add changedById to Contact.
 - Add RAIL to TransportMode enum.
 - Add BUS to VehicleType enum.
+- Add RAILWAY to RoadAuthorityType enum.
 
 ### Changed
 - Drop PHP <8.1 support.
