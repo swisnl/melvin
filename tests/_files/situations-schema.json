@@ -1054,7 +1054,8 @@
                 "PEDESTRIAN",
                 "BIKE",
                 "SCOOTER",
-                "AGRICULTURAL_VEHICLE"
+                "AGRICULTURAL_VEHICLE",
+                "BUS"
             ],
             "title": "VehicleType"
         },

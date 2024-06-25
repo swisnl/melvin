@@ -13,6 +13,7 @@ use MyCLabs\Enum\Enum;
  * @method static VehicleType BIKE()
  * @method static VehicleType SCOOTER()
  * @method static VehicleType AGRICULTURAL_VEHICLE()
+ * @method static VehicleType BUS()
  */
 final class VehicleType extends Enum
 {
@@ -22,6 +23,7 @@ final class VehicleType extends Enum
     private const BIKE = 'BIKE';
     private const SCOOTER = 'SCOOTER';
     private const AGRICULTURAL_VEHICLE = 'AGRICULTURAL_VEHICLE';
+    private const BUS = 'BUS';
 
     public function getLabel(): string
     {
@@ -32,6 +34,7 @@ final class VehicleType extends Enum
             'BIKE' => '(snor)Fiets',
             'SCOOTER' => 'Brommer',
             'AGRICULTURAL_VEHICLE' => 'Agrarisch voertuig',
+            'BUS' => 'Bus',
         ][$this->getKey()];
     }
 }
