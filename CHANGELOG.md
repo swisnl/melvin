@@ -7,6 +7,8 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+## [1.5.0] - 2024-06-26
+
 ### Added
 - Add changedById to Contact.
 - Add RAIL to TransportMode enum.
