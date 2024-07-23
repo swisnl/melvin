@@ -5,6 +5,9 @@ All notable changes to `swisnl\melvin` will be documented in this file.
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 ## Unreleased
+- Nothing.
+
+## [1.5.1] - 2024-07-23
 
 ### Added
 - Add RAILWAY to AreaType enum.
