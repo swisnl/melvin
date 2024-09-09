@@ -12,6 +12,7 @@ use MyCLabs\Enum\Enum;
  * @method static TransportMode WALK()
  * @method static TransportMode BOAT()
  * @method static TransportMode RAIL()
+ * @method static TransportMode BUS()
  */
 final class TransportMode extends Enum
 {
@@ -20,6 +21,7 @@ final class TransportMode extends Enum
     private const WALK = 'WALK';
     private const BOAT = 'BOAT';
     private const RAIL = 'RAIL';
+    private const BUS = 'BUS';
 
     public function getLabel(): string
     {
@@ -29,6 +31,7 @@ final class TransportMode extends Enum
             'WALK' => 'Voetganger',
             'BOAT' => 'Vaartuig',
             'RAIL' => 'Trein',
+            'BUS' => 'Bus',
         ][$this->getKey()];
     }
 }
