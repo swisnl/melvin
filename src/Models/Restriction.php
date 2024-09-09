@@ -33,7 +33,7 @@ class Restriction
          * @var \Swis\Melvin\Enums\RoadManagementType[]
          */
         public ?array $roadManagementTypes,
-        public ?RoadManagementType $roadManagementType
+        public ?RoadManagementType $roadManagementType,
     ) {
     }
 }

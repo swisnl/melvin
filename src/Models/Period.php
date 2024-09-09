@@ -18,7 +18,7 @@ class Period
         public ?PeriodStatus $status,
         public ?bool $overrunning,
         public int $order,
-        public ?int $parentId
+        public ?int $parentId,
     ) {
     }
 }

@@ -29,7 +29,7 @@ class SituationParser
         protected RestrictionParser $restrictionParser,
         protected DetourParser $detourParser,
         protected ContactParser $contactParser,
-        protected UrlParser $urlParser
+        protected UrlParser $urlParser,
     ) {
     }
 

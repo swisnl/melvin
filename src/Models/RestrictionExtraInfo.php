@@ -8,7 +8,7 @@ class RestrictionExtraInfo
 {
     public function __construct(
         public ?bool $passageAllowed,
-        public string $description
+        public string $description,
     ) {
     }
 }

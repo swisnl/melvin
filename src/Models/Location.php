@@ -10,7 +10,7 @@ class Location
         public string $city,
         public string $road,
         public string $district,
-        public string $comment
+        public string $comment,
     ) {
     }
 }

@@ -11,7 +11,7 @@ class Area
     public function __construct(
         public int $id,
         public AreaType $type,
-        public string $name
+        public string $name,
     ) {
     }
 }

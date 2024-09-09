@@ -24,7 +24,7 @@ class Detour
         /**
          * @var \Swis\Melvin\Enums\BoatType[]
          */
-        public array $boatTypes
+        public array $boatTypes,
     ) {
     }
 }

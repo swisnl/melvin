@@ -40,7 +40,7 @@ class HttpClient
         string $clientId = 'melvin-frontend-test',
         ?ClientInterface $httpClient = null,
         ?RequestFactoryInterface $requestFactory = null,
-        ?StreamFactoryInterface $streamFactory = null
+        ?StreamFactoryInterface $streamFactory = null,
     ) {
         $this->authenticate($username, $password, $clientId);
         $this->httpClient = $httpClient ?: Psr18ClientDiscovery::find();

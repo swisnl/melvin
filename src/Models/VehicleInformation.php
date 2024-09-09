@@ -10,7 +10,7 @@ class VehicleInformation
         public ?float $heightCharacteristic,
         public ?float $lengthCharacteristic,
         public ?float $widthCharacteristic,
-        public ?float $grossWeightCharacteristic
+        public ?float $grossWeightCharacteristic,
     ) {
     }
 }

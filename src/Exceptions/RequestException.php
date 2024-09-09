@@ -13,7 +13,7 @@ class RequestException extends \RuntimeException implements Exception
         string $message,
         private RequestInterface $request,
         private ?ResponseInterface $response = null,
-        ?\Throwable $previous = null
+        ?\Throwable $previous = null,
     ) {
         $code = $response ? $response->getStatusCode() : 0;
         parent::__construct($message, $code, $previous);
@@ -22,7 +22,7 @@ class RequestException extends \RuntimeException implements Exception
     public static function create(
         RequestInterface $request,
         ?ResponseInterface $response = null,
-        ?\Throwable $previous = null
+        ?\Throwable $previous = null,
     ): self {
         if (!$response) {
             return new self(

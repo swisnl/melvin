@@ -19,7 +19,7 @@ class Contact
         public string $publicPhone,
         public bool $active,
         public int $createdById,
-        public int $changedById
+        public int $changedById,
     ) {
     }
 }

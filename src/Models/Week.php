@@ -13,7 +13,7 @@ class Week
         public bool $thursday,
         public bool $friday,
         public bool $saturday,
-        public bool $sunday
+        public bool $sunday,
     ) {
     }
 }

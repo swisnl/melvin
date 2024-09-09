@@ -12,7 +12,7 @@ class Person
         public string $firstName,
         public string $prefix,
         public string $lastName,
-        public PersonType $type
+        public PersonType $type,
     ) {
     }
 }
