@@ -5,6 +5,9 @@ All notable changes to `swisnl\melvin` will be documented in this file.
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 ## Unreleased
+- Nothing.
+
+## [1.5.2] - 2024-09-09
 
 ### Added
 - Add BUS to TransportMode enum.
