@@ -6,11 +6,19 @@ namespace Swis\Melvin\Models;
 
 class Location
 {
-    public function __construct(
-        public string $city,
-        public string $road,
-        public string $district,
-        public string $comment,
-    ) {
+    public string $city;
+
+    public string $road;
+
+    public ?string $district;
+
+    public string $comment;
+
+    public function __construct(string $city, string $road, ?string $district, string $comment)
+    {
+        $this->city = $city;
+        $this->road = $road;
+        $this->district = $district;
+        $this->comment = $comment;
     }
 }
