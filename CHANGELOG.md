@@ -7,6 +7,11 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+## [1.5.3] - 2024-10-22
+
+### Fixed
+- Location district can be null.
+
 ## [1.5.2] - 2024-09-09
 
 ### Added
