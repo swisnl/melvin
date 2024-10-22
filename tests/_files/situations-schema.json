@@ -584,7 +584,14 @@
                     "type": "string"
                 },
                 "district": {
-                    "type": "string"
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 },
                 "comment": {
                     "anyOf": [
@@ -599,7 +606,6 @@
             },
             "required": [
                 "city",
-                "district",
                 "road"
             ],
             "title": "Location"
