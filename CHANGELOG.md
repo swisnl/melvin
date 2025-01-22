@@ -7,6 +7,11 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+## [1.5.4] - 2025-01-22
+
+### Fixed
+- Location city can be null.
+
 ## [1.5.3] - 2024-10-22
 
 ### Fixed
