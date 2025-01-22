@@ -578,7 +578,14 @@
             "additionalProperties": false,
             "properties": {
                 "city": {
-                    "type": "string"
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 },
                 "road": {
                     "type": "string"
@@ -605,7 +612,6 @@
                 }
             },
             "required": [
-                "city",
                 "road"
             ],
             "title": "Location"
