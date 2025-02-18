@@ -5,6 +5,9 @@ All notable changes to `swisnl\melvin` will be documented in this file.
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 ## Unreleased
+- Nothing.
+
+## [1.5.5] - 2025-02-18
 
 ### Fixed
 - Fixed a bug that caused activityType to always be WORK.
