@@ -7,6 +7,12 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+## [2.0.0] - 2025-03-11
+
+### Changed
+- Changed enum cases from `SCREAMING_SNAKE_CASE` to `PascalCase`.
+- Refactored enum classes from [myclabs/php-enum](https://github.com/myclabs/php-enum) to PHP native enums. Please see [native-enums-and-migration](https://github.com/myclabs/php-enum?tab=readme-ov-file#native-enums-and-migration) for information on how to migrate.
+
 ## [1.5.5] - 2025-02-18
 
 ### Fixed
