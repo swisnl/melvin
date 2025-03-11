@@ -4,25 +4,18 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Enums;
 
-use MyCLabs\Enum\Enum;
-
-/**
- * @method static Source MELVIN()
- * @method static Source SPIN()
- * @method static Source LTC()
- */
-final class Source extends Enum
+enum Source: string
 {
-    private const MELVIN = 'MELVIN';
-    private const SPIN = 'SPIN';
-    private const LTC = 'LTC';
+    case Melvin = 'MELVIN';
+    case SPIN = 'SPIN';
+    case LTC = 'LTC';
 
     public function getLabel(): string
     {
-        return [
-            'MELVIN' => 'Melvin',
-            'SPIN' => 'SPIN',
-            'LTC' => 'LTC',
-        ][$this->getKey()];
+        return match ($this) {
+            self::Melvin => 'Melvin',
+            self::SPIN => 'SPIN',
+            self::LTC => 'LTC',
+        };
     }
 }

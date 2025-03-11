@@ -4,22 +4,16 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Enums;
 
-use MyCLabs\Enum\Enum;
-
-/**
- * @method static PersonType CONTRACTOR()
- * @method static PersonType ROADAUTHORITY()
- */
-final class PersonType extends Enum
+enum PersonType: string
 {
-    private const CONTRACTOR = 'CONTRACTOR';
-    private const ROADAUTHORITY = 'ROADAUTHORITY';
+    case Contractor = 'CONTRACTOR';
+    case Roadauthority = 'ROADAUTHORITY';
 
     public function getLabel(): string
     {
-        return [
-            'CONTRACTOR' => 'Aannemer',
-            'ROADAUTHORITY' => '(vaar)wegbeheerder',
-        ][$this->getKey()];
+        return match ($this) {
+            self::Contractor => 'Aannemer',
+            self::Roadauthority => '(vaar)wegbeheerder',
+        };
     }
 }

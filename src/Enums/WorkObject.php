@@ -4,61 +4,42 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Enums;
 
-use MyCLabs\Enum\Enum;
-
-/**
- * @method static WorkObject BRIDGE()
- * @method static WorkObject GUIDE()
- * @method static WorkObject BARRIER()
- * @method static WorkObject CROSSING()
- * @method static WorkObject ROADSIDE_EQUIPMENT()
- * @method static WorkObject OTHER()
- * @method static WorkObject ROUNDABOUT()
- * @method static WorkObject RAILWAY_CROSSING()
- * @method static WorkObject TRAMWAY()
- * @method static WorkObject TUNNEL()
- * @method static WorkObject TRAFFIC_LIGHTS()
- * @method static WorkObject LIGHTING()
- * @method static WorkObject VIADUCT()
- * @method static WorkObject WATER_DRAINAGE()
- * @method static WorkObject ROAD()
- */
-final class WorkObject extends Enum
+enum WorkObject: string
 {
-    private const BRIDGE = 'BRIDGE';
-    private const GUIDE = 'GUIDE';
-    private const BARRIER = 'BARRIER';
-    private const CROSSING = 'CROSSING';
-    private const ROADSIDE_EQUIPMENT = 'ROADSIDE_EQUIPMENT';
-    private const OTHER = 'OTHER';
-    private const ROUNDABOUT = 'ROUNDABOUT';
-    private const RAILWAY_CROSSING = 'RAILWAY_CROSSING';
-    private const TRAMWAY = 'TRAMWAY';
-    private const TUNNEL = 'TUNNEL';
-    private const TRAFFIC_LIGHTS = 'TRAFFIC_LIGHTS';
-    private const LIGHTING = 'LIGHTING';
-    private const VIADUCT = 'VIADUCT';
-    private const WATER_DRAINAGE = 'WATER_DRAINAGE';
-    private const ROAD = 'ROAD';
+    case Bridge = 'BRIDGE';
+    case Guide = 'GUIDE';
+    case Barrier = 'BARRIER';
+    case Crossing = 'CROSSING';
+    case RoadsideEquipment = 'ROADSIDE_EQUIPMENT';
+    case Other = 'OTHER';
+    case Roundabout = 'ROUNDABOUT';
+    case RailwayCrossing = 'RAILWAY_CROSSING';
+    case Tramway = 'TRAMWAY';
+    case Tunnel = 'TUNNEL';
+    case TrafficLights = 'TRAFFIC_LIGHTS';
+    case Lighting = 'LIGHTING';
+    case Viaduct = 'VIADUCT';
+    case WaterDrainage = 'WATER_DRAINAGE';
+    case Road = 'ROAD';
 
     public function getLabel(): string
     {
-        return [
-            'BRIDGE' => 'Brug',
-            'GUIDE' => 'Geleiderail',
-            'BARRIER' => 'Geluidswal',
-            'CROSSING' => 'Kruising',
-            'ROADSIDE_EQUIPMENT' => 'Meet / Wegkantapparatuur',
-            'OTHER' => 'Overig',
-            'ROUNDABOUT' => 'Rotonde',
-            'RAILWAY_CROSSING' => 'Spoorwegovergang',
-            'TRAMWAY' => 'Trambaan',
-            'TUNNEL' => 'Tunnel',
-            'TRAFFIC_LIGHTS' => 'Verkeerslichten',
-            'LIGHTING' => 'Verlichting',
-            'VIADUCT' => 'Viaduct',
-            'WATER_DRAINAGE' => 'Waterafvoer (duiker)',
-            'ROAD' => 'Weg',
-        ][$this->getKey()];
+        return match ($this) {
+            self::Bridge => 'Brug',
+            self::Guide => 'Geleiderail',
+            self::Barrier => 'Geluidswal',
+            self::Crossing => 'Kruising',
+            self::RoadsideEquipment => 'Meet / Wegkantapparatuur',
+            self::Other => 'Overig',
+            self::Roundabout => 'Rotonde',
+            self::RailwayCrossing => 'Spoorwegovergang',
+            self::Tramway => 'Trambaan',
+            self::Tunnel => 'Tunnel',
+            self::TrafficLights => 'Verkeerslichten',
+            self::Lighting => 'Verlichting',
+            self::Viaduct => 'Viaduct',
+            self::WaterDrainage => 'Waterafvoer (duiker)',
+            self::Road => 'Weg',
+        };
     }
 }

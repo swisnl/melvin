@@ -4,22 +4,16 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Enums;
 
-use MyCLabs\Enum\Enum;
-
-/**
- * @method static Direction A_B()
- * @method static Direction BOTH()
- */
-final class Direction extends Enum
+enum Direction: string
 {
-    private const A_B = 'A_B';
-    private const BOTH = 'BOTH';
+    case AB = 'A_B';
+    case Both = 'BOTH';
 
     public function getLabel(): string
     {
-        return [
-            'A_B' => 'Enkele richting',
-            'BOTH' => 'Beide richtingen',
-        ][$this->getKey()];
+        return match ($this) {
+            self::AB => 'Enkele richting',
+            self::Both => 'Beide richtingen',
+        };
     }
 }
