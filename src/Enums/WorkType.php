@@ -4,58 +4,31 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Enums;
 
-use MyCLabs\Enum\Enum;
-
-/**
- * @method static WorkType CONSTRUCTION()
- * @method static WorkType MAINTENANCE()
- * @method static WorkType ASPHALTING()
- * @method static WorkType ROADMARKING()
- * @method static WorkType ROADSIDE_MAINTENANCE()
- * @method static WorkType CABLES()
- * @method static WorkType PRUNING()
- * @method static WorkType SEWERAGE()
- * @method static WorkType DEMOLITION()
- * @method static WorkType WIDENING()
- * @method static WorkType OVERHEAD_WORKS()
- * @method static WorkType WATERWAY_MAINTENANCE()
- * @method static WorkType WATERWAY_PRUNING()
- * @method static WorkType DREDGING()
- * @method static WorkType BRAKING()
- * @method static WorkType DOCKING()
- * @method static WorkType CONCRETE_MAINTENANCE()
- * @method static WorkType ENGINEERING_MAINTENANCE()
- * @method static WorkType ELECTROMECHANIC()
- * @method static WorkType DIVING()
- * @method static WorkType EVENT()
- * @method static WorkType UNKNOWN()
- * @method static WorkType OTHER()
- */
-final class WorkType extends Enum
+enum WorkType: string
 {
-    private const CONSTRUCTION = 'CONSTRUCTION';
-    private const MAINTENANCE = 'MAINTENANCE';
-    private const ASPHALTING = 'ASPHALTING';
-    private const ROADMARKING = 'ROADMARKING';
-    private const ROADSIDE_MAINTENANCE = 'ROADSIDE_MAINTENANCE';
-    private const CABLES = 'CABLES';
-    private const PRUNING = 'PRUNING';
-    private const SEWERAGE = 'SEWERAGE';
-    private const DEMOLITION = 'DEMOLITION';
-    private const WIDENING = 'WIDENING';
-    private const OVERHEAD_WORKS = 'OVERHEAD_WORKS';
-    private const WATERWAY_MAINTENANCE = 'WATERWAY_MAINTENANCE';
-    private const WATERWAY_PRUNING = 'WATERWAY_PRUNING';
-    private const DREDGING = 'DREDGING';
-    private const BRAKING = 'BRAKING';
-    private const DOCKING = 'DOCKING';
-    private const CONCRETE_MAINTENANCE = 'CONCRETE_MAINTENANCE';
-    private const ENGINEERING_MAINTENANCE = 'ENGINEERING_MAINTENANCE';
-    private const ELECTROMECHANIC = 'ELECTROMECHANIC';
-    private const DIVING = 'DIVING';
-    private const EVENT = 'EVENT';
-    private const UNKNOWN = 'UNKNOWN';
-    private const OTHER = 'OTHER';
+    case CONSTRUCTION = 'CONSTRUCTION';
+    case MAINTENANCE = 'MAINTENANCE';
+    case ASPHALTING = 'ASPHALTING';
+    case ROADMARKING = 'ROADMARKING';
+    case ROADSIDE_MAINTENANCE = 'ROADSIDE_MAINTENANCE';
+    case CABLES = 'CABLES';
+    case PRUNING = 'PRUNING';
+    case SEWERAGE = 'SEWERAGE';
+    case DEMOLITION = 'DEMOLITION';
+    case WIDENING = 'WIDENING';
+    case OVERHEAD_WORKS = 'OVERHEAD_WORKS';
+    case WATERWAY_MAINTENANCE = 'WATERWAY_MAINTENANCE';
+    case WATERWAY_PRUNING = 'WATERWAY_PRUNING';
+    case DREDGING = 'DREDGING';
+    case BRAKING = 'BRAKING';
+    case DOCKING = 'DOCKING';
+    case CONCRETE_MAINTENANCE = 'CONCRETE_MAINTENANCE';
+    case ENGINEERING_MAINTENANCE = 'ENGINEERING_MAINTENANCE';
+    case ELECTROMECHANIC = 'ELECTROMECHANIC';
+    case DIVING = 'DIVING';
+    case EVENT = 'EVENT';
+    case UNKNOWN = 'UNKNOWN';
+    case OTHER = 'OTHER';
 
     public function getLabel(): string
     {
@@ -83,6 +56,6 @@ final class WorkType extends Enum
             'EVENT' => 'Evenement',
             'UNKNOWN' => 'Onbekend',
             'OTHER' => 'Overig',
-        ][$this->getKey()];
+        ][$this->name];
     }
 }

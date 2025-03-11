@@ -4,32 +4,18 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Enums;
 
-use MyCLabs\Enum\Enum;
-
-/**
- * @method static RoadAuthorityType MUNICIPALITY()
- * @method static RoadAuthorityType SUBMUNICIPALITY()
- * @method static RoadAuthorityType ROAD_AUTHORITY()
- * @method static RoadAuthorityType TUNNEL_AUTHORITY()
- * @method static RoadAuthorityType WATER_AUTHORITY()
- * @method static RoadAuthorityType POLDER_AUTHORITY()
- * @method static RoadAuthorityType PROVINCE()
- * @method static RoadAuthorityType RAILWAY()
- * @method static RoadAuthorityType MISCELLANEOUS()
- * @method static RoadAuthorityType UNKNOWN()
- */
-final class RoadAuthorityType extends Enum
+enum RoadAuthorityType: string
 {
-    private const MUNICIPALITY = 'MUNICIPALITY';
-    private const SUBMUNICIPALITY = 'SUBMUNICIPALITY';
-    private const ROAD_AUTHORITY = 'ROAD_AUTHORITY';
-    private const TUNNEL_AUTHORITY = 'TUNNEL_AUTHORITY';
-    private const WATER_AUTHORITY = 'WATER_AUTHORITY';
-    private const POLDER_AUTHORITY = 'POLDER_AUTHORITY';
-    private const PROVINCE = 'PROVINCE';
-    private const RAILWAY = 'RAILWAY';
-    private const MISCELLANEOUS = 'MISCELLANEOUS';
-    private const UNKNOWN = 'UNKNOWN';
+    case MUNICIPALITY = 'MUNICIPALITY';
+    case SUBMUNICIPALITY = 'SUBMUNICIPALITY';
+    case ROAD_AUTHORITY = 'ROAD_AUTHORITY';
+    case TUNNEL_AUTHORITY = 'TUNNEL_AUTHORITY';
+    case WATER_AUTHORITY = 'WATER_AUTHORITY';
+    case POLDER_AUTHORITY = 'POLDER_AUTHORITY';
+    case PROVINCE = 'PROVINCE';
+    case RAILWAY = 'RAILWAY';
+    case MISCELLANEOUS = 'MISCELLANEOUS';
+    case UNKNOWN = 'UNKNOWN';
 
     public function getLabel(): string
     {
@@ -44,6 +30,6 @@ final class RoadAuthorityType extends Enum
             'RAILWAY' => 'Spoorbeheerder',
             'MISCELLANEOUS' => 'Diversen',
             'UNKNOWN' => 'Onbekend',
-        ][$this->getKey()];
+        ][$this->name];
     }
 }

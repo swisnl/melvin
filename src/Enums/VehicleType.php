@@ -4,26 +4,15 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Enums;
 
-use MyCLabs\Enum\Enum;
-
-/**
- * @method static VehicleType CAR()
- * @method static VehicleType VAN()
- * @method static VehicleType PEDESTRIAN()
- * @method static VehicleType BIKE()
- * @method static VehicleType SCOOTER()
- * @method static VehicleType AGRICULTURAL_VEHICLE()
- * @method static VehicleType BUS()
- */
-final class VehicleType extends Enum
+enum VehicleType: string
 {
-    private const CAR = 'CAR';
-    private const VAN = 'VAN';
-    private const PEDESTRIAN = 'PEDESTRIAN';
-    private const BIKE = 'BIKE';
-    private const SCOOTER = 'SCOOTER';
-    private const AGRICULTURAL_VEHICLE = 'AGRICULTURAL_VEHICLE';
-    private const BUS = 'BUS';
+    case CAR = 'CAR';
+    case VAN = 'VAN';
+    case PEDESTRIAN = 'PEDESTRIAN';
+    case BIKE = 'BIKE';
+    case SCOOTER = 'SCOOTER';
+    case AGRICULTURAL_VEHICLE = 'AGRICULTURAL_VEHICLE';
+    case BUS = 'BUS';
 
     public function getLabel(): string
     {
@@ -35,6 +24,6 @@ final class VehicleType extends Enum
             'SCOOTER' => 'Brommer',
             'AGRICULTURAL_VEHICLE' => 'Agrarisch voertuig',
             'BUS' => 'Bus',
-        ][$this->getKey()];
+        ][$this->name];
     }
 }

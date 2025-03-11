@@ -4,24 +4,14 @@ declare(strict_types=1);
 
 namespace Swis\Melvin\Enums;
 
-use MyCLabs\Enum\Enum;
-
-/**
- * @method static PeriodStatus INITIAL()
- * @method static PeriodStatus PROBABLY_STARTED()
- * @method static PeriodStatus STARTED()
- * @method static PeriodStatus OVERRUNNING()
- * @method static PeriodStatus PROBABLY_ENDED()
- * @method static PeriodStatus ENDED()
- */
-final class PeriodStatus extends Enum
+enum PeriodStatus: string
 {
-    private const INITIAL = 'INITIAL';
-    private const PROBABLY_STARTED = 'PROBABLY_STARTED';
-    private const STARTED = 'STARTED';
-    private const OVERRUNNING = 'OVERRUNNING';
-    private const PROBABLY_ENDED = 'PROBABLY_ENDED';
-    private const ENDED = 'ENDED';
+    case INITIAL = 'INITIAL';
+    case PROBABLY_STARTED = 'PROBABLY_STARTED';
+    case STARTED = 'STARTED';
+    case OVERRUNNING = 'OVERRUNNING';
+    case PROBABLY_ENDED = 'PROBABLY_ENDED';
+    case ENDED = 'ENDED';
 
     public function getLabel(): string
     {
@@ -32,6 +22,6 @@ final class PeriodStatus extends Enum
             'OVERRUNNING' => 'Uitloop',
             'PROBABLY_ENDED' => 'Gestopt',
             'ENDED' => 'Gestopt',
-        ][$this->getKey()];
+        ][$this->name];
     }
 }
