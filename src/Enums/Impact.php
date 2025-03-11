@@ -6,20 +6,20 @@ namespace Swis\Melvin\Enums;
 
 enum Impact: string
 {
-    case NONE = 'NONE';
-    case LITTLE = 'LITTLE';
-    case AVERAGE = 'AVERAGE';
-    case BIG = 'BIG';
-    case HUGE = 'HUGE';
+    case None = 'NONE';
+    case Little = 'LITTLE';
+    case Average = 'AVERAGE';
+    case Big = 'BIG';
+    case Huge = 'HUGE';
 
     public function getLabel(): string
     {
         return match ($this) {
-            self::NONE => 'Geen hinder',
-            self::LITTLE => 'Kleine hinder',
-            self::AVERAGE => 'Matige hinder',
-            self::BIG => 'Grote hinder',
-            self::HUGE => 'Zeer grote hinder',
+            self::None => 'Geen hinder',
+            self::Little => 'Kleine hinder',
+            self::Average => 'Matige hinder',
+            self::Big => 'Grote hinder',
+            self::Huge => 'Zeer grote hinder',
         };
     }
 }

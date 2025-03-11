@@ -6,18 +6,18 @@ namespace Swis\Melvin\Enums;
 
 enum ActivityType: string
 {
-    case WORK = 'WORK';
-    case EVENT = 'EVENT';
-    case WATERWAY = 'WATERWAY';
-    case WATERWAY_EVENT = 'WATERWAY_EVENT';
+    case Work = 'WORK';
+    case Event = 'EVENT';
+    case Waterway = 'WATERWAY';
+    case WaterwayEvent = 'WATERWAY_EVENT';
 
     public function getLabel(): string
     {
         return match ($this) {
-            self::WORK => 'Werk',
-            self::EVENT => 'Evenement',
-            self::WATERWAY => 'Vaarweg werk',
-            self::WATERWAY_EVENT => 'Vaarweg evenement',
+            self::Work => 'Werk',
+            self::Event => 'Evenement',
+            self::Waterway => 'Vaarweg werk',
+            self::WaterwayEvent => 'Vaarweg evenement',
         };
     }
 }

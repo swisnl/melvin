@@ -6,30 +6,30 @@ namespace Swis\Melvin\Enums;
 
 enum RoadAuthorityType: string
 {
-    case MUNICIPALITY = 'MUNICIPALITY';
-    case SUBMUNICIPALITY = 'SUBMUNICIPALITY';
-    case ROAD_AUTHORITY = 'ROAD_AUTHORITY';
-    case TUNNEL_AUTHORITY = 'TUNNEL_AUTHORITY';
-    case WATER_AUTHORITY = 'WATER_AUTHORITY';
-    case POLDER_AUTHORITY = 'POLDER_AUTHORITY';
-    case PROVINCE = 'PROVINCE';
-    case RAILWAY = 'RAILWAY';
-    case MISCELLANEOUS = 'MISCELLANEOUS';
-    case UNKNOWN = 'UNKNOWN';
+    case Municipality = 'MUNICIPALITY';
+    case Submunicipality = 'SUBMUNICIPALITY';
+    case RoadAuthority = 'ROAD_AUTHORITY';
+    case TunnelAuthority = 'TUNNEL_AUTHORITY';
+    case WaterAuthority = 'WATER_AUTHORITY';
+    case PolderAuthority = 'POLDER_AUTHORITY';
+    case Province = 'PROVINCE';
+    case Railway = 'RAILWAY';
+    case Miscellaneous = 'MISCELLANEOUS';
+    case Unknown = 'UNKNOWN';
 
     public function getLabel(): string
     {
         return match ($this) {
-            self::MUNICIPALITY => 'Gemeente',
-            self::SUBMUNICIPALITY => 'Stadsdeel',
-            self::ROAD_AUTHORITY => 'Wegendistrict',
-            self::TUNNEL_AUTHORITY => 'Tunnelbeheerder',
-            self::WATER_AUTHORITY => 'Waterschap',
-            self::POLDER_AUTHORITY => 'Hoogheemraadschap',
-            self::PROVINCE => 'Provincie',
-            self::RAILWAY => 'Spoorbeheerder',
-            self::MISCELLANEOUS => 'Diversen',
-            self::UNKNOWN => 'Onbekend',
+            self::Municipality => 'Gemeente',
+            self::Submunicipality => 'Stadsdeel',
+            self::RoadAuthority => 'Wegendistrict',
+            self::TunnelAuthority => 'Tunnelbeheerder',
+            self::WaterAuthority => 'Waterschap',
+            self::PolderAuthority => 'Hoogheemraadschap',
+            self::Province => 'Provincie',
+            self::Railway => 'Spoorbeheerder',
+            self::Miscellaneous => 'Diversen',
+            self::Unknown => 'Onbekend',
         };
     }
 }

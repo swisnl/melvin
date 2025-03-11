@@ -41,7 +41,7 @@ final class SituationsTest extends TestCase
 
         $areas = array_filter(
             self::client()->areas()->all(),
-            static fn (Area $area) => $area->type === AreaType::PROVINCE
+            static fn (Area $area) => $area->type === AreaType::Province
         );
 
         foreach ($areas as $area) {

@@ -6,14 +6,14 @@ namespace Swis\Melvin\Enums;
 
 enum Source: string
 {
-    case MELVIN = 'MELVIN';
+    case Melvin = 'MELVIN';
     case SPIN = 'SPIN';
     case LTC = 'LTC';
 
     public function getLabel(): string
     {
         return match ($this) {
-            self::MELVIN => 'Melvin',
+            self::Melvin => 'Melvin',
             self::SPIN => 'SPIN',
             self::LTC => 'LTC',
         };

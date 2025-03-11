@@ -85,7 +85,7 @@ class SituationParser
             str_contains($object->properties->type, '_EXTERNAL'),
             $this->geometryParser->parse($object->geometry),
             $this->getName($object),
-            ($object->properties->activityType ?? '') ? ActivityType::from($object->properties->activityType) : ActivityType::WORK,
+            ($object->properties->activityType ?? '') ? ActivityType::from($object->properties->activityType) : ActivityType::Work,
             ($object->properties->workObject ?? '') ? WorkObject::from($object->properties->workObject) : null,
             isset($object->properties->impact) && $object->properties->impact !== 'EMPTY' ? Impact::from($object->properties->impact) : null,
             $impactDescription,

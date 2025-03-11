@@ -6,25 +6,25 @@ namespace Swis\Melvin\Enums;
 
 enum AreaType: string
 {
-    case UNKNOWN = 'UNKNOWN';
-    case MUNICIPALITY = 'MUNICIPALITY';
-    case SUBMUNICIPALITY = 'SUBMUNICIPALITY';
-    case ROAD_AUTHORITY = 'ROAD_AUTHORITY';
-    case TUNNEL_AUTHORITY = 'TUNNEL_AUTHORITY';
-    case PROVINCE = 'PROVINCE';
-    case RAILWAY = 'RAILWAY';
-    case MISCELLANEOUS = 'MISCELLANEOUS';
+    case Unknown = 'UNKNOWN';
+    case Municipality = 'MUNICIPALITY';
+    case Submunicipality = 'SUBMUNICIPALITY';
+    case RoadAuthority = 'ROAD_AUTHORITY';
+    case TunnelAuthority = 'TUNNEL_AUTHORITY';
+    case Province = 'PROVINCE';
+    case Railway = 'RAILWAY';
+    case Miscellaneous = 'MISCELLANEOUS';
 
     public function getLabel(): string
     {
         return match ($this) {
-            self::UNKNOWN => '',
-            self::MUNICIPALITY, self::SUBMUNICIPALITY => 'Gemeente',
-            self::ROAD_AUTHORITY => 'Wegendistrict',
-            self::TUNNEL_AUTHORITY => 'Tunnelbeheerder',
-            self::PROVINCE => 'Provincie',
-            self::RAILWAY => 'Spoorbeheerder',
-            self::MISCELLANEOUS => 'Diversen',
+            self::Unknown => '',
+            self::Municipality, self::Submunicipality => 'Gemeente',
+            self::RoadAuthority => 'Wegendistrict',
+            self::TunnelAuthority => 'Tunnelbeheerder',
+            self::Province => 'Provincie',
+            self::Railway => 'Spoorbeheerder',
+            self::Miscellaneous => 'Diversen',
         };
     }
 }

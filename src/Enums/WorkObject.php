@@ -6,40 +6,40 @@ namespace Swis\Melvin\Enums;
 
 enum WorkObject: string
 {
-    case BRIDGE = 'BRIDGE';
-    case GUIDE = 'GUIDE';
-    case BARRIER = 'BARRIER';
-    case CROSSING = 'CROSSING';
-    case ROADSIDE_EQUIPMENT = 'ROADSIDE_EQUIPMENT';
-    case OTHER = 'OTHER';
-    case ROUNDABOUT = 'ROUNDABOUT';
-    case RAILWAY_CROSSING = 'RAILWAY_CROSSING';
-    case TRAMWAY = 'TRAMWAY';
-    case TUNNEL = 'TUNNEL';
-    case TRAFFIC_LIGHTS = 'TRAFFIC_LIGHTS';
-    case LIGHTING = 'LIGHTING';
-    case VIADUCT = 'VIADUCT';
-    case WATER_DRAINAGE = 'WATER_DRAINAGE';
-    case ROAD = 'ROAD';
+    case Bridge = 'BRIDGE';
+    case Guide = 'GUIDE';
+    case Barrier = 'BARRIER';
+    case Crossing = 'CROSSING';
+    case RoadsideEquipment = 'ROADSIDE_EQUIPMENT';
+    case Other = 'OTHER';
+    case Roundabout = 'ROUNDABOUT';
+    case RailwayCrossing = 'RAILWAY_CROSSING';
+    case Tramway = 'TRAMWAY';
+    case Tunnel = 'TUNNEL';
+    case TrafficLights = 'TRAFFIC_LIGHTS';
+    case Lighting = 'LIGHTING';
+    case Viaduct = 'VIADUCT';
+    case WaterDrainage = 'WATER_DRAINAGE';
+    case Road = 'ROAD';
 
     public function getLabel(): string
     {
         return match ($this) {
-            self::BRIDGE => 'Brug',
-            self::GUIDE => 'Geleiderail',
-            self::BARRIER => 'Geluidswal',
-            self::CROSSING => 'Kruising',
-            self::ROADSIDE_EQUIPMENT => 'Meet / Wegkantapparatuur',
-            self::OTHER => 'Overig',
-            self::ROUNDABOUT => 'Rotonde',
-            self::RAILWAY_CROSSING => 'Spoorwegovergang',
-            self::TRAMWAY => 'Trambaan',
-            self::TUNNEL => 'Tunnel',
-            self::TRAFFIC_LIGHTS => 'Verkeerslichten',
-            self::LIGHTING => 'Verlichting',
-            self::VIADUCT => 'Viaduct',
-            self::WATER_DRAINAGE => 'Waterafvoer (duiker)',
-            self::ROAD => 'Weg',
+            self::Bridge => 'Brug',
+            self::Guide => 'Geleiderail',
+            self::Barrier => 'Geluidswal',
+            self::Crossing => 'Kruising',
+            self::RoadsideEquipment => 'Meet / Wegkantapparatuur',
+            self::Other => 'Overig',
+            self::Roundabout => 'Rotonde',
+            self::RailwayCrossing => 'Spoorwegovergang',
+            self::Tramway => 'Trambaan',
+            self::Tunnel => 'Tunnel',
+            self::TrafficLights => 'Verkeerslichten',
+            self::Lighting => 'Verlichting',
+            self::Viaduct => 'Viaduct',
+            self::WaterDrainage => 'Waterafvoer (duiker)',
+            self::Road => 'Weg',
         };
     }
 }

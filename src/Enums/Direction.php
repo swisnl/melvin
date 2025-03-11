@@ -6,14 +6,14 @@ namespace Swis\Melvin\Enums;
 
 enum Direction: string
 {
-    case A_B = 'A_B';
-    case BOTH = 'BOTH';
+    case AB = 'A_B';
+    case Both = 'BOTH';
 
     public function getLabel(): string
     {
         return match ($this) {
-            self::A_B => 'Enkele richting',
-            self::BOTH => 'Beide richtingen',
+            self::AB => 'Enkele richting',
+            self::Both => 'Beide richtingen',
         };
     }
 }

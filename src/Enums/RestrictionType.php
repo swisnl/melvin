@@ -6,16 +6,16 @@ namespace Swis\Melvin\Enums;
 
 enum RestrictionType: string
 {
-    case NONE = 'NONE';
-    case SPEED = 'SPEED';
-    case COMPLETE = 'COMPLETE';
+    case None = 'NONE';
+    case Speed = 'SPEED';
+    case Complete = 'COMPLETE';
 
     public function getLabel(): string
     {
         return match ($this) {
-            self::NONE => 'Geen verkeersmaatregel noodzakelijk',
-            self::SPEED => 'Snelheidsbeperking',
-            self::COMPLETE => 'Afsluiting',
+            self::None => 'Geen verkeersmaatregel noodzakelijk',
+            self::Speed => 'Snelheidsbeperking',
+            self::Complete => 'Afsluiting',
         };
     }
 }

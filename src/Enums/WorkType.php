@@ -6,56 +6,56 @@ namespace Swis\Melvin\Enums;
 
 enum WorkType: string
 {
-    case CONSTRUCTION = 'CONSTRUCTION';
-    case MAINTENANCE = 'MAINTENANCE';
-    case ASPHALTING = 'ASPHALTING';
-    case ROADMARKING = 'ROADMARKING';
-    case ROADSIDE_MAINTENANCE = 'ROADSIDE_MAINTENANCE';
-    case CABLES = 'CABLES';
-    case PRUNING = 'PRUNING';
-    case SEWERAGE = 'SEWERAGE';
-    case DEMOLITION = 'DEMOLITION';
-    case WIDENING = 'WIDENING';
-    case OVERHEAD_WORKS = 'OVERHEAD_WORKS';
-    case WATERWAY_MAINTENANCE = 'WATERWAY_MAINTENANCE';
-    case WATERWAY_PRUNING = 'WATERWAY_PRUNING';
-    case DREDGING = 'DREDGING';
-    case BRAKING = 'BRAKING';
-    case DOCKING = 'DOCKING';
-    case CONCRETE_MAINTENANCE = 'CONCRETE_MAINTENANCE';
-    case ENGINEERING_MAINTENANCE = 'ENGINEERING_MAINTENANCE';
-    case ELECTROMECHANIC = 'ELECTROMECHANIC';
-    case DIVING = 'DIVING';
-    case EVENT = 'EVENT';
-    case UNKNOWN = 'UNKNOWN';
-    case OTHER = 'OTHER';
+    case Construction = 'CONSTRUCTION';
+    case Maintenance = 'MAINTENANCE';
+    case Asphalting = 'ASPHALTING';
+    case Roadmarking = 'ROADMARKING';
+    case RoadsideMaintenance = 'ROADSIDE_MAINTENANCE';
+    case Cables = 'CABLES';
+    case Pruning = 'PRUNING';
+    case Sewerage = 'SEWERAGE';
+    case Demolition = 'DEMOLITION';
+    case Widening = 'WIDENING';
+    case OverheadWorks = 'OVERHEAD_WORKS';
+    case WaterwayMaintenance = 'WATERWAY_MAINTENANCE';
+    case WaterwayPruning = 'WATERWAY_PRUNING';
+    case Dredging = 'DREDGING';
+    case Braking = 'BRAKING';
+    case Docking = 'DOCKING';
+    case ConcreteMaintenance = 'CONCRETE_MAINTENANCE';
+    case EngineeringMaintenance = 'ENGINEERING_MAINTENANCE';
+    case Electromechanic = 'ELECTROMECHANIC';
+    case Diving = 'DIVING';
+    case Event = 'EVENT';
+    case Unknown = 'UNKNOWN';
+    case Other = 'OTHER';
 
     public function getLabel(): string
     {
         return match ($this) {
-            self::CONSTRUCTION => 'Aanleg van ...',
-            self::MAINTENANCE => 'Herinrichting / onderhoud van ...',
-            self::ASPHALTING => 'Asfalteringswerkzaamheden',
-            self::ROADMARKING => 'Wegmarkering',
-            self::ROADSIDE_MAINTENANCE => 'Berm onderhoud',
-            self::CABLES => 'Kabels / Leidingen',
-            self::PRUNING => 'Kappen / Snoeien',
-            self::SEWERAGE => 'Rioleringswerkzaamheden',
-            self::DEMOLITION => 'Sloopwerkzaamheden',
-            self::WIDENING => 'Wegverbreding',
-            self::OVERHEAD_WORKS => 'Bouw / Takel',
-            self::WATERWAY_MAINTENANCE => 'Oever - Onderhoud cq. vervanging',
-            self::WATERWAY_PRUNING => 'Oever - Maai werkzaamheden',
-            self::DREDGING => 'Bodem - Baggerwerk cq. vervanging',
-            self::BRAKING => 'Nautische voorziening - Remmingswerken onderhoud cq. vervanging',
-            self::DOCKING => 'Nautische voorziening - Afmeer voorziening',
-            self::CONCRETE_MAINTENANCE => 'Kunstwerk - Betononderhoud',
-            self::ENGINEERING_MAINTENANCE => 'Kunstwerk - Werktuigbouwkundig onderhoud',
-            self::ELECTROMECHANIC => 'Kunstwerk - Electromechanisch',
-            self::DIVING => 'Duikwerkzaamheden',
-            self::EVENT => 'Evenement',
-            self::UNKNOWN => 'Onbekend',
-            self::OTHER => 'Overig',
+            self::Construction => 'Aanleg van ...',
+            self::Maintenance => 'Herinrichting / onderhoud van ...',
+            self::Asphalting => 'Asfalteringswerkzaamheden',
+            self::Roadmarking => 'Wegmarkering',
+            self::RoadsideMaintenance => 'Berm onderhoud',
+            self::Cables => 'Kabels / Leidingen',
+            self::Pruning => 'Kappen / Snoeien',
+            self::Sewerage => 'Rioleringswerkzaamheden',
+            self::Demolition => 'Sloopwerkzaamheden',
+            self::Widening => 'Wegverbreding',
+            self::OverheadWorks => 'Bouw / Takel',
+            self::WaterwayMaintenance => 'Oever - Onderhoud cq. vervanging',
+            self::WaterwayPruning => 'Oever - Maai werkzaamheden',
+            self::Dredging => 'Bodem - Baggerwerk cq. vervanging',
+            self::Braking => 'Nautische voorziening - Remmingswerken onderhoud cq. vervanging',
+            self::Docking => 'Nautische voorziening - Afmeer voorziening',
+            self::ConcreteMaintenance => 'Kunstwerk - Betononderhoud',
+            self::EngineeringMaintenance => 'Kunstwerk - Werktuigbouwkundig onderhoud',
+            self::Electromechanic => 'Kunstwerk - Electromechanisch',
+            self::Diving => 'Duikwerkzaamheden',
+            self::Event => 'Evenement',
+            self::Unknown => 'Onbekend',
+            self::Other => 'Overig',
         };
     }
 }

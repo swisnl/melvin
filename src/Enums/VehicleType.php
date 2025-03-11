@@ -6,24 +6,24 @@ namespace Swis\Melvin\Enums;
 
 enum VehicleType: string
 {
-    case CAR = 'CAR';
-    case VAN = 'VAN';
-    case PEDESTRIAN = 'PEDESTRIAN';
-    case BIKE = 'BIKE';
-    case SCOOTER = 'SCOOTER';
-    case AGRICULTURAL_VEHICLE = 'AGRICULTURAL_VEHICLE';
-    case BUS = 'BUS';
+    case Car = 'CAR';
+    case Van = 'VAN';
+    case Pedestrian = 'PEDESTRIAN';
+    case Bike = 'BIKE';
+    case Scooter = 'SCOOTER';
+    case AgriculturalVehicle = 'AGRICULTURAL_VEHICLE';
+    case Bus = 'BUS';
 
     public function getLabel(): string
     {
         return match ($this) {
-            self::CAR => 'Auto / Motor',
-            self::VAN => 'Vrachtwagen',
-            self::PEDESTRIAN => 'Voetganger',
-            self::BIKE => '(snor)Fiets',
-            self::SCOOTER => 'Brommer',
-            self::AGRICULTURAL_VEHICLE => 'Agrarisch voertuig',
-            self::BUS => 'Bus',
+            self::Car => 'Auto / Motor',
+            self::Van => 'Vrachtwagen',
+            self::Pedestrian => 'Voetganger',
+            self::Bike => '(snor)Fiets',
+            self::Scooter => 'Brommer',
+            self::AgriculturalVehicle => 'Agrarisch voertuig',
+            self::Bus => 'Bus',
         };
     }
 }

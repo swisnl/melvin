@@ -6,22 +6,22 @@ namespace Swis\Melvin\Enums;
 
 enum SituationStatus: string
 {
-    case UNKNOWN = 'UNKNOWN';
-    case START = 'START';
-    case INITIAL = 'INITIAL';
-    case CONCEPT = 'CONCEPT';
-    case FINAL = 'FINAL';
-    case DELETED = 'DELETED';
+    case Unknown = 'UNKNOWN';
+    case Start = 'START';
+    case Initial = 'INITIAL';
+    case Concept = 'CONCEPT';
+    case Final = 'FINAL';
+    case Deleted = 'DELETED';
 
     public function getLabel(): string
     {
         return match ($this) {
-            self::UNKNOWN => '',
-            self::START => 'Bij aannemer',
-            self::INITIAL => 'Initieel',
-            self::CONCEPT => 'Concept',
-            self::FINAL => 'Definitief',
-            self::DELETED => 'Verwijderd',
+            self::Unknown => '',
+            self::Start => 'Bij aannemer',
+            self::Initial => 'Initieel',
+            self::Concept => 'Concept',
+            self::Final => 'Definitief',
+            self::Deleted => 'Verwijderd',
         };
     }
 }

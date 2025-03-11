@@ -6,26 +6,26 @@ namespace Swis\Melvin\Enums;
 
 enum ImpactDescription: string
 {
-    case NONE = 'NONE';
-    case SLOW_TRAFFIC_RESTRICTION = 'SLOW_TRAFFIC_RESTRICTION';
-    case ROAD_CLOSED_ONE_DIRECTION = 'ROAD_CLOSED_ONE_DIRECTION';
-    case ROAD_CLOSED_BOTH_WAYS = 'ROAD_CLOSED_BOTH_WAYS';
-    case REDUCED_NUMBER_OF_LANES = 'REDUCED_NUMBER_OF_LANES';
-    case SPEED_REDUCTION = 'SPEED_REDUCTION';
-    case ROADWORK_ON_JUNCTION = 'ROADWORK_ON_JUNCTION';
-    case OTHER = 'OTHER';
+    case None = 'NONE';
+    case SlowTrafficRestriction = 'SLOW_TRAFFIC_RESTRICTION';
+    case RoadClosedOneDirection = 'ROAD_CLOSED_ONE_DIRECTION';
+    case RoadClosedBothWays = 'ROAD_CLOSED_BOTH_WAYS';
+    case ReducedNumberOfLanes = 'REDUCED_NUMBER_OF_LANES';
+    case SpeedReduction = 'SPEED_REDUCTION';
+    case RoadworkOnJunction = 'ROADWORK_ON_JUNCTION';
+    case Other = 'OTHER';
 
     public function getLabel(): string
     {
         return match ($this) {
-            self::NONE => 'Geen',
-            self::SLOW_TRAFFIC_RESTRICTION => 'Beperking voor langzaam verkeer',
-            self::ROAD_CLOSED_ONE_DIRECTION => 'Weg dicht in één richting',
-            self::ROAD_CLOSED_BOTH_WAYS => 'Weg dicht in beide richtingen',
-            self::REDUCED_NUMBER_OF_LANES => 'Verminderd aantal rijstroken beschikbaar',
-            self::SPEED_REDUCTION => 'Snelheidsbeperking',
-            self::ROADWORK_ON_JUNCTION => 'Werkzaamheden op kruising/rotonde',
-            self::OTHER => 'Anders',
+            self::None => 'Geen',
+            self::SlowTrafficRestriction => 'Beperking voor langzaam verkeer',
+            self::RoadClosedOneDirection => 'Weg dicht in één richting',
+            self::RoadClosedBothWays => 'Weg dicht in beide richtingen',
+            self::ReducedNumberOfLanes => 'Verminderd aantal rijstroken beschikbaar',
+            self::SpeedReduction => 'Snelheidsbeperking',
+            self::RoadworkOnJunction => 'Werkzaamheden op kruising/rotonde',
+            self::Other => 'Anders',
         };
     }
 }
