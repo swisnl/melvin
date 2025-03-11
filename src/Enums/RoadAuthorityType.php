@@ -19,17 +19,17 @@ enum RoadAuthorityType: string
 
     public function getLabel(): string
     {
-        return [
-            'MUNICIPALITY' => 'Gemeente',
-            'SUBMUNICIPALITY' => 'Stadsdeel',
-            'ROAD_AUTHORITY' => 'Wegendistrict',
-            'TUNNEL_AUTHORITY' => 'Tunnelbeheerder',
-            'WATER_AUTHORITY' => 'Waterschap',
-            'POLDER_AUTHORITY' => 'Hoogheemraadschap',
-            'PROVINCE' => 'Provincie',
-            'RAILWAY' => 'Spoorbeheerder',
-            'MISCELLANEOUS' => 'Diversen',
-            'UNKNOWN' => 'Onbekend',
-        ][$this->name];
+        return match ($this) {
+            self::MUNICIPALITY => 'Gemeente',
+            self::SUBMUNICIPALITY => 'Stadsdeel',
+            self::ROAD_AUTHORITY => 'Wegendistrict',
+            self::TUNNEL_AUTHORITY => 'Tunnelbeheerder',
+            self::WATER_AUTHORITY => 'Waterschap',
+            self::POLDER_AUTHORITY => 'Hoogheemraadschap',
+            self::PROVINCE => 'Provincie',
+            self::RAILWAY => 'Spoorbeheerder',
+            self::MISCELLANEOUS => 'Diversen',
+            self::UNKNOWN => 'Onbekend',
+        };
     }
 }

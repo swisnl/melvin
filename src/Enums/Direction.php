@@ -11,9 +11,9 @@ enum Direction: string
 
     public function getLabel(): string
     {
-        return [
-            'A_B' => 'Enkele richting',
-            'BOTH' => 'Beide richtingen',
-        ][$this->name];
+        return match ($this) {
+            self::A_B => 'Enkele richting',
+            self::BOTH => 'Beide richtingen',
+        };
     }
 }

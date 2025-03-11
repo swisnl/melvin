@@ -15,13 +15,13 @@ enum SituationStatus: string
 
     public function getLabel(): string
     {
-        return [
-            'UNKNOWN' => '',
-            'START' => 'Bij aannemer',
-            'INITIAL' => 'Initieel',
-            'CONCEPT' => 'Concept',
-            'FINAL' => 'Definitief',
-            'DELETED' => 'Verwijderd',
-        ][$this->name];
+        return match ($this) {
+            self::UNKNOWN => '',
+            self::START => 'Bij aannemer',
+            self::INITIAL => 'Initieel',
+            self::CONCEPT => 'Concept',
+            self::FINAL => 'Definitief',
+            self::DELETED => 'Verwijderd',
+        };
     }
 }

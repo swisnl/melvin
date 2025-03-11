@@ -24,22 +24,22 @@ enum WorkObject: string
 
     public function getLabel(): string
     {
-        return [
-            'BRIDGE' => 'Brug',
-            'GUIDE' => 'Geleiderail',
-            'BARRIER' => 'Geluidswal',
-            'CROSSING' => 'Kruising',
-            'ROADSIDE_EQUIPMENT' => 'Meet / Wegkantapparatuur',
-            'OTHER' => 'Overig',
-            'ROUNDABOUT' => 'Rotonde',
-            'RAILWAY_CROSSING' => 'Spoorwegovergang',
-            'TRAMWAY' => 'Trambaan',
-            'TUNNEL' => 'Tunnel',
-            'TRAFFIC_LIGHTS' => 'Verkeerslichten',
-            'LIGHTING' => 'Verlichting',
-            'VIADUCT' => 'Viaduct',
-            'WATER_DRAINAGE' => 'Waterafvoer (duiker)',
-            'ROAD' => 'Weg',
-        ][$this->name];
+        return match ($this) {
+            self::BRIDGE => 'Brug',
+            self::GUIDE => 'Geleiderail',
+            self::BARRIER => 'Geluidswal',
+            self::CROSSING => 'Kruising',
+            self::ROADSIDE_EQUIPMENT => 'Meet / Wegkantapparatuur',
+            self::OTHER => 'Overig',
+            self::ROUNDABOUT => 'Rotonde',
+            self::RAILWAY_CROSSING => 'Spoorwegovergang',
+            self::TRAMWAY => 'Trambaan',
+            self::TUNNEL => 'Tunnel',
+            self::TRAFFIC_LIGHTS => 'Verkeerslichten',
+            self::LIGHTING => 'Verlichting',
+            self::VIADUCT => 'Viaduct',
+            self::WATER_DRAINAGE => 'Waterafvoer (duiker)',
+            self::ROAD => 'Weg',
+        };
     }
 }

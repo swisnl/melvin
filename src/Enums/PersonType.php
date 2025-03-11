@@ -11,9 +11,9 @@ enum PersonType: string
 
     public function getLabel(): string
     {
-        return [
-            'CONTRACTOR' => 'Aannemer',
-            'ROADAUTHORITY' => '(vaar)wegbeheerder',
-        ][$this->name];
+        return match ($this) {
+            self::CONTRACTOR => 'Aannemer',
+            self::ROADAUTHORITY => '(vaar)wegbeheerder',
+        };
     }
 }

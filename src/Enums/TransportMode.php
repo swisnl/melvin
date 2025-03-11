@@ -15,13 +15,13 @@ enum TransportMode: string
 
     public function getLabel(): string
     {
-        return [
-            'CAR' => 'Auto / Motor',
-            'BIKE' => '(snor)Fiets',
-            'WALK' => 'Voetganger',
-            'BOAT' => 'Vaartuig',
-            'RAIL' => 'Trein',
-            'BUS' => 'Bus',
-        ][$this->name];
+        return match ($this) {
+            self::CAR => 'Auto / Motor',
+            self::BIKE => '(snor)Fiets',
+            self::WALK => 'Voetganger',
+            self::BOAT => 'Vaartuig',
+            self::RAIL => 'Trein',
+            self::BUS => 'Bus',
+        };
     }
 }

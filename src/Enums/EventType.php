@@ -21,19 +21,19 @@ enum EventType: string
 
     public function getLabel(): string
     {
-        return [
-            'UNKNOWN' => '',
-            'FAIR' => 'Braderie',
-            'CONCERT' => 'Concert',
-            'FESTIVAL' => 'Festival',
-            'FUNFAIR' => 'Kermis',
-            'MARKET' => 'Markt',
-            'MARATHON' => 'Marathon',
-            'SPORTSMEETING' => 'Sportevenement',
-            'FOOTBALLMATCH' => 'Voetbalwedstrijd',
-            'BICYCLERACE' => 'Wielerronde',
-            'WATERSPORTSMEETING' => 'Watersport evenement',
-            'OTHER' => 'Overig',
-        ][$this->name];
+        return match ($this) {
+            self::UNKNOWN => '',
+            self::FAIR => 'Braderie',
+            self::CONCERT => 'Concert',
+            self::FESTIVAL => 'Festival',
+            self::FUNFAIR => 'Kermis',
+            self::MARKET => 'Markt',
+            self::MARATHON => 'Marathon',
+            self::SPORTSMEETING => 'Sportevenement',
+            self::FOOTBALLMATCH => 'Voetbalwedstrijd',
+            self::BICYCLERACE => 'Wielerronde',
+            self::WATERSPORTSMEETING => 'Watersport evenement',
+            self::OTHER => 'Overig',
+        };
     }
 }

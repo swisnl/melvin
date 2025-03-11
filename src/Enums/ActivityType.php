@@ -13,11 +13,11 @@ enum ActivityType: string
 
     public function getLabel(): string
     {
-        return [
-            'WORK' => 'Werk',
-            'EVENT' => 'Evenement',
-            'WATERWAY' => 'Vaarweg werk',
-            'WATERWAY_EVENT' => 'Vaarweg evenement',
-        ][$this->name];
+        return match ($this) {
+            self::WORK => 'Werk',
+            self::EVENT => 'Evenement',
+            self::WATERWAY => 'Vaarweg werk',
+            self::WATERWAY_EVENT => 'Vaarweg evenement',
+        };
     }
 }

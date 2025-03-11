@@ -12,10 +12,10 @@ enum BoatType: string
 
     public function getLabel(): string
     {
-        return [
-            'PROFESSIONAL' => 'Beroepsvaart',
-            'RECREATIONAL' => 'Recreatie',
-            'STANDING_MAST' => 'Staande mast',
-        ][$this->name];
+        return match ($this) {
+            self::PROFESSIONAL => 'Beroepsvaart',
+            self::RECREATIONAL => 'Recreatie',
+            self::STANDING_MAST => 'Staande mast',
+        };
     }
 }

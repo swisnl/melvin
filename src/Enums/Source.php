@@ -12,10 +12,10 @@ enum Source: string
 
     public function getLabel(): string
     {
-        return [
-            'MELVIN' => 'Melvin',
-            'SPIN' => 'SPIN',
-            'LTC' => 'LTC',
-        ][$this->name];
+        return match ($this) {
+            self::MELVIN => 'Melvin',
+            self::SPIN => 'SPIN',
+            self::LTC => 'LTC',
+        };
     }
 }

@@ -14,12 +14,12 @@ enum Impact: string
 
     public function getLabel(): string
     {
-        return [
-            'NONE' => 'Geen hinder',
-            'LITTLE' => 'Kleine hinder',
-            'AVERAGE' => 'Matige hinder',
-            'BIG' => 'Grote hinder',
-            'HUGE' => 'Zeer grote hinder',
-        ][$this->name];
+        return match ($this) {
+            self::NONE => 'Geen hinder',
+            self::LITTLE => 'Kleine hinder',
+            self::AVERAGE => 'Matige hinder',
+            self::BIG => 'Grote hinder',
+            self::HUGE => 'Zeer grote hinder',
+        };
     }
 }

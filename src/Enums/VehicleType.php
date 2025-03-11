@@ -16,14 +16,14 @@ enum VehicleType: string
 
     public function getLabel(): string
     {
-        return [
-            'CAR' => 'Auto / Motor',
-            'VAN' => 'Vrachtwagen',
-            'PEDESTRIAN' => 'Voetganger',
-            'BIKE' => '(snor)Fiets',
-            'SCOOTER' => 'Brommer',
-            'AGRICULTURAL_VEHICLE' => 'Agrarisch voertuig',
-            'BUS' => 'Bus',
-        ][$this->name];
+        return match ($this) {
+            self::CAR => 'Auto / Motor',
+            self::VAN => 'Vrachtwagen',
+            self::PEDESTRIAN => 'Voetganger',
+            self::BIKE => '(snor)Fiets',
+            self::SCOOTER => 'Brommer',
+            self::AGRICULTURAL_VEHICLE => 'Agrarisch voertuig',
+            self::BUS => 'Bus',
+        };
     }
 }

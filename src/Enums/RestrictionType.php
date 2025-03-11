@@ -12,10 +12,10 @@ enum RestrictionType: string
 
     public function getLabel(): string
     {
-        return [
-            'NONE' => 'Geen verkeersmaatregel noodzakelijk',
-            'SPEED' => 'Snelheidsbeperking',
-            'COMPLETE' => 'Afsluiting',
-        ][$this->name];
+        return match ($this) {
+            self::NONE => 'Geen verkeersmaatregel noodzakelijk',
+            self::SPEED => 'Snelheidsbeperking',
+            self::COMPLETE => 'Afsluiting',
+        };
     }
 }

@@ -15,13 +15,11 @@ enum PeriodStatus: string
 
     public function getLabel(): string
     {
-        return [
-            'INITIAL' => 'Initieel',
-            'PROBABLY_STARTED' => 'Gestart',
-            'STARTED' => 'Gestart',
-            'OVERRUNNING' => 'Uitloop',
-            'PROBABLY_ENDED' => 'Gestopt',
-            'ENDED' => 'Gestopt',
-        ][$this->name];
+        return match ($this) {
+            self::INITIAL => 'Initieel',
+            self::PROBABLY_STARTED, self::STARTED => 'Gestart',
+            self::OVERRUNNING => 'Uitloop',
+            self::PROBABLY_ENDED, self::ENDED => 'Gestopt',
+        };
     }
 }

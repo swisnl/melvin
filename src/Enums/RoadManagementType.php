@@ -20,18 +20,18 @@ enum RoadManagementType: string
 
     public function getLabel(): string
     {
-        return [
-            'UNKNOWN' => '',
-            'SPEED_RESTRICTION' => 'Snelheidsbeperking',
-            'DISPLACEMENT' => 'Verplaatsing van de rijbaan',
-            'NARROW_LANES' => 'Versmalde rijstroken',
-            'CLOSURES' => 'Afsluiting',
-            'CLOSED_LANES' => 'Verminderd aantal rijstroken beschikbaar',
-            'ROAD_CLOSED_ONE_DIRECTION' => 'Wegafsluiting',
-            'JUNCTION_CONNECTING_CARRIAGEWAY_CLOSED' => 'Afsluiting verbindingsweg',
-            'JUNCTION_ENTRY_CLOSED' => 'Afsluiting toerit',
-            'JUNCTION_EXIT_CLOSED' => 'Afsluiting afrit',
-            'HARD_SHOULDER_USAGE' => 'Verkeer via vluchtstrook',
-        ][$this->name];
+        return match ($this) {
+            self::UNKNOWN => '',
+            self::SPEED_RESTRICTION => 'Snelheidsbeperking',
+            self::DISPLACEMENT => 'Verplaatsing van de rijbaan',
+            self::NARROW_LANES => 'Versmalde rijstroken',
+            self::CLOSURES => 'Afsluiting',
+            self::CLOSED_LANES => 'Verminderd aantal rijstroken beschikbaar',
+            self::ROAD_CLOSED_ONE_DIRECTION => 'Wegafsluiting',
+            self::JUNCTION_CONNECTING_CARRIAGEWAY_CLOSED => 'Afsluiting verbindingsweg',
+            self::JUNCTION_ENTRY_CLOSED => 'Afsluiting toerit',
+            self::JUNCTION_EXIT_CLOSED => 'Afsluiting afrit',
+            self::HARD_SHOULDER_USAGE => 'Verkeer via vluchtstrook',
+        };
     }
 }

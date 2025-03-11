@@ -17,15 +17,14 @@ enum AreaType: string
 
     public function getLabel(): string
     {
-        return [
-            'UNKNOWN' => '',
-            'MUNICIPALITY' => 'Gemeente',
-            'SUBMUNICIPALITY' => 'Gemeente',
-            'ROAD_AUTHORITY' => 'Wegendistrict',
-            'TUNNEL_AUTHORITY' => 'Tunnelbeheerder',
-            'PROVINCE' => 'Provincie',
-            'RAILWAY' => 'Spoorbeheerder',
-            'MISCELLANEOUS' => 'Diversen',
-        ][$this->name];
+        return match ($this) {
+            self::UNKNOWN => '',
+            self::MUNICIPALITY, self::SUBMUNICIPALITY => 'Gemeente',
+            self::ROAD_AUTHORITY => 'Wegendistrict',
+            self::TUNNEL_AUTHORITY => 'Tunnelbeheerder',
+            self::PROVINCE => 'Provincie',
+            self::RAILWAY => 'Spoorbeheerder',
+            self::MISCELLANEOUS => 'Diversen',
+        };
     }
 }
