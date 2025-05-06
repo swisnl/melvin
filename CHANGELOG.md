@@ -7,6 +7,11 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+## [2.0.1] - 2025-05-01
+
+### Fixed
+- Add ternary check for optional vehicleTypes and boatTypes.
+
 ## [2.0.0] - 2025-03-11
 
 ### Changed
