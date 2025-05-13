@@ -15,6 +15,7 @@ enum RoadAuthorityType: string
     case Province = 'PROVINCE';
     case Railway = 'RAILWAY';
     case Miscellaneous = 'MISCELLANEOUS';
+    case BusCompany = 'BUSCOMPANY';
     case Unknown = 'UNKNOWN';
 
     public function getLabel(): string
@@ -29,6 +30,7 @@ enum RoadAuthorityType: string
             self::Province => 'Provincie',
             self::Railway => 'Spoorbeheerder',
             self::Miscellaneous => 'Diversen',
+            self::BusCompany => 'Busmaatschappij',
             self::Unknown => 'Onbekend',
         };
     }
