@@ -38,6 +38,7 @@ Please, please, please, don't send your pull request until all of the boxes are 
 - [ ] I have created a branch for this patch/feature.
 - [ ] Each individual commit in the pull request is meaningful.
 - [ ] I have added tests to cover my changes.
+- [ ] If my change requires a change to the [schema](tests/_files/situations-schema.json), I have updated it accordingly.
 - [ ] If my change requires a change to the documentation, I have updated it accordingly.
 
 If you're unsure about any of these, don't hesitate to ask. We're here to help!
