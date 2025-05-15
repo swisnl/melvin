@@ -317,10 +317,17 @@
                     "$ref": "#/definitions/VehicleInformation"
                 },
                 "vehicleTypes": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/VehicleType"
-                    }
+                    "anyOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/VehicleType"
+                            }
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 },
                 "emergencyServices": {
                     "$ref": "#/definitions/RestrictionExtraInfo"
@@ -344,11 +351,21 @@
                         }
                     ]
                 },
+                "railwayTypes": {
+                    "type": "null"
+                },
                 "boatTypes": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/BoatType"
-                    }
+                    "anyOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/BoatType"
+                            }
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 },
                 "referenceId": {
                     "anyOf": [
@@ -944,7 +961,8 @@
             "type": "string",
             "enum": [
                 "",
-                "EMERGENCY_SERVICES"
+                "EMERGENCY_SERVICES",
+                "PUBLIC_TRANSPORT"
             ],
             "title": "RestrictionExtraInfoType"
         },
@@ -999,6 +1017,7 @@
                 "POLDER_AUTHORITY",
                 "PROVINCE",
                 "RAILWAY",
+                "BUSCOMPANY",
                 "MISCELLANEOUS",
                 "UNKNOWN",
                 "EMPTY"
