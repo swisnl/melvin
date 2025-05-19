@@ -7,6 +7,12 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+## [2.0.2] - 2025-05-19
+
+### Fixed
+- Add BusCompany to RoadAuthorityType enum.
+- RoadAuthority name can be null.
+
 ## [2.0.1] - 2025-05-01
 
 ### Fixed
