@@ -147,9 +147,9 @@ class SituationParser
                 ' ',
                 sprintf(
                     '%s %s %s %s %s',
-                    $object->properties->location->road,
-                    $object->properties->location->district,
-                    $object->properties->location->city,
+                    $object->properties->location->road ?? '',
+                    $object->properties->location->district ?? '',
+                    $object->properties->location->city ?? '',
                     $description,
                     $object->properties->addition ?? ''
                 )

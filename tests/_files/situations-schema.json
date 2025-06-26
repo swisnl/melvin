@@ -612,7 +612,14 @@
                     ]
                 },
                 "road": {
-                    "type": "string"
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 },
                 "district": {
                     "anyOf": [
@@ -635,9 +642,6 @@
                     ]
                 }
             },
-            "required": [
-                "road"
-            ],
             "title": "Location"
         },
         "Period": {
