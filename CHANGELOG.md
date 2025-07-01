@@ -7,6 +7,12 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+## [2.0.3] - 2025-07-01
+
+### Fixed
+- Roads of a location can be null
+- Situation geometry can be null
+
 ## [2.0.2] - 2025-05-19
 
 ### Fixed
