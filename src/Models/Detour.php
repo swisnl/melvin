@@ -13,7 +13,7 @@ class Detour
     public function __construct(
         public string $id,
         public bool $external,
-        public Geometry $geometry,
+        public ?Geometry $geometry,
         public string $name,
         public Direction $direction,
         public ?TransportMode $transportMode,
