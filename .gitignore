@@ -6,3 +6,7 @@ vendor
 .php-cs-fixer.cache
 phpunit.xml
 /.phpunit.cache
+
+/.ddev/.env*
+/.ddev/!.env.*.example
+/.ddev/!.env.example
