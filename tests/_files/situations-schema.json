@@ -87,6 +87,9 @@
                             }
                         ]
                     }
+                },
+                "crs": {
+                    "$ref": "#/definitions/CRS"
                 }
             },
             "required": [
@@ -388,6 +391,26 @@
                     "items": {
                         "$ref": "#/definitions/Contact"
                     }
+                },
+                "maintainer": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "recordId": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 }
             },
             "required": [
@@ -794,6 +817,9 @@
                             "type": "null"
                         }
                     ]
+                },
+                "cbsCode": {
+                    "type": "string"
                 }
             },
             "required": [
@@ -898,6 +924,30 @@
                 "LineString"
             ],
             "title": "GeometryType"
+        },
+        "CRS": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "properties": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "name"
+                    ]
+                }
+            },
+            "required": [
+                "properties",
+                "type"
+            ],
+            "title": "CRS"
         },
         "ActivityType": {
             "type": "string",
