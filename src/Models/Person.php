@@ -10,7 +10,7 @@ class Person
 {
     public function __construct(
         public string $firstName,
-        public string $prefix,
+        public ?string $prefix,
         public string $lastName,
         public PersonType $type,
     ) {
