@@ -63,7 +63,7 @@ class Situation
         /**
          * @var string[]
          */
-        public array $remarks,
+        public ?array $remarks,
         /**
          * @var \Swis\Melvin\Models\Contact[]
          */

@@ -112,7 +112,7 @@ class SituationParser
             array_map([$this->detourParser, 'parse'], $detours, array_keys($detours)),
             ($object->properties->permitId ?? '') ?: null,
             ($object->properties->referenceId ?? '') ?: null,
-            $object->properties->remarks,
+            ($object->properties->remarks ?? '') ?: null,
             array_map([$this->contactParser, 'parse'], $object->properties->contacts ?? []),
         );
     }

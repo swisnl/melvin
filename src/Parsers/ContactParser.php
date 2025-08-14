@@ -11,19 +11,19 @@ class ContactParser
     public function parse(\stdClass $object): Contact
     {
         return new Contact(
-            $object->contactId,
-            $object->firstName,
-            $object->prefix,
-            $object->lastName,
+            $object->contactId ?? null,
+            $object->firstName ?? null,
+            $object->prefix ?? null,
+            $object->lastName ?? null,
             $object->email,
             $object->phone,
             $object->organisation ?? $object->organization,
-            $object->parentSituationId,
+            $object->parentSituationId ?? null,
             $object->function,
-            $object->publicPhone,
-            $object->active,
-            $object->createdById,
-            $object->changedById
+            $object->publicPhone ?? null,
+            $object->active ?? null,
+            $object->createdById ?? null,
+            $object->changedById ?? null
         );
     }
 }
