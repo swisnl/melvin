@@ -10,6 +10,7 @@ enum ActivityType: string
     case Event = 'EVENT';
     case Waterway = 'WATERWAY';
     case WaterwayEvent = 'WATERWAY_EVENT';
+    case Railway = 'RAILWAY';
 
     public function getLabel(): string
     {
@@ -18,6 +19,7 @@ enum ActivityType: string
             self::Event => 'Evenement',
             self::Waterway => 'Vaarweg werk',
             self::WaterwayEvent => 'Vaarweg evenement',
+            self::Railway => 'Spoorweg',
         };
     }
 }
