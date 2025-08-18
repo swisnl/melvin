@@ -12,6 +12,7 @@ class RoadAuthority
         public int $id,
         public ?RoadAuthorityType $type,
         public ?string $name,
+        public ?string $cbsCode,
     ) {
     }
 }

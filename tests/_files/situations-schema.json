@@ -26,6 +26,16 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
+                "recordId": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
                 "type": {
                     "$ref": "#/definitions/FeatureType"
                 },
@@ -61,6 +71,15 @@
             "properties": {
                 "type": {
                     "$ref": "#/definitions/GeometryType"
+                },
+                "crs": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["name"]
                 },
                 "coordinates": {
                     "type": "array",
@@ -873,6 +892,16 @@
                     "anyOf": [
                         {
                             "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "cbsCode": {
+                    "anyOf": [
+                        {
+                            "type": "string"
                         },
                         {
                             "type": "null"

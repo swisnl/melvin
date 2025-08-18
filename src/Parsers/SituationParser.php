@@ -41,7 +41,8 @@ class SituationParser
             $roadAuthority = new RoadAuthority(
                 $roadAuthority->id ?? $situationId,
                 $roadAuthority->type !== 'EMPTY' ? RoadAuthorityType::from($roadAuthority->type) : null,
-                $roadAuthority->name
+                $roadAuthority->name,
+                $roadAuthority->cbsCode ?? null,
             );
         }
 
