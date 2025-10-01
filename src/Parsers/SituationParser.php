@@ -115,6 +115,7 @@ class SituationParser
             ($object->properties->referenceId ?? '') ?: null,
             ($object->properties->remarks ?? '') ?: null,
             array_map([$this->contactParser, 'parse'], $object->properties->contacts ?? []),
+            ($object->properties->maintainer ?? '') ?: null,
         );
     }
 

@@ -68,6 +68,7 @@ class Situation
          * @var \Swis\Melvin\Models\Contact[]
          */
         public array $contacts,
+        public ?string $maintainer,
     ) {
     }
 }

@@ -214,6 +214,16 @@
                         }
                     ]
                 },
+                "recordId": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
                 "addition": {
                     "anyOf": [
                         {
@@ -408,6 +418,16 @@
                     "items": {
                         "$ref": "#/definitions/Contact"
                     }
+                },
+                "maintainer": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 }
             },
             "required": [
