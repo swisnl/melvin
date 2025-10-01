@@ -73,13 +73,7 @@
                     "$ref": "#/definitions/GeometryType"
                 },
                 "crs": {
-                    "type": "object",
-                    "properties": {
-                        "name": {
-                            "type": "string"
-                        }
-                    },
-                    "required": ["name"]
+                    "$ref": "#/definitions/CRS"
                 },
                 "coordinates": {
                     "type": "array",
@@ -1011,6 +1005,32 @@
                 "LineString"
             ],
             "title": "GeometryType"
+        },
+        "CRS": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "name"
+                    ]
+                },
+                "properties": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "enum": [
+                                "EPSG:4326"
+                            ]
+                        }
+                    },
+                    "required": ["name"]
+                }
+            },
+            "title": "CRS"
         },
         "ActivityType": {
             "type": "string",
