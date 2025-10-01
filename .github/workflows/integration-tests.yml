@@ -40,4 +40,4 @@ jobs:
         run: |
           bash scripts/update-fixtures.sh
           vendor/bin/phpunit --testsuite=schema --testdox
-          vendor/bin/phpunit --testsuite=integration --fail-on-skipped --testdox
+          vendor/bin/phpunit --testsuite=integration --fail-on-skipped --fail-on-warning --testdox
