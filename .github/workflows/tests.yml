@@ -43,7 +43,7 @@ jobs:
         run: composer update --${{ matrix.stability }} --prefer-dist --no-interaction
 
       - name: Execute tests
-        run: XDEBUG_MODE=coverage vendor/bin/phpunit --testsuite=default --fail-on-warning --coverage-text --coverage-clover=coverage.clover
+        run: XDEBUG_MODE=coverage vendor/bin/phpunit --testsuite=default --fail-on-warning --testdox --coverage-text --coverage-clover=coverage.clover
 
       - name: Upload Scrutinizer coverage
         uses: sudo-bot/action-scrutinizer@latest
