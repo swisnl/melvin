@@ -49,7 +49,7 @@ class SituationParser
         if ($createdBy = $object->properties->createdBy ?? null) {
             $createdBy = new Person(
                 $createdBy->firstName,
-                $createdBy->prefix,
+                $createdBy->prefix ?? null,
                 $createdBy->lastName,
                 PersonType::from($createdBy->type)
             );
@@ -61,7 +61,7 @@ class SituationParser
         if ($lastChangedBy = $object->properties->lastChangedBy ?? null) {
             $lastChangedBy = new Person(
                 $lastChangedBy->firstName,
-                $lastChangedBy->prefix,
+                $lastChangedBy->prefix ?? null,
                 $lastChangedBy->lastName,
                 PersonType::from($lastChangedBy->type)
             );

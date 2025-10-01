@@ -632,7 +632,6 @@
             },
             "required": [
                 "firstName",
-                "prefix",
                 "lastName",
                 "type"
             ],
