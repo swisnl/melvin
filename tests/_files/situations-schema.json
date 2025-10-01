@@ -1045,9 +1045,15 @@
                             ]
                         }
                     },
-                    "required": ["name"]
+                    "required": [
+                        "name"
+                    ]
                 }
             },
+            "required": [
+                "properties",
+                "type"
+            ],
             "title": "CRS"
         },
         "ActivityType": {
