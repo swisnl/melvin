@@ -7,6 +7,17 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+## [2.1.0] - 2025-10-02
+
+### Added
+- Added maintainer as an attribute to Situation
+
+### Changed
+- Contact has fewer properties, please see the updated model.
+
+### Fixed
+- Skip invalid periods in Situation
+
 ## [2.0.5] - 2025-08-18
 
 ### Fixed
