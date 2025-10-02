@@ -241,7 +241,14 @@
                     "$ref": "#/definitions/EventType"
                 },
                 "eventName": {
-                    "type": "string"
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 },
                 "attachments": {
                     "type": "array",
@@ -460,147 +467,24 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "firstName": {
-                    "anyOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
-                "prefix": {
-                    "anyOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
-                "lastName": {
-                    "anyOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
-                "email": {
+                "name": {
                     "type": "string"
-                },
-                "phone": {
-                    "anyOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
-                "organisation": {
-                    "anyOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
-                "parentSituationId": {
-                    "anyOf": [
-                        {
-                            "type": "integer"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
-                "contactId": {
-                    "anyOf": [
-                        {
-                            "type": "integer"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
-                "organization": {
-                    "anyOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
                 },
                 "function": {
                     "type": "string"
                 },
-                "publicPhone": {
-                    "anyOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
+                "email": {
+                    "type": "string"
                 },
-                "active": {
-                    "anyOf": [
-                        {
-                            "type": "boolean"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
-                "createdById": {
-                    "anyOf": [
-                        {
-                            "type": "integer"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
-                "changedById": {
-                    "anyOf": [
-                        {
-                            "type": "integer"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
+                "organization": {
+                    "type": "string"
                 }
             },
             "required": [
-                "active",
-                "changedById",
-                "contactId",
-                "createdById",
-                "email",
-                "firstName",
+                "name",
                 "function",
-                "lastName",
-                "organisation",
-                "parentSituationId",
-                "phone",
-                "prefix",
-                "publicPhone"
+                "email",
+                "organization"
             ],
             "title": "Contact"
         },
@@ -686,9 +570,7 @@
                 }
             },
             "required": [
-                "description",
-                "passageAllowed",
-                "type"
+                "passageAllowed"
             ],
             "title": "RestrictionExtraInfo"
         },
