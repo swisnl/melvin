@@ -241,7 +241,14 @@
                     "$ref": "#/definitions/EventType"
                 },
                 "eventName": {
-                    "type": "string"
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 },
                 "attachments": {
                     "type": "array",
@@ -563,9 +570,7 @@
                 }
             },
             "required": [
-                "description",
-                "passageAllowed",
-                "type"
+                "passageAllowed"
             ],
             "title": "RestrictionExtraInfo"
         },
