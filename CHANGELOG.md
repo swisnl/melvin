@@ -7,6 +7,18 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+## [2.0.5] - 2025-08-18
+
+### Fixed
+- Added railway as an ActivityType
+- Added cbscode as an attribute to RoadAuthority
+
+## [2.0.4] - 2025-08-14
+
+### Fixed
+- Contact and Person attributes can be null
+- Remarks of a situation can be null
+
 ## [2.0.3] - 2025-07-01
 
 ### Fixed
