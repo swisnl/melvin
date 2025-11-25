@@ -369,7 +369,17 @@
                     }
                 },
                 "roadManagementType": {
-                    "$ref": "#/definitions/RoadManagementType"
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/RoadManagementType"
+                        },
+                        {
+                            "type": "string",
+                            "enum": [
+                                ""
+                            ]
+                        }
+                    ]
                 },
                 "laneInformation": {
                     "anyOf": [
