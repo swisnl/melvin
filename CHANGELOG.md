@@ -7,6 +7,11 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+## [2.1.1] - 2025-11-25
+
+### Fixed
+- Add Unknown to Delay enum.
+
 ## [2.1.0] - 2025-10-02
 
 ### Added
