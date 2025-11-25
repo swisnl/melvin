@@ -977,7 +977,8 @@
                 "BETWEEN_1_AND_2_HOURS",
                 "BETWEEN_2_AND_4_HOURS",
                 "BETWEEN_4_AND_8_HOURS",
-                "MORE_8_HOURS"
+                "MORE_8_HOURS",
+                "UNKNOWN"
             ],
             "title": "Delay"
         },

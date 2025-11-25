@@ -16,6 +16,7 @@ enum Delay: string
     case Between2And4Hours = 'BETWEEN_2_AND_4_HOURS';
     case Between4And8Hours = 'BETWEEN_4_AND_8_HOURS';
     case More8Hours = 'MORE_8_HOURS';
+    case Unknown = 'UNKNOWN';
 
     public function getLabel(): string
     {
@@ -29,6 +30,7 @@ enum Delay: string
             self::Between2And4Hours => '2-4 uur vertraging',
             self::Between4And8Hours => '4-8 uur vertraging',
             self::More8Hours => '> 8 uur vertraging',
+            self::Unknown => 'Onbekende vertraging',
         };
     }
 }
