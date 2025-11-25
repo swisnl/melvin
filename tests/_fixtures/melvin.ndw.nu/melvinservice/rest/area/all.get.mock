@@ -1,13 +1,23 @@
 [
   {
-    "id": 321,
+    "id": 41,
     "type": "MUNICIPALITY",
-    "name": "Bunnik"
+    "name": "Terschelling"
+  },
+  {
+    "id": 43,
+    "type": "MUNICIPALITY",
+    "name": "Vlieland"
   },
   {
     "id": 465,
     "type": "MUNICIPALITY",
     "name": "Molenlanden"
+  },
+  {
+    "id": 88,
+    "type": "MUNICIPALITY",
+    "name": "Rozendaal"
   },
   {
     "id": 339,
@@ -85,6 +95,11 @@
     "name": "Rotterdam (Centrum)"
   },
   {
+    "id": 182,
+    "type": "MUNICIPALITY",
+    "name": "Gemert-Bakel"
+  },
+  {
     "id": 223,
     "type": "PROVINCE",
     "name": "Noord-Brabant"
@@ -100,6 +115,11 @@
     "name": "Dijk en Waard"
   },
   {
+    "id": 218,
+    "type": "MUNICIPALITY",
+    "name": "Waalwijk"
+  },
+  {
     "id": 316,
     "type": "ROAD_AUTHORITY",
     "name": "Zuid-Nederland District West"
@@ -108,6 +128,16 @@
     "id": 327,
     "type": "MUNICIPALITY",
     "name": "IJsselstein"
+  },
+  {
+    "id": 240,
+    "type": "MUNICIPALITY",
+    "name": "Haarlem"
+  },
+  {
+    "id": 321,
+    "type": "MUNICIPALITY",
+    "name": "Bunnik"
   },
   {
     "id": 1142,
@@ -130,9 +160,19 @@
     "name": "Rotterdam (Havengebied)"
   },
   {
+    "id": 329,
+    "type": "MUNICIPALITY",
+    "name": "Lopik"
+  },
+  {
     "id": 371,
     "type": "MUNICIPALITY",
     "name": "Kapelle"
+  },
+  {
+    "id": 325,
+    "type": "MUNICIPALITY",
+    "name": "Eemnes"
   },
   {
     "id": 22,
@@ -940,11 +980,6 @@
     "name": "Duiven"
   },
   {
-    "id": 325,
-    "type": "MUNICIPALITY",
-    "name": "Eemnes"
-  },
-  {
     "id": 506,
     "type": "MUNICIPALITY",
     "name": "Eemsdelta"
@@ -975,11 +1010,6 @@
     "name": "Ermelo"
   },
   {
-    "id": 182,
-    "type": "MUNICIPALITY",
-    "name": "Gemert-Bakel"
-  },
-  {
     "id": 131,
     "type": "MUNICIPALITY",
     "name": "Gennep"
@@ -1008,11 +1038,6 @@
     "id": 282,
     "type": "MUNICIPALITY",
     "name": "Haaksbergen"
-  },
-  {
-    "id": 240,
-    "type": "MUNICIPALITY",
-    "name": "Haarlem"
   },
   {
     "id": 242,
@@ -1263,11 +1288,6 @@
     "id": 194,
     "type": "MUNICIPALITY",
     "name": "Loon op Zand"
-  },
-  {
-    "id": 329,
-    "type": "MUNICIPALITY",
-    "name": "Lopik"
   },
   {
     "id": 288,
@@ -1605,11 +1625,6 @@
     "name": "Roosendaal"
   },
   {
-    "id": 88,
-    "type": "MUNICIPALITY",
-    "name": "Rozendaal"
-  },
-  {
     "id": 426,
     "type": "MUNICIPALITY",
     "name": "Rotterdam"
@@ -1688,11 +1703,6 @@
     "id": 118,
     "type": "MUNICIPALITY",
     "name": "Stadskanaal"
-  },
-  {
-    "id": 41,
-    "type": "MUNICIPALITY",
-    "name": "Terschelling"
   },
   {
     "id": 294,
@@ -1830,11 +1840,6 @@
     "name": "Vlaardingen"
   },
   {
-    "id": 43,
-    "type": "MUNICIPALITY",
-    "name": "Vlieland"
-  },
-  {
     "id": 904,
     "type": "MUNICIPALITY",
     "name": "Voorne aan Zee"
@@ -1863,11 +1868,6 @@
     "id": 267,
     "type": "MUNICIPALITY",
     "name": "Weesp"
-  },
-  {
-    "id": 218,
-    "type": "MUNICIPALITY",
-    "name": "Waalwijk"
   },
   {
     "id": 434,
