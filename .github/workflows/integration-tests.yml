@@ -3,7 +3,7 @@ name: Run integration tests
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 5 * * 1-5'
+    - cron: '30 7 * * 1-5'
 
 jobs:
   php-integration-tests:
