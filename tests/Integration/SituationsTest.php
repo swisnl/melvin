@@ -24,6 +24,7 @@ final class SituationsTest extends TestCase
 
         $params = (new SituationFilterParameters())
             ->setIncludeDetours(true)
+            ->setAreaBuffer(0)
             ->setAreaIds([$areaId]);
 
         $situations = self::client()->situations()->export($params);
