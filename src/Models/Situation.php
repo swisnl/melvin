@@ -70,6 +70,10 @@ class Situation
          */
         public array $contacts,
         public ?string $maintainer,
+        /**
+         * @var \Swis\Melvin\Models\RelatedSituation[]
+         */
+        public array $relatedSituations,
     ) {
     }
 }

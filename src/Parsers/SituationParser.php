@@ -17,6 +17,7 @@ use Swis\Melvin\Enums\WorkObject;
 use Swis\Melvin\Enums\WorkType;
 use Swis\Melvin\Models\Location;
 use Swis\Melvin\Models\Person;
+use Swis\Melvin\Models\RelatedSituation;
 use Swis\Melvin\Models\RoadAuthority;
 use Swis\Melvin\Models\Situation;
 
@@ -117,6 +118,16 @@ class SituationParser
             ($object->properties->remarks ?? '') ?: null,
             array_map([$this->contactParser, 'parse'], $object->properties->contacts ?? []),
             ($object->properties->maintainer ?? '') ?: null,
+            array_map([$this, 'parseRelatedSituation'], $object->properties->relatedSituations ?? []),
+        );
+    }
+
+    public function parseRelatedSituation(\stdClass $object): RelatedSituation
+    {
+        return new RelatedSituation(
+            $object->id,
+            $object->project,
+            Source::from($object->source),
         );
     }
 
