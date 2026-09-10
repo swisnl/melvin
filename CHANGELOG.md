@@ -7,6 +7,16 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 ## Unreleased
 - Nothing.
 
+## [2.2.0] - 2026-09-10
+
+### Added
+- Added roadOperatorType and roadOperatorCode as an attribute to Area
+- Added allSituationId and relatedSituations as an attribute to Situation
+- Added phone and publicPhone as an attribute to Contact
+
+### Fixed
+- Added SeepingOfRoad, Roadworks, InstallationWork, RepairWork and GrassCuttingWork to WorkType enum.
+
 ## [2.1.1] - 2025-11-25
 
 ### Fixed
