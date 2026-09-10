@@ -122,6 +122,9 @@
                         }
                     ]
                 },
+                "allSituationId": {
+                    "type": "integer"
+                },
                 "workObject": {
                     "anyOf": [
                         {
@@ -185,6 +188,12 @@
                             "type": "null"
                         }
                     ]
+                },
+                "relatedSituations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/RelatedSituation"
+                    }
                 },
                 "periods": {
                     "type": "array",
@@ -488,6 +497,26 @@
                 },
                 "organization": {
                     "type": "string"
+                },
+                "phone": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "public_phone": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 }
             },
             "required": [
@@ -867,6 +896,27 @@
             },
             "title": "VehicleInformation"
         },
+        "RelatedSituation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "project": {
+                    "type": "boolean"
+                },
+                "source": {
+                    "$ref": "#/definitions/Source"
+                }
+            },
+            "required": [
+                "id",
+                "project",
+                "source"
+            ],
+            "title": "RelatedSituation"
+        },
         "URLUnion": {
             "anyOf": [
                 {
@@ -1007,7 +1057,8 @@
                 "true",
                 "false",
                 "YES",
-                "NO"
+                "NO",
+                "NOT_APPLICABLE"
             ],
             "title": "PassageAllowed"
         },
@@ -1178,6 +1229,7 @@
         "WorkType": {
             "type": "string",
             "enum": [
+                "SWEEPING_OF_ROAD",
                 "CONSTRUCTION",
                 "MAINTENANCE",
                 "ASPHALTING",
@@ -1189,6 +1241,10 @@
                 "DEMOLITION",
                 "WIDENING",
                 "OVERHEAD_WORKS",
+                "ROADWORKS",
+                "INSTALLATION_WORK",
+                "REPAIR_WORK",
+                "GRASS_CUTTING_WORK",
                 "WATERWAY_MAINTENANCE",
                 "WATERWAY_PRUNING",
                 "DREDGING",
