@@ -59,6 +59,7 @@ class Situation
          */
         public array $detours,
         public ?string $permitId,
+        public ?int $allSituationId,
         public ?string $referenceId,
         /**
          * @var string[]
@@ -69,6 +70,10 @@ class Situation
          */
         public array $contacts,
         public ?string $maintainer,
+        /**
+         * @var \Swis\Melvin\Models\RelatedSituation[]
+         */
+        public array $relatedSituations,
     ) {
     }
 }

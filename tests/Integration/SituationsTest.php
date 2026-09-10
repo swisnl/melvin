@@ -25,6 +25,7 @@ final class SituationsTest extends TestCase
         $params = (new SituationFilterParameters())
             ->setIncludeDetours(true)
             ->setAreaBuffer(0)
+            ->setPeriod(new \DateTime('today'), new \DateTime('today +1 month'))
             ->setAreaIds([$areaId]);
 
         $situations = self::client()->situations()->export($params);

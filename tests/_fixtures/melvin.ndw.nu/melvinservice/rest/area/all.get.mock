@@ -1,73 +1,45 @@
 [
   {
+    "id": 407,
+    "type": "MUNICIPALITY",
+    "name": "Lansingerland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1621"
+  },
+  {
     "id": 41,
     "type": "MUNICIPALITY",
-    "name": "Terschelling"
+    "name": "Terschelling",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "93"
   },
   {
     "id": 43,
     "type": "MUNICIPALITY",
-    "name": "Vlieland"
+    "name": "Vlieland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "96"
   },
   {
     "id": 465,
     "type": "MUNICIPALITY",
-    "name": "Molenlanden"
+    "name": "Molenlanden",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1978"
   },
   {
     "id": 88,
     "type": "MUNICIPALITY",
-    "name": "Rozendaal"
+    "name": "Rozendaal",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "277"
   },
   {
     "id": 339,
     "type": "MUNICIPALITY",
-    "name": "Veenendaal"
-  },
-  {
-    "id": 453,
-    "type": "SUBMUNICIPALITY",
-    "name": "'s-Gravenhage (Centrum)"
-  },
-  {
-    "id": 454,
-    "type": "SUBMUNICIPALITY",
-    "name": "'s-Gravenhage (Escamp)"
-  },
-  {
-    "id": 455,
-    "type": "SUBMUNICIPALITY",
-    "name": "'s-Gravenhage (Haagse Hout)"
-  },
-  {
-    "id": 456,
-    "type": "SUBMUNICIPALITY",
-    "name": "'s-Gravenhage (Laak)"
-  },
-  {
-    "id": 458,
-    "type": "SUBMUNICIPALITY",
-    "name": "'s-Gravenhage (Loosduinen)"
-  },
-  {
-    "id": 459,
-    "type": "SUBMUNICIPALITY",
-    "name": "'s-Gravenhage (Scheveningen)"
-  },
-  {
-    "id": 457,
-    "type": "SUBMUNICIPALITY",
-    "name": "'s-Gravenhage (Leidschenveen-Ypenburg)"
-  },
-  {
-    "id": 452,
-    "type": "SUBMUNICIPALITY",
-    "name": "Rotterdam (Zuid West)"
-  },
-  {
-    "id": 451,
-    "type": "SUBMUNICIPALITY",
-    "name": "Rotterdam (Zuid Oost)"
+    "name": "Veenendaal",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "345"
   },
   {
     "id": 509,
@@ -75,504 +47,639 @@
     "name": "Wegschap Tunnel Dordtse Kil"
   },
   {
-    "id": 450,
-    "type": "SUBMUNICIPALITY",
-    "name": "Rotterdam (Prins Alexander)"
-  },
-  {
     "id": 449,
     "type": "SUBMUNICIPALITY",
     "name": "Rotterdam (Noord West)"
   },
   {
-    "id": 448,
-    "type": "SUBMUNICIPALITY",
-    "name": "Rotterdam (Noord Oost)"
-  },
-  {
-    "id": 447,
-    "type": "SUBMUNICIPALITY",
-    "name": "Rotterdam (Centrum)"
-  },
-  {
     "id": 182,
     "type": "MUNICIPALITY",
-    "name": "Gemert-Bakel"
+    "name": "Gemert-Bakel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1652"
   },
   {
     "id": 223,
     "type": "PROVINCE",
-    "name": "Noord-Brabant"
-  },
-  {
-    "id": 460,
-    "type": "SUBMUNICIPALITY",
-    "name": "'s-Gravenhage (Segbroek)"
+    "name": "Noord-Brabant",
+    "roadOperatorType": "Province",
+    "roadOperatorCode": "NB"
   },
   {
     "id": 577,
     "type": "MUNICIPALITY",
-    "name": "Dijk en Waard"
+    "name": "Dijk en Waard",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1980"
   },
   {
     "id": 218,
     "type": "MUNICIPALITY",
-    "name": "Waalwijk"
+    "name": "Waalwijk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "867"
   },
   {
     "id": 316,
     "type": "ROAD_AUTHORITY",
-    "name": "Zuid-Nederland District West"
+    "name": "Zuid-Nederland District West",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "193"
+  },
+  {
+    "id": 426,
+    "type": "MUNICIPALITY",
+    "name": "Rotterdam",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "599"
   },
   {
     "id": 327,
     "type": "MUNICIPALITY",
-    "name": "IJsselstein"
+    "name": "IJsselstein",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "353"
   },
   {
     "id": 240,
     "type": "MUNICIPALITY",
-    "name": "Haarlem"
+    "name": "Haarlem",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "392"
   },
   {
     "id": 321,
     "type": "MUNICIPALITY",
-    "name": "Bunnik"
-  },
-  {
-    "id": 1142,
-    "type": "SUBMUNICIPALITY",
-    "name": "Amsterdam Weesp"
-  },
-  {
-    "id": 1134,
-    "type": "SUBMUNICIPALITY",
-    "name": "Amsterdam Zuidoost"
+    "name": "Bunnik",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "312"
   },
   {
     "id": 470,
     "type": "TUNNEL_AUTHORITY",
-    "name": "Westerscheldetunnel NV"
+    "name": "Westerscheldetunnel NV",
+    "roadOperatorType": "Other",
+    "roadOperatorCode": "WST"
   },
   {
-    "id": 468,
-    "type": "SUBMUNICIPALITY",
-    "name": "Rotterdam (Havengebied)"
+    "id": 128,
+    "type": "MUNICIPALITY",
+    "name": "Brunssum",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "899"
   },
   {
     "id": 329,
     "type": "MUNICIPALITY",
-    "name": "Lopik"
+    "name": "Lopik",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "331"
   },
   {
     "id": 371,
     "type": "MUNICIPALITY",
-    "name": "Kapelle"
+    "name": "Kapelle",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "678"
   },
   {
     "id": 325,
     "type": "MUNICIPALITY",
-    "name": "Eemnes"
+    "name": "Eemnes",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "317"
   },
   {
     "id": 22,
     "type": "MUNICIPALITY",
-    "name": "Ameland"
+    "name": "Ameland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "60"
   },
   {
     "id": 189,
     "type": "MUNICIPALITY",
-    "name": "Helmond"
+    "name": "Helmond",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "794"
   },
   {
     "id": 336,
     "type": "MUNICIPALITY",
-    "name": "Stichtse Vecht"
+    "name": "Stichtse Vecht",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1904"
   },
   {
     "id": 304,
     "type": "ROAD_AUTHORITY",
-    "name": "Noord-Nederland District Oost"
+    "name": "Noord-Nederland District Oost",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "100"
   },
   {
     "id": 38,
     "type": "MUNICIPALITY",
-    "name": "Schiermonnikoog"
-  },
-  {
-    "id": 1140,
-    "type": "SUBMUNICIPALITY",
-    "name": "Amsterdam Zuid"
-  },
-  {
-    "id": 1136,
-    "type": "SUBMUNICIPALITY",
-    "name": "Amsterdam Noord"
-  },
-  {
-    "id": 1137,
-    "type": "SUBMUNICIPALITY",
-    "name": "Amsterdam Westpoort"
-  },
-  {
-    "id": 1139,
-    "type": "SUBMUNICIPALITY",
-    "name": "Amsterdam Nieuw-West"
+    "name": "Schiermonnikoog",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "88"
   },
   {
     "id": 402,
     "type": "MUNICIPALITY",
-    "name": "Katwijk"
+    "name": "Katwijk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "537"
   },
   {
     "id": 135,
     "type": "MUNICIPALITY",
-    "name": "Kerkrade"
-  },
-  {
-    "id": 1141,
-    "type": "SUBMUNICIPALITY",
-    "name": "Amsterdam Oost"
+    "name": "Kerkrade",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "928"
   },
   {
     "id": 302,
     "type": "ROAD_AUTHORITY",
-    "name": "Midden-Nederland District Noord"
+    "name": "Midden-Nederland District Noord",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "136"
   },
   {
     "id": 306,
     "type": "ROAD_AUTHORITY",
-    "name": "Oost-Nederland District Noord"
+    "name": "Oost-Nederland District Noord",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "160"
   },
   {
     "id": 308,
     "type": "ROAD_AUTHORITY",
-    "name": "Oost-Nederland District Zuid"
+    "name": "Oost-Nederland District Zuid",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "161"
   },
   {
     "id": 309,
     "type": "ROAD_AUTHORITY",
-    "name": "West-Nederland Noord District Noord"
+    "name": "West-Nederland Noord District Noord",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "187"
   },
   {
     "id": 314,
     "type": "ROAD_AUTHORITY",
-    "name": "Zee en Delta District Zuid"
+    "name": "Zee en Delta District Zuid",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "144"
   },
   {
     "id": 315,
     "type": "ROAD_AUTHORITY",
-    "name": "Zuid-Nederland District Midden"
+    "name": "Zuid-Nederland District Midden",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "194"
   },
   {
     "id": 180,
     "type": "MUNICIPALITY",
-    "name": "Geertruidenberg"
+    "name": "Geertruidenberg",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "779"
   },
   {
     "id": 305,
     "type": "ROAD_AUTHORITY",
-    "name": "Noord-Nederland District West"
+    "name": "Noord-Nederland District West",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "199"
   },
   {
     "id": 311,
     "type": "ROAD_AUTHORITY",
-    "name": "West-Nederland Zuid District Noord"
+    "name": "West-Nederland Zuid District Noord",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "112"
   },
   {
     "id": 312,
     "type": "ROAD_AUTHORITY",
-    "name": "West-Nederland Zuid District Zuid"
+    "name": "West-Nederland Zuid District Zuid",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "113"
   },
   {
     "id": 181,
     "type": "MUNICIPALITY",
-    "name": "Geldrop-Mierlo"
+    "name": "Geldrop-Mierlo",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1771"
   },
   {
     "id": 251,
     "type": "MUNICIPALITY",
-    "name": "Koggenland"
+    "name": "Koggenland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1598"
   },
   {
     "id": 395,
     "type": "MUNICIPALITY",
-    "name": "Gorinchem"
+    "name": "Gorinchem",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "512"
   },
   {
     "id": 507,
     "type": "UNKNOWN",
-    "name": "PWN"
+    "name": "PWN",
+    "roadOperatorType": "Other",
+    "roadOperatorCode": "PWN"
   },
   {
     "id": 405,
     "type": "MUNICIPALITY",
-    "name": "Krimpen aan den IJssel"
+    "name": "Krimpen aan den IJssel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "542"
   },
   {
     "id": 224,
     "type": "MUNICIPALITY",
-    "name": "Aalsmeer"
+    "name": "Aalsmeer",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "358"
   },
   {
     "id": 176,
     "type": "MUNICIPALITY",
-    "name": "Drimmelen"
+    "name": "Drimmelen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1719"
   },
   {
     "id": 136,
     "type": "MUNICIPALITY",
-    "name": "Landgraaf"
+    "name": "Landgraaf",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "882"
+  },
+  {
+    "id": 290,
+    "type": "MUNICIPALITY",
+    "name": "Olst-Wijhe",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1773"
   },
   {
     "id": 21,
     "type": "MUNICIPALITY",
-    "name": "Achtkarspelen"
+    "name": "Achtkarspelen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "59"
   },
   {
     "id": 382,
     "type": "MUNICIPALITY",
-    "name": "Alblasserdam"
+    "name": "Alblasserdam",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "482"
   },
   {
     "id": 125,
     "type": "MUNICIPALITY",
-    "name": "Beek"
+    "name": "Beek",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "888"
   },
   {
     "id": 399,
     "type": "MUNICIPALITY",
-    "name": "Hendrik-Ido-Ambacht"
+    "name": "Hendrik-Ido-Ambacht",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "531"
   },
   {
     "id": 383,
     "type": "MUNICIPALITY",
-    "name": "Albrandswaard"
+    "name": "Albrandswaard",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "613"
   },
   {
     "id": 254,
     "type": "MUNICIPALITY",
-    "name": "Laren"
+    "name": "Laren",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "417"
   },
   {
     "id": 51,
     "type": "MUNICIPALITY",
-    "name": "Berkelland"
+    "name": "Berkelland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1859"
   },
   {
     "id": 225,
     "type": "MUNICIPALITY",
-    "name": "Alkmaar"
+    "name": "Alkmaar",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "361"
   },
   {
     "id": 276,
     "type": "MUNICIPALITY",
-    "name": "Almelo"
+    "name": "Almelo",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "141"
   },
   {
     "id": 165,
     "type": "MUNICIPALITY",
-    "name": "Bernheze"
+    "name": "Bernheze",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1721"
   },
   {
     "id": 166,
     "type": "MUNICIPALITY",
-    "name": "Best"
+    "name": "Best",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "753"
   },
   {
     "id": 232,
     "type": "MUNICIPALITY",
-    "name": "Bloemendaal"
+    "name": "Bloemendaal",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "377"
   },
   {
     "id": 277,
     "type": "MUNICIPALITY",
-    "name": "Borne"
+    "name": "Borne",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "147"
   },
   {
     "id": 46,
     "type": "MUNICIPALITY",
-    "name": "Aalten"
+    "name": "Aalten",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "197"
   },
   {
     "id": 420,
     "type": "MUNICIPALITY",
-    "name": "Oegstgeest"
+    "name": "Oegstgeest",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "579"
   },
   {
     "id": 289,
     "type": "MUNICIPALITY",
-    "name": "Oldenzaal"
+    "name": "Oldenzaal",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "173"
   },
   {
     "id": 368,
     "type": "MUNICIPALITY",
-    "name": "Borsele"
+    "name": "Borsele",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "654"
   },
   {
     "id": 183,
     "type": "MUNICIPALITY",
-    "name": "Gilze en Rijen"
+    "name": "Gilze en Rijen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "784"
   },
   {
     "id": 184,
     "type": "MUNICIPALITY",
-    "name": "Goirle"
+    "name": "Goirle",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "785"
   },
   {
     "id": 170,
     "type": "MUNICIPALITY",
-    "name": "Boxtel"
+    "name": "Boxtel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "757"
   },
   {
     "id": 239,
     "type": "MUNICIPALITY",
-    "name": "Gooise Meren"
+    "name": "Gooise Meren",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1942"
   },
   {
     "id": 396,
     "type": "MUNICIPALITY",
-    "name": "Gouda"
+    "name": "Gouda",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "513"
   },
   {
     "id": 384,
     "type": "MUNICIPALITY",
-    "name": "Alphen aan den Rijn"
+    "name": "Alphen aan den Rijn",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "484"
   },
   {
     "id": 156,
     "type": "MUNICIPALITY",
-    "name": "Voerendaal"
+    "name": "Voerendaal",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "986"
   },
   {
     "id": 160,
     "type": "MUNICIPALITY",
-    "name": "Alphen-Chaam"
+    "name": "Alphen-Chaam",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1723"
   },
   {
     "id": 397,
     "type": "MUNICIPALITY",
-    "name": "Hardinxveld-Giessendam"
+    "name": "Hardinxveld-Giessendam",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "523"
   },
   {
     "id": 226,
     "type": "MUNICIPALITY",
-    "name": "Amstelveen"
+    "name": "Amstelveen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "362"
   },
   {
     "id": 322,
     "type": "MUNICIPALITY",
-    "name": "Bunschoten"
+    "name": "Bunschoten",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "313"
   },
   {
     "id": 233,
     "type": "MUNICIPALITY",
-    "name": "Castricum"
+    "name": "Castricum",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "383"
   },
   {
     "id": 28,
     "type": "MUNICIPALITY",
-    "name": "Harlingen"
+    "name": "Harlingen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "72"
   },
   {
     "id": 285,
     "type": "MUNICIPALITY",
-    "name": "Hengelo"
+    "name": "Hengelo",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "164"
   },
   {
     "id": 227,
     "type": "MUNICIPALITY",
-    "name": "Amsterdam"
+    "name": "Amsterdam",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "363"
   },
   {
     "id": 443,
     "type": "PROVINCE",
-    "name": "Zuid-Holland"
+    "name": "Zuid-Holland",
+    "roadOperatorType": "Province",
+    "roadOperatorCode": "ZH"
   },
   {
     "id": 249,
     "type": "MUNICIPALITY",
-    "name": "Hoorn"
+    "name": "Hoorn",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "405"
   },
   {
     "id": 62,
     "type": "MUNICIPALITY",
-    "name": "Elburg"
+    "name": "Elburg",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "230"
   },
   {
     "id": 172,
     "type": "MUNICIPALITY",
-    "name": "Cranendonck"
+    "name": "Cranendonck",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1706"
   },
   {
     "id": 250,
     "type": "MUNICIPALITY",
-    "name": "Huizen"
+    "name": "Huizen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "406"
   },
   {
     "id": 47,
     "type": "MUNICIPALITY",
-    "name": "Apeldoorn"
+    "name": "Apeldoorn",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "200"
   },
   {
     "id": 48,
     "type": "MUNICIPALITY",
-    "name": "Arnhem"
+    "name": "Arnhem",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "202"
   },
   {
     "id": 2,
     "type": "MUNICIPALITY",
-    "name": "Assen"
+    "name": "Assen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "106"
   },
   {
     "id": 161,
     "type": "MUNICIPALITY",
-    "name": "Asten"
+    "name": "Asten",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "743"
   },
   {
     "id": 13,
     "type": "PROVINCE",
-    "name": "Drenthe"
+    "name": "Drenthe",
+    "roadOperatorType": "Province",
+    "roadOperatorCode": "DR"
   },
   {
     "id": 56,
     "type": "MUNICIPALITY",
-    "name": "Culemborg"
+    "name": "Culemborg",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "216"
   },
   {
     "id": 45,
     "type": "PROVINCE",
-    "name": "Friesland"
+    "name": "Friesland",
+    "roadOperatorType": "Province",
+    "roadOperatorCode": "FR"
   },
   {
     "id": 100,
     "type": "PROVINCE",
-    "name": "Gelderland"
+    "name": "Gelderland",
+    "roadOperatorType": "Province",
+    "roadOperatorCode": "GL"
   },
   {
     "id": 124,
     "type": "PROVINCE",
-    "name": "Groningen"
+    "name": "Groningen",
+    "roadOperatorType": "Province",
+    "roadOperatorCode": "GR"
   },
   {
     "id": 158,
     "type": "PROVINCE",
-    "name": "Limburg"
+    "name": "Limburg",
+    "roadOperatorType": "Province",
+    "roadOperatorCode": "LB"
   },
   {
     "id": 162,
     "type": "MUNICIPALITY",
-    "name": "Baarle-Nassau"
+    "name": "Baarle-Nassau",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "744"
   },
   {
     "id": 230,
     "type": "MUNICIPALITY",
-    "name": "Beverwijk"
+    "name": "Beverwijk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "375"
   },
   {
     "id": 319,
     "type": "MUNICIPALITY",
-    "name": "Baarn"
+    "name": "Baarn",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "308"
   },
   {
     "id": 933,
@@ -582,67 +689,93 @@
   {
     "id": 385,
     "type": "MUNICIPALITY",
-    "name": "Barendrecht"
+    "name": "Barendrecht",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "489"
   },
   {
     "id": 444,
     "type": "MUNICIPALITY",
-    "name": "Waadhoeke"
+    "name": "Waadhoeke",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1949"
   },
   {
     "id": 272,
     "type": "PROVINCE",
-    "name": "Noord-Holland"
+    "name": "Noord-Holland",
+    "roadOperatorType": "Province",
+    "roadOperatorCode": "NH"
   },
   {
     "id": 301,
     "type": "PROVINCE",
-    "name": "Overijssel"
+    "name": "Overijssel",
+    "roadOperatorType": "Province",
+    "roadOperatorCode": "OV"
   },
   {
     "id": 345,
     "type": "PROVINCE",
-    "name": "Utrecht"
+    "name": "Utrecht",
+    "roadOperatorType": "Province",
+    "roadOperatorCode": "UT"
   },
   {
     "id": 89,
     "type": "MUNICIPALITY",
-    "name": "Scherpenzeel"
+    "name": "Scherpenzeel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "279"
   },
   {
     "id": 49,
     "type": "MUNICIPALITY",
-    "name": "Barneveld"
+    "name": "Barneveld",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "203"
   },
   {
     "id": 461,
     "type": "MUNICIPALITY",
-    "name": "Beekdaelen"
+    "name": "Beekdaelen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1954"
   },
   {
     "id": 152,
     "type": "MUNICIPALITY",
-    "name": "Vaals"
+    "name": "Vaals",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "981"
   },
   {
     "id": 231,
     "type": "MUNICIPALITY",
-    "name": "Blaricum"
+    "name": "Blaricum",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "376"
   },
   {
     "id": 126,
     "type": "MUNICIPALITY",
-    "name": "Beesel"
+    "name": "Beesel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "889"
   },
   {
     "id": 163,
     "type": "MUNICIPALITY",
-    "name": "Bergeijk"
+    "name": "Bergeijk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1724"
   },
   {
     "id": 413,
     "type": "MUNICIPALITY",
-    "name": "Maassluis"
+    "name": "Maassluis",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "556"
   },
   {
     "id": 926,
@@ -662,7 +795,9 @@
   {
     "id": 50,
     "type": "MUNICIPALITY",
-    "name": "Berg en Dal"
+    "name": "Berg en Dal",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1945"
   },
   {
     "id": 1124,
@@ -677,7 +812,9 @@
   {
     "id": 15,
     "type": "MUNICIPALITY",
-    "name": "Dronten"
+    "name": "Dronten",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "303"
   },
   {
     "id": 1126,
@@ -687,7 +824,9 @@
   {
     "id": 129,
     "type": "MUNICIPALITY",
-    "name": "Echt-Susteren"
+    "name": "Echt-Susteren",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1711"
   },
   {
     "id": 1127,
@@ -697,7 +836,9 @@
   {
     "id": 237,
     "type": "MUNICIPALITY",
-    "name": "Edam-Volendam"
+    "name": "Edam-Volendam",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "385"
   },
   {
     "id": 1128,
@@ -707,7 +848,9 @@
   {
     "id": 127,
     "type": "MUNICIPALITY",
-    "name": "Bergen (L.)"
+    "name": "Bergen (L.)",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "893"
   },
   {
     "id": 1129,
@@ -717,7 +860,1822 @@
   {
     "id": 229,
     "type": "MUNICIPALITY",
-    "name": "Bergen (NH.)"
+    "name": "Bergen (NH.)",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "373"
+  },
+  {
+    "id": 20,
+    "type": "PROVINCE",
+    "name": "Flevoland",
+    "roadOperatorType": "Province",
+    "roadOperatorCode": "FL"
+  },
+  {
+    "id": 164,
+    "type": "MUNICIPALITY",
+    "name": "Bergen op Zoom",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "748"
+  },
+  {
+    "id": 381,
+    "type": "PROVINCE",
+    "name": "Zeeland",
+    "roadOperatorType": "Province",
+    "roadOperatorCode": "ZL"
+  },
+  {
+    "id": 303,
+    "type": "ROAD_AUTHORITY",
+    "name": "Midden-Nederland District Zuid",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "137"
+  },
+  {
+    "id": 307,
+    "type": "ROAD_AUTHORITY",
+    "name": "Oost-Nederland District Oost",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "159"
+  },
+  {
+    "id": 310,
+    "type": "ROAD_AUTHORITY",
+    "name": "West-Nederland Noord District Zuid",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "186"
+  },
+  {
+    "id": 313,
+    "type": "ROAD_AUTHORITY",
+    "name": "Zee en Delta District Noord",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "143"
+  },
+  {
+    "id": 317,
+    "type": "ROAD_AUTHORITY",
+    "name": "Zuid-Nederland District Zuid-Oost",
+    "roadOperatorType": "State",
+    "roadOperatorCode": "195"
+  },
+  {
+    "id": 876,
+    "type": "MISCELLANEOUS",
+    "name": "North Sea Port",
+    "roadOperatorType": "Other",
+    "roadOperatorCode": "NSP"
+  },
+  {
+    "id": 1,
+    "type": "MUNICIPALITY",
+    "name": "Aa en Hunze",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1680"
+  },
+  {
+    "id": 14,
+    "type": "MUNICIPALITY",
+    "name": "Almere",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "34"
+  },
+  {
+    "id": 149,
+    "type": "MUNICIPALITY",
+    "name": "Simpelveld",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "965"
+  },
+  {
+    "id": 462,
+    "type": "MUNICIPALITY",
+    "name": "Altena",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1959"
+  },
+  {
+    "id": 318,
+    "type": "MUNICIPALITY",
+    "name": "Amersfoort",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "307"
+  },
+  {
+    "id": 52,
+    "type": "MUNICIPALITY",
+    "name": "Beuningen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "209"
+  },
+  {
+    "id": 167,
+    "type": "MUNICIPALITY",
+    "name": "Bladel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1728"
+  },
+  {
+    "id": 387,
+    "type": "MUNICIPALITY",
+    "name": "Bodegraven-Reeuwijk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1901"
+  },
+  {
+    "id": 168,
+    "type": "MUNICIPALITY",
+    "name": "Boekel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "755"
+  },
+  {
+    "id": 54,
+    "type": "MUNICIPALITY",
+    "name": "Brummen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "213"
+  },
+  {
+    "id": 3,
+    "type": "MUNICIPALITY",
+    "name": "Borger-Odoorn",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1681"
+  },
+  {
+    "id": 171,
+    "type": "MUNICIPALITY",
+    "name": "Breda",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "758"
+  },
+  {
+    "id": 61,
+    "type": "MUNICIPALITY",
+    "name": "Ede",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "228"
+  },
+  {
+    "id": 53,
+    "type": "MUNICIPALITY",
+    "name": "Bronckhorst",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1876"
+  },
+  {
+    "id": 177,
+    "type": "MUNICIPALITY",
+    "name": "Eersel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "770"
+  },
+  {
+    "id": 55,
+    "type": "MUNICIPALITY",
+    "name": "Buren",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "214"
+  },
+  {
+    "id": 389,
+    "type": "MUNICIPALITY",
+    "name": "Capelle aan den IJssel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "502"
+  },
+  {
+    "id": 4,
+    "type": "MUNICIPALITY",
+    "name": "Coevorden",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "109"
+  },
+  {
+    "id": 130,
+    "type": "MUNICIPALITY",
+    "name": "Eijsden-Margraten",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1903"
+  },
+  {
+    "id": 278,
+    "type": "MUNICIPALITY",
+    "name": "Dalfsen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "148"
+  },
+  {
+    "id": 178,
+    "type": "MUNICIPALITY",
+    "name": "Eindhoven",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "772"
+  },
+  {
+    "id": 23,
+    "type": "MUNICIPALITY",
+    "name": "Dantumadiel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1891"
+  },
+  {
+    "id": 323,
+    "type": "MUNICIPALITY",
+    "name": "De Bilt",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "310"
+  },
+  {
+    "id": 24,
+    "type": "MUNICIPALITY",
+    "name": "De Fryske Marren",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1940"
+  },
+  {
+    "id": 391,
+    "type": "MUNICIPALITY",
+    "name": "Delft",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "503"
+  },
+  {
+    "id": 234,
+    "type": "MUNICIPALITY",
+    "name": "Den Helder",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "400"
+  },
+  {
+    "id": 324,
+    "type": "MUNICIPALITY",
+    "name": "De Ronde Venen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "736"
+  },
+  {
+    "id": 238,
+    "type": "MUNICIPALITY",
+    "name": "Enkhuizen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "388"
+  },
+  {
+    "id": 174,
+    "type": "MUNICIPALITY",
+    "name": "Deurne",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "762"
+  },
+  {
+    "id": 279,
+    "type": "MUNICIPALITY",
+    "name": "Deventer",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "150"
+  },
+  {
+    "id": 5,
+    "type": "MUNICIPALITY",
+    "name": "De Wolden",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1690"
+  },
+  {
+    "id": 235,
+    "type": "MUNICIPALITY",
+    "name": "Diemen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "384"
+  },
+  {
+    "id": 280,
+    "type": "MUNICIPALITY",
+    "name": "Dinkelland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1774"
+  },
+  {
+    "id": 57,
+    "type": "MUNICIPALITY",
+    "name": "Doesburg",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "221"
+  },
+  {
+    "id": 58,
+    "type": "MUNICIPALITY",
+    "name": "Doetinchem",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "222"
+  },
+  {
+    "id": 175,
+    "type": "MUNICIPALITY",
+    "name": "Dongen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "766"
+  },
+  {
+    "id": 392,
+    "type": "MUNICIPALITY",
+    "name": "Dordrecht",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "505"
+  },
+  {
+    "id": 236,
+    "type": "MUNICIPALITY",
+    "name": "Drechterland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "498"
+  },
+  {
+    "id": 59,
+    "type": "MUNICIPALITY",
+    "name": "Druten",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "225"
+  },
+  {
+    "id": 60,
+    "type": "MUNICIPALITY",
+    "name": "Duiven",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "226"
+  },
+  {
+    "id": 506,
+    "type": "MUNICIPALITY",
+    "name": "Eemsdelta",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1979"
+  },
+  {
+    "id": 291,
+    "type": "MUNICIPALITY",
+    "name": "Ommen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "175"
+  },
+  {
+    "id": 6,
+    "type": "MUNICIPALITY",
+    "name": "Emmen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "114"
+  },
+  {
+    "id": 281,
+    "type": "MUNICIPALITY",
+    "name": "Enschede",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "153"
+  },
+  {
+    "id": 179,
+    "type": "MUNICIPALITY",
+    "name": "Etten-Leur",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "777"
+  },
+  {
+    "id": 63,
+    "type": "MUNICIPALITY",
+    "name": "Epe",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "232"
+  },
+  {
+    "id": 64,
+    "type": "MUNICIPALITY",
+    "name": "Ermelo",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "233"
+  },
+  {
+    "id": 131,
+    "type": "MUNICIPALITY",
+    "name": "Gennep",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "907"
+  },
+  {
+    "id": 394,
+    "type": "MUNICIPALITY",
+    "name": "Goeree-Overflakkee",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1924"
+  },
+  {
+    "id": 369,
+    "type": "MUNICIPALITY",
+    "name": "Goes",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "664"
+  },
+  {
+    "id": 107,
+    "type": "MUNICIPALITY",
+    "name": "Groningen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "14"
+  },
+  {
+    "id": 132,
+    "type": "MUNICIPALITY",
+    "name": "Gulpen-Wittem",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1729"
+  },
+  {
+    "id": 282,
+    "type": "MUNICIPALITY",
+    "name": "Haaksbergen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "158"
+  },
+  {
+    "id": 242,
+    "type": "MUNICIPALITY",
+    "name": "Haarlemmermeer",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "394"
+  },
+  {
+    "id": 187,
+    "type": "MUNICIPALITY",
+    "name": "Halderberge",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1655"
+  },
+  {
+    "id": 261,
+    "type": "MUNICIPALITY",
+    "name": "Stede Broec",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "532"
+  },
+  {
+    "id": 283,
+    "type": "MUNICIPALITY",
+    "name": "Hardenberg",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "160"
+  },
+  {
+    "id": 66,
+    "type": "MUNICIPALITY",
+    "name": "Harderwijk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "243"
+  },
+  {
+    "id": 67,
+    "type": "MUNICIPALITY",
+    "name": "Hattem",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "244"
+  },
+  {
+    "id": 243,
+    "type": "MUNICIPALITY",
+    "name": "Heemskerk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "396"
+  },
+  {
+    "id": 244,
+    "type": "MUNICIPALITY",
+    "name": "Heemstede",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "397"
+  },
+  {
+    "id": 68,
+    "type": "MUNICIPALITY",
+    "name": "Heerde",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "246"
+  },
+  {
+    "id": 133,
+    "type": "MUNICIPALITY",
+    "name": "Heerlen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "917"
+  },
+  {
+    "id": 29,
+    "type": "MUNICIPALITY",
+    "name": "Heerenveen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "74"
+  },
+  {
+    "id": 188,
+    "type": "MUNICIPALITY",
+    "name": "Heeze-Leende",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1658"
+  },
+  {
+    "id": 246,
+    "type": "MUNICIPALITY",
+    "name": "Heiloo",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "399"
+  },
+  {
+    "id": 284,
+    "type": "MUNICIPALITY",
+    "name": "Hellendoorn",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "163"
+  },
+  {
+    "id": 428,
+    "type": "MUNICIPALITY",
+    "name": "'s-Gravenhage",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "518"
+  },
+  {
+    "id": 479,
+    "type": "MUNICIPALITY",
+    "name": "Het Hogeland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1966"
+  },
+  {
+    "id": 206,
+    "type": "MUNICIPALITY",
+    "name": "'s-Hertogenbosch",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "796"
+  },
+  {
+    "id": 69,
+    "type": "MUNICIPALITY",
+    "name": "Heumen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "252"
+  },
+  {
+    "id": 190,
+    "type": "MUNICIPALITY",
+    "name": "Heusden",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "797"
+  },
+  {
+    "id": 400,
+    "type": "MUNICIPALITY",
+    "name": "Hillegom",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "534"
+  },
+  {
+    "id": 191,
+    "type": "MUNICIPALITY",
+    "name": "Hilvarenbeek",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "798"
+  },
+  {
+    "id": 90,
+    "type": "MUNICIPALITY",
+    "name": "Tiel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "281"
+  },
+  {
+    "id": 247,
+    "type": "MUNICIPALITY",
+    "name": "Hilversum",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "402"
+  },
+  {
+    "id": 370,
+    "type": "MUNICIPALITY",
+    "name": "Hulst",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "677"
+  },
+  {
+    "id": 466,
+    "type": "MUNICIPALITY",
+    "name": "Hoeksche Waard",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1963"
+  },
+  {
+    "id": 286,
+    "type": "MUNICIPALITY",
+    "name": "Hof van Twente",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1735"
+  },
+  {
+    "id": 248,
+    "type": "MUNICIPALITY",
+    "name": "Hollands Kroon",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1911"
+  },
+  {
+    "id": 7,
+    "type": "MUNICIPALITY",
+    "name": "Hoogeveen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "118"
+  },
+  {
+    "id": 134,
+    "type": "MUNICIPALITY",
+    "name": "Horst aan de Maas",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1507"
+  },
+  {
+    "id": 326,
+    "type": "MUNICIPALITY",
+    "name": "Houten",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "321"
+  },
+  {
+    "id": 401,
+    "type": "MUNICIPALITY",
+    "name": "Kaag en Braassem",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1884"
+  },
+  {
+    "id": 287,
+    "type": "MUNICIPALITY",
+    "name": "Kampen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "166"
+  },
+  {
+    "id": 406,
+    "type": "MUNICIPALITY",
+    "name": "Krimpenerwaard",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1931"
+  },
+  {
+    "id": 192,
+    "type": "MUNICIPALITY",
+    "name": "Laarbeek",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1659"
+  },
+  {
+    "id": 579,
+    "type": "MUNICIPALITY",
+    "name": "Land van Cuijk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1982"
+  },
+  {
+    "id": 252,
+    "type": "MUNICIPALITY",
+    "name": "Landsmeer",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "415"
+  },
+  {
+    "id": 32,
+    "type": "MUNICIPALITY",
+    "name": "Leeuwarden",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "80"
+  },
+  {
+    "id": 409,
+    "type": "MUNICIPALITY",
+    "name": "Leiden",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "546"
+  },
+  {
+    "id": 410,
+    "type": "MUNICIPALITY",
+    "name": "Leiderdorp",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "547"
+  },
+  {
+    "id": 411,
+    "type": "MUNICIPALITY",
+    "name": "Leidschendam-Voorburg",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1916"
+  },
+  {
+    "id": 214,
+    "type": "MUNICIPALITY",
+    "name": "Valkenswaard",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "858"
+  },
+  {
+    "id": 16,
+    "type": "MUNICIPALITY",
+    "name": "Lelystad",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "995"
+  },
+  {
+    "id": 328,
+    "type": "MUNICIPALITY",
+    "name": "Leusden",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "327"
+  },
+  {
+    "id": 81,
+    "type": "MUNICIPALITY",
+    "name": "Oost Gelre",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1586"
+  },
+  {
+    "id": 137,
+    "type": "MUNICIPALITY",
+    "name": "Leudal",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1640"
+  },
+  {
+    "id": 257,
+    "type": "MUNICIPALITY",
+    "name": "Opmeer",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "432"
+  },
+  {
+    "id": 71,
+    "type": "MUNICIPALITY",
+    "name": "Lingewaard",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1705"
+  },
+  {
+    "id": 412,
+    "type": "MUNICIPALITY",
+    "name": "Lisse",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "553"
+  },
+  {
+    "id": 72,
+    "type": "MUNICIPALITY",
+    "name": "Lochem",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "262"
+  },
+  {
+    "id": 194,
+    "type": "MUNICIPALITY",
+    "name": "Loon op Zand",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "809"
+  },
+  {
+    "id": 288,
+    "type": "MUNICIPALITY",
+    "name": "Losser",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "168"
+  },
+  {
+    "id": 73,
+    "type": "MUNICIPALITY",
+    "name": "Maasdriel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "263"
+  },
+  {
+    "id": 138,
+    "type": "MUNICIPALITY",
+    "name": "Maasgouw",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1641"
+  },
+  {
+    "id": 578,
+    "type": "MUNICIPALITY",
+    "name": "Maashorst",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1991"
+  },
+  {
+    "id": 139,
+    "type": "MUNICIPALITY",
+    "name": "Maastricht",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "935"
+  },
+  {
+    "id": 255,
+    "type": "MUNICIPALITY",
+    "name": "Medemblik",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "420"
+  },
+  {
+    "id": 140,
+    "type": "MUNICIPALITY",
+    "name": "Meerssen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "938"
+  },
+  {
+    "id": 422,
+    "type": "MUNICIPALITY",
+    "name": "Papendrecht",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "590"
+  },
+  {
+    "id": 195,
+    "type": "MUNICIPALITY",
+    "name": "Meierijstad",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1948"
+  },
+  {
+    "id": 8,
+    "type": "MUNICIPALITY",
+    "name": "Meppel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "119"
+  },
+  {
+    "id": 372,
+    "type": "MUNICIPALITY",
+    "name": "Middelburg",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "687"
+  },
+  {
+    "id": 414,
+    "type": "MUNICIPALITY",
+    "name": "Midden-Delfland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1842"
+  },
+  {
+    "id": 9,
+    "type": "MUNICIPALITY",
+    "name": "Midden-Drenthe",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1731"
+  },
+  {
+    "id": 197,
+    "type": "MUNICIPALITY",
+    "name": "Moerdijk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1709"
+  },
+  {
+    "id": 201,
+    "type": "MUNICIPALITY",
+    "name": "Oosterhout",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "826"
+  },
+  {
+    "id": 446,
+    "type": "MUNICIPALITY",
+    "name": "Midden-Groningen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1952"
+  },
+  {
+    "id": 330,
+    "type": "MUNICIPALITY",
+    "name": "Montfoort",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "335"
+  },
+  {
+    "id": 74,
+    "type": "MUNICIPALITY",
+    "name": "Montferland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1955"
+  },
+  {
+    "id": 141,
+    "type": "MUNICIPALITY",
+    "name": "Mook en Middelaar",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "944"
+  },
+  {
+    "id": 75,
+    "type": "MUNICIPALITY",
+    "name": "Neder-Betuwe",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1740"
+  },
+  {
+    "id": 417,
+    "type": "MUNICIPALITY",
+    "name": "Nissewaard",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1930"
+  },
+  {
+    "id": 142,
+    "type": "MUNICIPALITY",
+    "name": "Nederweert",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "946"
+  },
+  {
+    "id": 198,
+    "type": "MUNICIPALITY",
+    "name": "Nuenen, Gerwen en Nederwetten",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "820"
+  },
+  {
+    "id": 331,
+    "type": "MUNICIPALITY",
+    "name": "Nieuwegein",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "356"
+  },
+  {
+    "id": 416,
+    "type": "MUNICIPALITY",
+    "name": "Nieuwkoop",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "569"
+  },
+  {
+    "id": 77,
+    "type": "MUNICIPALITY",
+    "name": "Nijkerk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "267"
+  },
+  {
+    "id": 78,
+    "type": "MUNICIPALITY",
+    "name": "Nijmegen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "268"
+  },
+  {
+    "id": 467,
+    "type": "MUNICIPALITY",
+    "name": "Noardeast-Fryslân",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1970"
+  },
+  {
+    "id": 373,
+    "type": "MUNICIPALITY",
+    "name": "Noord-Beveland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1695"
+  },
+  {
+    "id": 10,
+    "type": "MUNICIPALITY",
+    "name": "Noordenveld",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1699"
+  },
+  {
+    "id": 79,
+    "type": "MUNICIPALITY",
+    "name": "Nunspeet",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "302"
+  },
+  {
+    "id": 17,
+    "type": "MUNICIPALITY",
+    "name": "Noordoostpolder",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "171"
+  },
+  {
+    "id": 418,
+    "type": "MUNICIPALITY",
+    "name": "Noordwijk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "575"
+  },
+  {
+    "id": 199,
+    "type": "MUNICIPALITY",
+    "name": "Oirschot",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "823"
+  },
+  {
+    "id": 200,
+    "type": "MUNICIPALITY",
+    "name": "Oisterwijk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "824"
+  },
+  {
+    "id": 115,
+    "type": "MUNICIPALITY",
+    "name": "Oldambt",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1895"
+  },
+  {
+    "id": 80,
+    "type": "MUNICIPALITY",
+    "name": "Oldebroek",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "269"
+  },
+  {
+    "id": 36,
+    "type": "MUNICIPALITY",
+    "name": "Ooststellingwerf",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "85"
+  },
+  {
+    "id": 256,
+    "type": "MUNICIPALITY",
+    "name": "Oostzaan",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "431"
+  },
+  {
+    "id": 37,
+    "type": "MUNICIPALITY",
+    "name": "Opsterland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "86"
+  },
+  {
+    "id": 202,
+    "type": "MUNICIPALITY",
+    "name": "Oss",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "828"
+  },
+  {
+    "id": 85,
+    "type": "MUNICIPALITY",
+    "name": "Renkum",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "274"
+  },
+  {
+    "id": 82,
+    "type": "MUNICIPALITY",
+    "name": "Oude IJsselstreek",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1509"
+  },
+  {
+    "id": 258,
+    "type": "MUNICIPALITY",
+    "name": "Ouder-Amstel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "437"
+  },
+  {
+    "id": 332,
+    "type": "MUNICIPALITY",
+    "name": "Oudewater",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "589"
+  },
+  {
+    "id": 83,
+    "type": "MUNICIPALITY",
+    "name": "Overbetuwe",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1734"
+  },
+  {
+    "id": 145,
+    "type": "MUNICIPALITY",
+    "name": "Peel en Maas",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1894"
+  },
+  {
+    "id": 333,
+    "type": "MUNICIPALITY",
+    "name": "Renswoude",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "339"
+  },
+  {
+    "id": 203,
+    "type": "MUNICIPALITY",
+    "name": "Reusel-De Mierden",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1667"
+  },
+  {
+    "id": 116,
+    "type": "MUNICIPALITY",
+    "name": "Pekela",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "765"
+  },
+  {
+    "id": 423,
+    "type": "MUNICIPALITY",
+    "name": "Pijnacker-Nootdorp",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1926"
+  },
+  {
+    "id": 259,
+    "type": "MUNICIPALITY",
+    "name": "Purmerend",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "439"
+  },
+  {
+    "id": 343,
+    "type": "MUNICIPALITY",
+    "name": "Woudenberg",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "351"
+  },
+  {
+    "id": 84,
+    "type": "MUNICIPALITY",
+    "name": "Putten",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "273"
+  },
+  {
+    "id": 424,
+    "type": "MUNICIPALITY",
+    "name": "Ridderkerk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "597"
+  },
+  {
+    "id": 292,
+    "type": "MUNICIPALITY",
+    "name": "Raalte",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "177"
+  },
+  {
+    "id": 374,
+    "type": "MUNICIPALITY",
+    "name": "Reimerswaal",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "703"
+  },
+  {
+    "id": 86,
+    "type": "MUNICIPALITY",
+    "name": "Rheden",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "275"
+  },
+  {
+    "id": 334,
+    "type": "MUNICIPALITY",
+    "name": "Rhenen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "340"
+  },
+  {
+    "id": 293,
+    "type": "MUNICIPALITY",
+    "name": "Rijssen-Holten",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1742"
+  },
+  {
+    "id": 425,
+    "type": "MUNICIPALITY",
+    "name": "Rijswijk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "603"
+  },
+  {
+    "id": 146,
+    "type": "MUNICIPALITY",
+    "name": "Roerdalen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1669"
+  },
+  {
+    "id": 147,
+    "type": "MUNICIPALITY",
+    "name": "Roermond",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "957"
+  },
+  {
+    "id": 204,
+    "type": "MUNICIPALITY",
+    "name": "Roosendaal",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1674"
+  },
+  {
+    "id": 205,
+    "type": "MUNICIPALITY",
+    "name": "Rucphen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "840"
+  },
+  {
+    "id": 260,
+    "type": "MUNICIPALITY",
+    "name": "Schagen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "441"
+  },
+  {
+    "id": 427,
+    "type": "MUNICIPALITY",
+    "name": "Schiedam",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "606"
+  },
+  {
+    "id": 375,
+    "type": "MUNICIPALITY",
+    "name": "Schouwen-Duiveland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1676"
+  },
+  {
+    "id": 208,
+    "type": "MUNICIPALITY",
+    "name": "Sint-Michielsgestel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "845"
+  },
+  {
+    "id": 150,
+    "type": "MUNICIPALITY",
+    "name": "Sittard-Geleen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1883"
+  },
+  {
+    "id": 379,
+    "type": "MUNICIPALITY",
+    "name": "Veere",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "717"
+  },
+  {
+    "id": 429,
+    "type": "MUNICIPALITY",
+    "name": "Sliedrecht",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "610"
+  },
+  {
+    "id": 376,
+    "type": "MUNICIPALITY",
+    "name": "Sluis",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1714"
+  },
+  {
+    "id": 39,
+    "type": "MUNICIPALITY",
+    "name": "Smallingerland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "90"
+  },
+  {
+    "id": 211,
+    "type": "MUNICIPALITY",
+    "name": "Steenbergen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "851"
+  },
+  {
+    "id": 335,
+    "type": "MUNICIPALITY",
+    "name": "Soest",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "342"
+  },
+  {
+    "id": 209,
+    "type": "MUNICIPALITY",
+    "name": "Someren",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "847"
+  },
+  {
+    "id": 210,
+    "type": "MUNICIPALITY",
+    "name": "Son en Breugel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "848"
+  },
+  {
+    "id": 118,
+    "type": "MUNICIPALITY",
+    "name": "Stadskanaal",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "37"
+  },
+  {
+    "id": 294,
+    "type": "MUNICIPALITY",
+    "name": "Staphorst",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "180"
+  },
+  {
+    "id": 378,
+    "type": "MUNICIPALITY",
+    "name": "Tholen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "716"
+  },
+  {
+    "id": 295,
+    "type": "MUNICIPALITY",
+    "name": "Steenwijkerland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1708"
+  },
+  {
+    "id": 151,
+    "type": "MUNICIPALITY",
+    "name": "Stein",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "971"
+  },
+  {
+    "id": 40,
+    "type": "MUNICIPALITY",
+    "name": "Súdwest-Fryslân",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1900"
+  },
+  {
+    "id": 377,
+    "type": "MUNICIPALITY",
+    "name": "Terneuzen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "715"
+  },
+  {
+    "id": 262,
+    "type": "MUNICIPALITY",
+    "name": "Texel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "448"
+  },
+  {
+    "id": 431,
+    "type": "MUNICIPALITY",
+    "name": "Teylingen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1525"
+  },
+  {
+    "id": 212,
+    "type": "MUNICIPALITY",
+    "name": "Tilburg",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "855"
+  },
+  {
+    "id": 296,
+    "type": "MUNICIPALITY",
+    "name": "Tubbergen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "183"
+  },
+  {
+    "id": 297,
+    "type": "MUNICIPALITY",
+    "name": "Twenterand",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1700"
+  },
+  {
+    "id": 11,
+    "type": "MUNICIPALITY",
+    "name": "Tynaarlo",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1730"
+  },
+  {
+    "id": 42,
+    "type": "MUNICIPALITY",
+    "name": "Tytsjerksteradiel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "737"
+  },
+  {
+    "id": 263,
+    "type": "MUNICIPALITY",
+    "name": "Uitgeest",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "450"
+  },
+  {
+    "id": 264,
+    "type": "MUNICIPALITY",
+    "name": "Uithoorn",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "451"
+  },
+  {
+    "id": 18,
+    "type": "MUNICIPALITY",
+    "name": "Urk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "184"
+  },
+  {
+    "id": 337,
+    "type": "MUNICIPALITY",
+    "name": "Utrecht",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "344"
+  },
+  {
+    "id": 120,
+    "type": "MUNICIPALITY",
+    "name": "Veendam",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "47"
+  },
+  {
+    "id": 338,
+    "type": "MUNICIPALITY",
+    "name": "Utrechtse Heuvelrug",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1581"
+  },
+  {
+    "id": 153,
+    "type": "MUNICIPALITY",
+    "name": "Valkenburg aan de Geul",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "994"
+  },
+  {
+    "id": 215,
+    "type": "MUNICIPALITY",
+    "name": "Veldhoven",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "861"
+  },
+  {
+    "id": 265,
+    "type": "MUNICIPALITY",
+    "name": "Velsen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "453"
+  },
+  {
+    "id": 154,
+    "type": "MUNICIPALITY",
+    "name": "Venlo",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "983"
+  },
+  {
+    "id": 155,
+    "type": "MUNICIPALITY",
+    "name": "Venray",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "984"
+  },
+  {
+    "id": 464,
+    "type": "MUNICIPALITY",
+    "name": "Vijfheerenlanden",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1961"
+  },
+  {
+    "id": 380,
+    "type": "MUNICIPALITY",
+    "name": "Vlissingen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "718"
+  },
+  {
+    "id": 432,
+    "type": "MUNICIPALITY",
+    "name": "Vlaardingen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "622"
+  },
+  {
+    "id": 904,
+    "type": "MUNICIPALITY",
+    "name": "Voorne aan Zee",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1992"
+  },
+  {
+    "id": 433,
+    "type": "MUNICIPALITY",
+    "name": "Voorschoten",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "626"
+  },
+  {
+    "id": 217,
+    "type": "MUNICIPALITY",
+    "name": "Waalre",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "866"
+  },
+  {
+    "id": 91,
+    "type": "MUNICIPALITY",
+    "name": "Voorst",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "285"
+  },
+  {
+    "id": 216,
+    "type": "MUNICIPALITY",
+    "name": "Vught",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "865"
+  },
+  {
+    "id": 267,
+    "type": "MUNICIPALITY",
+    "name": "Weesp",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "457"
+  },
+  {
+    "id": 434,
+    "type": "MUNICIPALITY",
+    "name": "Waddinxveen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "627"
+  },
+  {
+    "id": 92,
+    "type": "MUNICIPALITY",
+    "name": "Wageningen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "289"
+  },
+  {
+    "id": 435,
+    "type": "MUNICIPALITY",
+    "name": "Wassenaar",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "629"
+  },
+  {
+    "id": 266,
+    "type": "MUNICIPALITY",
+    "name": "Waterland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "852"
+  },
+  {
+    "id": 157,
+    "type": "MUNICIPALITY",
+    "name": "Weert",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "988"
+  },
+  {
+    "id": 463,
+    "type": "MUNICIPALITY",
+    "name": "West Betuwe",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1960"
+  },
+  {
+    "id": 93,
+    "type": "MUNICIPALITY",
+    "name": "West Maas en Waal",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "668"
+  },
+  {
+    "id": 94,
+    "type": "MUNICIPALITY",
+    "name": "Westervoort",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "293"
+  },
+  {
+    "id": 480,
+    "type": "MUNICIPALITY",
+    "name": "Westerkwartier",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1969"
+  },
+  {
+    "id": 436,
+    "type": "MUNICIPALITY",
+    "name": "Westland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1783"
+  },
+  {
+    "id": 12,
+    "type": "MUNICIPALITY",
+    "name": "Westerveld",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1701"
+  },
+  {
+    "id": 220,
+    "type": "MUNICIPALITY",
+    "name": "Woensdrecht",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "873"
+  },
+  {
+    "id": 445,
+    "type": "MUNICIPALITY",
+    "name": "Westerwolde",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1950"
+  },
+  {
+    "id": 44,
+    "type": "MUNICIPALITY",
+    "name": "Weststellingwerf",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "98"
+  },
+  {
+    "id": 298,
+    "type": "MUNICIPALITY",
+    "name": "Wierden",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "189"
+  },
+  {
+    "id": 95,
+    "type": "MUNICIPALITY",
+    "name": "Wijchen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "296"
+  },
+  {
+    "id": 268,
+    "type": "MUNICIPALITY",
+    "name": "Wijdemeren",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1696"
+  },
+  {
+    "id": 341,
+    "type": "MUNICIPALITY",
+    "name": "Wijk bij Duurstede",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "352"
+  },
+  {
+    "id": 96,
+    "type": "MUNICIPALITY",
+    "name": "Winterswijk",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "294"
+  },
+  {
+    "id": 342,
+    "type": "MUNICIPALITY",
+    "name": "Woerden",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "632"
+  },
+  {
+    "id": 269,
+    "type": "MUNICIPALITY",
+    "name": "Wormerland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "880"
+  },
+  {
+    "id": 270,
+    "type": "MUNICIPALITY",
+    "name": "Zaanstad",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "479"
+  },
+  {
+    "id": 97,
+    "type": "MUNICIPALITY",
+    "name": "Zaltbommel",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "297"
+  },
+  {
+    "id": 271,
+    "type": "MUNICIPALITY",
+    "name": "Zandvoort",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "473"
+  },
+  {
+    "id": 19,
+    "type": "MUNICIPALITY",
+    "name": "Zeewolde",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "50"
+  },
+  {
+    "id": 344,
+    "type": "MUNICIPALITY",
+    "name": "Zeist",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "355"
+  },
+  {
+    "id": 98,
+    "type": "MUNICIPALITY",
+    "name": "Zevenaar",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "299"
+  },
+  {
+    "id": 439,
+    "type": "MUNICIPALITY",
+    "name": "Zoetermeer",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "637"
+  },
+  {
+    "id": 440,
+    "type": "MUNICIPALITY",
+    "name": "Zoeterwoude",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "638"
+  },
+  {
+    "id": 441,
+    "type": "MUNICIPALITY",
+    "name": "Zuidplas",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1892"
+  },
+  {
+    "id": 99,
+    "type": "MUNICIPALITY",
+    "name": "Zutphen",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "301"
+  },
+  {
+    "id": 222,
+    "type": "MUNICIPALITY",
+    "name": "Zundert",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "879"
+  },
+  {
+    "id": 299,
+    "type": "MUNICIPALITY",
+    "name": "Zwartewaterland",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "1896"
+  },
+  {
+    "id": 442,
+    "type": "MUNICIPALITY",
+    "name": "Zwijndrecht",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "642"
+  },
+  {
+    "id": 300,
+    "type": "MUNICIPALITY",
+    "name": "Zwolle",
+    "roadOperatorType": "Municipality",
+    "roadOperatorCode": "193"
   },
   {
     "id": 1135,
@@ -725,1323 +2683,113 @@
     "name": "Amsterdam Centrum"
   },
   {
+    "id": 1139,
+    "type": "SUBMUNICIPALITY",
+    "name": "Amsterdam Nieuw-West"
+  },
+  {
+    "id": 1136,
+    "type": "SUBMUNICIPALITY",
+    "name": "Amsterdam Noord"
+  },
+  {
+    "id": 1141,
+    "type": "SUBMUNICIPALITY",
+    "name": "Amsterdam Oost"
+  },
+  {
+    "id": 1142,
+    "type": "SUBMUNICIPALITY",
+    "name": "Amsterdam Weesp"
+  },
+  {
     "id": 1138,
     "type": "SUBMUNICIPALITY",
     "name": "Amsterdam West"
   },
   {
-    "id": 20,
-    "type": "PROVINCE",
-    "name": "Flevoland"
+    "id": 1137,
+    "type": "SUBMUNICIPALITY",
+    "name": "Amsterdam Westpoort"
   },
   {
-    "id": 164,
-    "type": "MUNICIPALITY",
-    "name": "Bergen op Zoom"
+    "id": 1140,
+    "type": "SUBMUNICIPALITY",
+    "name": "Amsterdam Zuid"
   },
   {
-    "id": 381,
-    "type": "PROVINCE",
-    "name": "Zeeland"
+    "id": 1134,
+    "type": "SUBMUNICIPALITY",
+    "name": "Amsterdam Zuidoost"
   },
   {
-    "id": 303,
-    "type": "ROAD_AUTHORITY",
-    "name": "Midden-Nederland District Zuid"
+    "id": 447,
+    "type": "SUBMUNICIPALITY",
+    "name": "Rotterdam (Centrum)"
   },
   {
-    "id": 307,
-    "type": "ROAD_AUTHORITY",
-    "name": "Oost-Nederland District Oost"
+    "id": 448,
+    "type": "SUBMUNICIPALITY",
+    "name": "Rotterdam (Noord Oost)"
   },
   {
-    "id": 310,
-    "type": "ROAD_AUTHORITY",
-    "name": "West-Nederland Noord District Zuid"
+    "id": 468,
+    "type": "SUBMUNICIPALITY",
+    "name": "Rotterdam (Havengebied)"
   },
   {
-    "id": 313,
-    "type": "ROAD_AUTHORITY",
-    "name": "Zee en Delta District Noord"
+    "id": 450,
+    "type": "SUBMUNICIPALITY",
+    "name": "Rotterdam (Prins Alexander)"
   },
   {
-    "id": 317,
-    "type": "ROAD_AUTHORITY",
-    "name": "Zuid-Nederland District Zuid-Oost"
+    "id": 451,
+    "type": "SUBMUNICIPALITY",
+    "name": "Rotterdam (Zuid Oost)"
   },
   {
-    "id": 876,
-    "type": "MISCELLANEOUS",
-    "name": "North Sea Port"
+    "id": 452,
+    "type": "SUBMUNICIPALITY",
+    "name": "Rotterdam (Zuid West)"
   },
   {
-    "id": 1,
-    "type": "MUNICIPALITY",
-    "name": "Aa en Hunze"
+    "id": 453,
+    "type": "SUBMUNICIPALITY",
+    "name": "'s-Gravenhage (Centrum)"
   },
   {
-    "id": 14,
-    "type": "MUNICIPALITY",
-    "name": "Almere"
+    "id": 454,
+    "type": "SUBMUNICIPALITY",
+    "name": "'s-Gravenhage (Escamp)"
   },
   {
-    "id": 149,
-    "type": "MUNICIPALITY",
-    "name": "Simpelveld"
+    "id": 455,
+    "type": "SUBMUNICIPALITY",
+    "name": "'s-Gravenhage (Haagse Hout)"
   },
   {
-    "id": 462,
-    "type": "MUNICIPALITY",
-    "name": "Altena"
+    "id": 459,
+    "type": "SUBMUNICIPALITY",
+    "name": "'s-Gravenhage (Scheveningen)"
   },
   {
-    "id": 318,
-    "type": "MUNICIPALITY",
-    "name": "Amersfoort"
+    "id": 456,
+    "type": "SUBMUNICIPALITY",
+    "name": "'s-Gravenhage (Laak)"
   },
   {
-    "id": 52,
-    "type": "MUNICIPALITY",
-    "name": "Beuningen"
+    "id": 457,
+    "type": "SUBMUNICIPALITY",
+    "name": "'s-Gravenhage (Leidschenveen-Ypenburg)"
   },
   {
-    "id": 167,
-    "type": "MUNICIPALITY",
-    "name": "Bladel"
+    "id": 458,
+    "type": "SUBMUNICIPALITY",
+    "name": "'s-Gravenhage (Loosduinen)"
   },
   {
-    "id": 387,
-    "type": "MUNICIPALITY",
-    "name": "Bodegraven-Reeuwijk"
-  },
-  {
-    "id": 168,
-    "type": "MUNICIPALITY",
-    "name": "Boekel"
-  },
-  {
-    "id": 3,
-    "type": "MUNICIPALITY",
-    "name": "Borger-Odoorn"
-  },
-  {
-    "id": 171,
-    "type": "MUNICIPALITY",
-    "name": "Breda"
-  },
-  {
-    "id": 61,
-    "type": "MUNICIPALITY",
-    "name": "Ede"
-  },
-  {
-    "id": 53,
-    "type": "MUNICIPALITY",
-    "name": "Bronckhorst"
-  },
-  {
-    "id": 177,
-    "type": "MUNICIPALITY",
-    "name": "Eersel"
-  },
-  {
-    "id": 54,
-    "type": "MUNICIPALITY",
-    "name": "Brummen"
-  },
-  {
-    "id": 128,
-    "type": "MUNICIPALITY",
-    "name": "Brunssum"
-  },
-  {
-    "id": 55,
-    "type": "MUNICIPALITY",
-    "name": "Buren"
-  },
-  {
-    "id": 389,
-    "type": "MUNICIPALITY",
-    "name": "Capelle aan den IJssel"
-  },
-  {
-    "id": 4,
-    "type": "MUNICIPALITY",
-    "name": "Coevorden"
-  },
-  {
-    "id": 130,
-    "type": "MUNICIPALITY",
-    "name": "Eijsden-Margraten"
-  },
-  {
-    "id": 278,
-    "type": "MUNICIPALITY",
-    "name": "Dalfsen"
-  },
-  {
-    "id": 178,
-    "type": "MUNICIPALITY",
-    "name": "Eindhoven"
-  },
-  {
-    "id": 23,
-    "type": "MUNICIPALITY",
-    "name": "Dantumadiel"
-  },
-  {
-    "id": 323,
-    "type": "MUNICIPALITY",
-    "name": "De Bilt"
-  },
-  {
-    "id": 24,
-    "type": "MUNICIPALITY",
-    "name": "De Fryske Marren"
-  },
-  {
-    "id": 391,
-    "type": "MUNICIPALITY",
-    "name": "Delft"
-  },
-  {
-    "id": 234,
-    "type": "MUNICIPALITY",
-    "name": "Den Helder"
-  },
-  {
-    "id": 324,
-    "type": "MUNICIPALITY",
-    "name": "De Ronde Venen"
-  },
-  {
-    "id": 238,
-    "type": "MUNICIPALITY",
-    "name": "Enkhuizen"
-  },
-  {
-    "id": 174,
-    "type": "MUNICIPALITY",
-    "name": "Deurne"
-  },
-  {
-    "id": 279,
-    "type": "MUNICIPALITY",
-    "name": "Deventer"
-  },
-  {
-    "id": 5,
-    "type": "MUNICIPALITY",
-    "name": "De Wolden"
-  },
-  {
-    "id": 235,
-    "type": "MUNICIPALITY",
-    "name": "Diemen"
-  },
-  {
-    "id": 280,
-    "type": "MUNICIPALITY",
-    "name": "Dinkelland"
-  },
-  {
-    "id": 57,
-    "type": "MUNICIPALITY",
-    "name": "Doesburg"
-  },
-  {
-    "id": 58,
-    "type": "MUNICIPALITY",
-    "name": "Doetinchem"
-  },
-  {
-    "id": 175,
-    "type": "MUNICIPALITY",
-    "name": "Dongen"
-  },
-  {
-    "id": 392,
-    "type": "MUNICIPALITY",
-    "name": "Dordrecht"
-  },
-  {
-    "id": 236,
-    "type": "MUNICIPALITY",
-    "name": "Drechterland"
-  },
-  {
-    "id": 59,
-    "type": "MUNICIPALITY",
-    "name": "Druten"
-  },
-  {
-    "id": 60,
-    "type": "MUNICIPALITY",
-    "name": "Duiven"
-  },
-  {
-    "id": 506,
-    "type": "MUNICIPALITY",
-    "name": "Eemsdelta"
-  },
-  {
-    "id": 6,
-    "type": "MUNICIPALITY",
-    "name": "Emmen"
-  },
-  {
-    "id": 281,
-    "type": "MUNICIPALITY",
-    "name": "Enschede"
-  },
-  {
-    "id": 179,
-    "type": "MUNICIPALITY",
-    "name": "Etten-Leur"
-  },
-  {
-    "id": 63,
-    "type": "MUNICIPALITY",
-    "name": "Epe"
-  },
-  {
-    "id": 64,
-    "type": "MUNICIPALITY",
-    "name": "Ermelo"
-  },
-  {
-    "id": 131,
-    "type": "MUNICIPALITY",
-    "name": "Gennep"
-  },
-  {
-    "id": 394,
-    "type": "MUNICIPALITY",
-    "name": "Goeree-Overflakkee"
-  },
-  {
-    "id": 369,
-    "type": "MUNICIPALITY",
-    "name": "Goes"
-  },
-  {
-    "id": 107,
-    "type": "MUNICIPALITY",
-    "name": "Groningen"
-  },
-  {
-    "id": 132,
-    "type": "MUNICIPALITY",
-    "name": "Gulpen-Wittem"
-  },
-  {
-    "id": 282,
-    "type": "MUNICIPALITY",
-    "name": "Haaksbergen"
-  },
-  {
-    "id": 242,
-    "type": "MUNICIPALITY",
-    "name": "Haarlemmermeer"
-  },
-  {
-    "id": 187,
-    "type": "MUNICIPALITY",
-    "name": "Halderberge"
-  },
-  {
-    "id": 261,
-    "type": "MUNICIPALITY",
-    "name": "Stede Broec"
-  },
-  {
-    "id": 283,
-    "type": "MUNICIPALITY",
-    "name": "Hardenberg"
-  },
-  {
-    "id": 66,
-    "type": "MUNICIPALITY",
-    "name": "Harderwijk"
-  },
-  {
-    "id": 67,
-    "type": "MUNICIPALITY",
-    "name": "Hattem"
-  },
-  {
-    "id": 243,
-    "type": "MUNICIPALITY",
-    "name": "Heemskerk"
-  },
-  {
-    "id": 244,
-    "type": "MUNICIPALITY",
-    "name": "Heemstede"
-  },
-  {
-    "id": 68,
-    "type": "MUNICIPALITY",
-    "name": "Heerde"
-  },
-  {
-    "id": 133,
-    "type": "MUNICIPALITY",
-    "name": "Heerlen"
-  },
-  {
-    "id": 29,
-    "type": "MUNICIPALITY",
-    "name": "Heerenveen"
-  },
-  {
-    "id": 188,
-    "type": "MUNICIPALITY",
-    "name": "Heeze-Leende"
-  },
-  {
-    "id": 246,
-    "type": "MUNICIPALITY",
-    "name": "Heiloo"
-  },
-  {
-    "id": 284,
-    "type": "MUNICIPALITY",
-    "name": "Hellendoorn"
-  },
-  {
-    "id": 428,
-    "type": "MUNICIPALITY",
-    "name": "'s-Gravenhage"
-  },
-  {
-    "id": 479,
-    "type": "MUNICIPALITY",
-    "name": "Het Hogeland"
-  },
-  {
-    "id": 206,
-    "type": "MUNICIPALITY",
-    "name": "'s-Hertogenbosch"
-  },
-  {
-    "id": 69,
-    "type": "MUNICIPALITY",
-    "name": "Heumen"
-  },
-  {
-    "id": 190,
-    "type": "MUNICIPALITY",
-    "name": "Heusden"
-  },
-  {
-    "id": 400,
-    "type": "MUNICIPALITY",
-    "name": "Hillegom"
-  },
-  {
-    "id": 191,
-    "type": "MUNICIPALITY",
-    "name": "Hilvarenbeek"
-  },
-  {
-    "id": 90,
-    "type": "MUNICIPALITY",
-    "name": "Tiel"
-  },
-  {
-    "id": 247,
-    "type": "MUNICIPALITY",
-    "name": "Hilversum"
-  },
-  {
-    "id": 370,
-    "type": "MUNICIPALITY",
-    "name": "Hulst"
-  },
-  {
-    "id": 466,
-    "type": "MUNICIPALITY",
-    "name": "Hoeksche Waard"
-  },
-  {
-    "id": 286,
-    "type": "MUNICIPALITY",
-    "name": "Hof van Twente"
-  },
-  {
-    "id": 248,
-    "type": "MUNICIPALITY",
-    "name": "Hollands Kroon"
-  },
-  {
-    "id": 7,
-    "type": "MUNICIPALITY",
-    "name": "Hoogeveen"
-  },
-  {
-    "id": 134,
-    "type": "MUNICIPALITY",
-    "name": "Horst aan de Maas"
-  },
-  {
-    "id": 326,
-    "type": "MUNICIPALITY",
-    "name": "Houten"
-  },
-  {
-    "id": 401,
-    "type": "MUNICIPALITY",
-    "name": "Kaag en Braassem"
-  },
-  {
-    "id": 287,
-    "type": "MUNICIPALITY",
-    "name": "Kampen"
-  },
-  {
-    "id": 406,
-    "type": "MUNICIPALITY",
-    "name": "Krimpenerwaard"
-  },
-  {
-    "id": 192,
-    "type": "MUNICIPALITY",
-    "name": "Laarbeek"
-  },
-  {
-    "id": 579,
-    "type": "MUNICIPALITY",
-    "name": "Land van Cuijk"
-  },
-  {
-    "id": 252,
-    "type": "MUNICIPALITY",
-    "name": "Landsmeer"
-  },
-  {
-    "id": 407,
-    "type": "MUNICIPALITY",
-    "name": "Lansingerland"
-  },
-  {
-    "id": 32,
-    "type": "MUNICIPALITY",
-    "name": "Leeuwarden"
-  },
-  {
-    "id": 409,
-    "type": "MUNICIPALITY",
-    "name": "Leiden"
-  },
-  {
-    "id": 410,
-    "type": "MUNICIPALITY",
-    "name": "Leiderdorp"
-  },
-  {
-    "id": 411,
-    "type": "MUNICIPALITY",
-    "name": "Leidschendam-Voorburg"
-  },
-  {
-    "id": 214,
-    "type": "MUNICIPALITY",
-    "name": "Valkenswaard"
-  },
-  {
-    "id": 16,
-    "type": "MUNICIPALITY",
-    "name": "Lelystad"
-  },
-  {
-    "id": 328,
-    "type": "MUNICIPALITY",
-    "name": "Leusden"
-  },
-  {
-    "id": 137,
-    "type": "MUNICIPALITY",
-    "name": "Leudal"
-  },
-  {
-    "id": 257,
-    "type": "MUNICIPALITY",
-    "name": "Opmeer"
-  },
-  {
-    "id": 71,
-    "type": "MUNICIPALITY",
-    "name": "Lingewaard"
-  },
-  {
-    "id": 412,
-    "type": "MUNICIPALITY",
-    "name": "Lisse"
-  },
-  {
-    "id": 72,
-    "type": "MUNICIPALITY",
-    "name": "Lochem"
-  },
-  {
-    "id": 194,
-    "type": "MUNICIPALITY",
-    "name": "Loon op Zand"
-  },
-  {
-    "id": 288,
-    "type": "MUNICIPALITY",
-    "name": "Losser"
-  },
-  {
-    "id": 73,
-    "type": "MUNICIPALITY",
-    "name": "Maasdriel"
-  },
-  {
-    "id": 138,
-    "type": "MUNICIPALITY",
-    "name": "Maasgouw"
-  },
-  {
-    "id": 578,
-    "type": "MUNICIPALITY",
-    "name": "Maashorst"
-  },
-  {
-    "id": 139,
-    "type": "MUNICIPALITY",
-    "name": "Maastricht"
-  },
-  {
-    "id": 255,
-    "type": "MUNICIPALITY",
-    "name": "Medemblik"
-  },
-  {
-    "id": 140,
-    "type": "MUNICIPALITY",
-    "name": "Meerssen"
-  },
-  {
-    "id": 422,
-    "type": "MUNICIPALITY",
-    "name": "Papendrecht"
-  },
-  {
-    "id": 195,
-    "type": "MUNICIPALITY",
-    "name": "Meierijstad"
-  },
-  {
-    "id": 8,
-    "type": "MUNICIPALITY",
-    "name": "Meppel"
-  },
-  {
-    "id": 372,
-    "type": "MUNICIPALITY",
-    "name": "Middelburg"
-  },
-  {
-    "id": 414,
-    "type": "MUNICIPALITY",
-    "name": "Midden-Delfland"
-  },
-  {
-    "id": 9,
-    "type": "MUNICIPALITY",
-    "name": "Midden-Drenthe"
-  },
-  {
-    "id": 197,
-    "type": "MUNICIPALITY",
-    "name": "Moerdijk"
-  },
-  {
-    "id": 446,
-    "type": "MUNICIPALITY",
-    "name": "Midden-Groningen"
-  },
-  {
-    "id": 330,
-    "type": "MUNICIPALITY",
-    "name": "Montfoort"
-  },
-  {
-    "id": 74,
-    "type": "MUNICIPALITY",
-    "name": "Montferland"
-  },
-  {
-    "id": 141,
-    "type": "MUNICIPALITY",
-    "name": "Mook en Middelaar"
-  },
-  {
-    "id": 75,
-    "type": "MUNICIPALITY",
-    "name": "Neder-Betuwe"
-  },
-  {
-    "id": 417,
-    "type": "MUNICIPALITY",
-    "name": "Nissewaard"
-  },
-  {
-    "id": 142,
-    "type": "MUNICIPALITY",
-    "name": "Nederweert"
-  },
-  {
-    "id": 198,
-    "type": "MUNICIPALITY",
-    "name": "Nuenen, Gerwen en Nederwetten"
-  },
-  {
-    "id": 331,
-    "type": "MUNICIPALITY",
-    "name": "Nieuwegein"
-  },
-  {
-    "id": 416,
-    "type": "MUNICIPALITY",
-    "name": "Nieuwkoop"
-  },
-  {
-    "id": 77,
-    "type": "MUNICIPALITY",
-    "name": "Nijkerk"
-  },
-  {
-    "id": 78,
-    "type": "MUNICIPALITY",
-    "name": "Nijmegen"
-  },
-  {
-    "id": 467,
-    "type": "MUNICIPALITY",
-    "name": "Noardeast-Fryslân"
-  },
-  {
-    "id": 373,
-    "type": "MUNICIPALITY",
-    "name": "Noord-Beveland"
-  },
-  {
-    "id": 10,
-    "type": "MUNICIPALITY",
-    "name": "Noordenveld"
-  },
-  {
-    "id": 79,
-    "type": "MUNICIPALITY",
-    "name": "Nunspeet"
-  },
-  {
-    "id": 17,
-    "type": "MUNICIPALITY",
-    "name": "Noordoostpolder"
-  },
-  {
-    "id": 418,
-    "type": "MUNICIPALITY",
-    "name": "Noordwijk"
-  },
-  {
-    "id": 199,
-    "type": "MUNICIPALITY",
-    "name": "Oirschot"
-  },
-  {
-    "id": 200,
-    "type": "MUNICIPALITY",
-    "name": "Oisterwijk"
-  },
-  {
-    "id": 115,
-    "type": "MUNICIPALITY",
-    "name": "Oldambt"
-  },
-  {
-    "id": 80,
-    "type": "MUNICIPALITY",
-    "name": "Oldebroek"
-  },
-  {
-    "id": 290,
-    "type": "MUNICIPALITY",
-    "name": "Olst-Wijhe"
-  },
-  {
-    "id": 291,
-    "type": "MUNICIPALITY",
-    "name": "Ommen"
-  },
-  {
-    "id": 81,
-    "type": "MUNICIPALITY",
-    "name": "Oost Gelre"
-  },
-  {
-    "id": 201,
-    "type": "MUNICIPALITY",
-    "name": "Oosterhout"
-  },
-  {
-    "id": 36,
-    "type": "MUNICIPALITY",
-    "name": "Ooststellingwerf"
-  },
-  {
-    "id": 256,
-    "type": "MUNICIPALITY",
-    "name": "Oostzaan"
-  },
-  {
-    "id": 37,
-    "type": "MUNICIPALITY",
-    "name": "Opsterland"
-  },
-  {
-    "id": 202,
-    "type": "MUNICIPALITY",
-    "name": "Oss"
-  },
-  {
-    "id": 85,
-    "type": "MUNICIPALITY",
-    "name": "Renkum"
-  },
-  {
-    "id": 82,
-    "type": "MUNICIPALITY",
-    "name": "Oude IJsselstreek"
-  },
-  {
-    "id": 258,
-    "type": "MUNICIPALITY",
-    "name": "Ouder-Amstel"
-  },
-  {
-    "id": 332,
-    "type": "MUNICIPALITY",
-    "name": "Oudewater"
-  },
-  {
-    "id": 83,
-    "type": "MUNICIPALITY",
-    "name": "Overbetuwe"
-  },
-  {
-    "id": 145,
-    "type": "MUNICIPALITY",
-    "name": "Peel en Maas"
-  },
-  {
-    "id": 333,
-    "type": "MUNICIPALITY",
-    "name": "Renswoude"
-  },
-  {
-    "id": 203,
-    "type": "MUNICIPALITY",
-    "name": "Reusel-De Mierden"
-  },
-  {
-    "id": 116,
-    "type": "MUNICIPALITY",
-    "name": "Pekela"
-  },
-  {
-    "id": 423,
-    "type": "MUNICIPALITY",
-    "name": "Pijnacker-Nootdorp"
-  },
-  {
-    "id": 259,
-    "type": "MUNICIPALITY",
-    "name": "Purmerend"
-  },
-  {
-    "id": 343,
-    "type": "MUNICIPALITY",
-    "name": "Woudenberg"
-  },
-  {
-    "id": 84,
-    "type": "MUNICIPALITY",
-    "name": "Putten"
-  },
-  {
-    "id": 424,
-    "type": "MUNICIPALITY",
-    "name": "Ridderkerk"
-  },
-  {
-    "id": 292,
-    "type": "MUNICIPALITY",
-    "name": "Raalte"
-  },
-  {
-    "id": 374,
-    "type": "MUNICIPALITY",
-    "name": "Reimerswaal"
-  },
-  {
-    "id": 86,
-    "type": "MUNICIPALITY",
-    "name": "Rheden"
-  },
-  {
-    "id": 334,
-    "type": "MUNICIPALITY",
-    "name": "Rhenen"
-  },
-  {
-    "id": 293,
-    "type": "MUNICIPALITY",
-    "name": "Rijssen-Holten"
-  },
-  {
-    "id": 425,
-    "type": "MUNICIPALITY",
-    "name": "Rijswijk"
-  },
-  {
-    "id": 146,
-    "type": "MUNICIPALITY",
-    "name": "Roerdalen"
-  },
-  {
-    "id": 147,
-    "type": "MUNICIPALITY",
-    "name": "Roermond"
-  },
-  {
-    "id": 204,
-    "type": "MUNICIPALITY",
-    "name": "Roosendaal"
-  },
-  {
-    "id": 426,
-    "type": "MUNICIPALITY",
-    "name": "Rotterdam"
-  },
-  {
-    "id": 205,
-    "type": "MUNICIPALITY",
-    "name": "Rucphen"
-  },
-  {
-    "id": 260,
-    "type": "MUNICIPALITY",
-    "name": "Schagen"
-  },
-  {
-    "id": 427,
-    "type": "MUNICIPALITY",
-    "name": "Schiedam"
-  },
-  {
-    "id": 375,
-    "type": "MUNICIPALITY",
-    "name": "Schouwen-Duiveland"
-  },
-  {
-    "id": 208,
-    "type": "MUNICIPALITY",
-    "name": "Sint-Michielsgestel"
-  },
-  {
-    "id": 150,
-    "type": "MUNICIPALITY",
-    "name": "Sittard-Geleen"
-  },
-  {
-    "id": 379,
-    "type": "MUNICIPALITY",
-    "name": "Veere"
-  },
-  {
-    "id": 429,
-    "type": "MUNICIPALITY",
-    "name": "Sliedrecht"
-  },
-  {
-    "id": 376,
-    "type": "MUNICIPALITY",
-    "name": "Sluis"
-  },
-  {
-    "id": 39,
-    "type": "MUNICIPALITY",
-    "name": "Smallingerland"
-  },
-  {
-    "id": 211,
-    "type": "MUNICIPALITY",
-    "name": "Steenbergen"
-  },
-  {
-    "id": 335,
-    "type": "MUNICIPALITY",
-    "name": "Soest"
-  },
-  {
-    "id": 209,
-    "type": "MUNICIPALITY",
-    "name": "Someren"
-  },
-  {
-    "id": 210,
-    "type": "MUNICIPALITY",
-    "name": "Son en Breugel"
-  },
-  {
-    "id": 118,
-    "type": "MUNICIPALITY",
-    "name": "Stadskanaal"
-  },
-  {
-    "id": 294,
-    "type": "MUNICIPALITY",
-    "name": "Staphorst"
-  },
-  {
-    "id": 378,
-    "type": "MUNICIPALITY",
-    "name": "Tholen"
-  },
-  {
-    "id": 295,
-    "type": "MUNICIPALITY",
-    "name": "Steenwijkerland"
-  },
-  {
-    "id": 151,
-    "type": "MUNICIPALITY",
-    "name": "Stein"
-  },
-  {
-    "id": 40,
-    "type": "MUNICIPALITY",
-    "name": "Súdwest-Fryslân"
-  },
-  {
-    "id": 377,
-    "type": "MUNICIPALITY",
-    "name": "Terneuzen"
-  },
-  {
-    "id": 262,
-    "type": "MUNICIPALITY",
-    "name": "Texel"
-  },
-  {
-    "id": 431,
-    "type": "MUNICIPALITY",
-    "name": "Teylingen"
-  },
-  {
-    "id": 212,
-    "type": "MUNICIPALITY",
-    "name": "Tilburg"
-  },
-  {
-    "id": 296,
-    "type": "MUNICIPALITY",
-    "name": "Tubbergen"
-  },
-  {
-    "id": 297,
-    "type": "MUNICIPALITY",
-    "name": "Twenterand"
-  },
-  {
-    "id": 11,
-    "type": "MUNICIPALITY",
-    "name": "Tynaarlo"
-  },
-  {
-    "id": 42,
-    "type": "MUNICIPALITY",
-    "name": "Tytsjerksteradiel"
-  },
-  {
-    "id": 263,
-    "type": "MUNICIPALITY",
-    "name": "Uitgeest"
-  },
-  {
-    "id": 264,
-    "type": "MUNICIPALITY",
-    "name": "Uithoorn"
-  },
-  {
-    "id": 18,
-    "type": "MUNICIPALITY",
-    "name": "Urk"
-  },
-  {
-    "id": 337,
-    "type": "MUNICIPALITY",
-    "name": "Utrecht"
-  },
-  {
-    "id": 120,
-    "type": "MUNICIPALITY",
-    "name": "Veendam"
-  },
-  {
-    "id": 338,
-    "type": "MUNICIPALITY",
-    "name": "Utrechtse Heuvelrug"
-  },
-  {
-    "id": 153,
-    "type": "MUNICIPALITY",
-    "name": "Valkenburg aan de Geul"
-  },
-  {
-    "id": 215,
-    "type": "MUNICIPALITY",
-    "name": "Veldhoven"
-  },
-  {
-    "id": 265,
-    "type": "MUNICIPALITY",
-    "name": "Velsen"
-  },
-  {
-    "id": 154,
-    "type": "MUNICIPALITY",
-    "name": "Venlo"
-  },
-  {
-    "id": 155,
-    "type": "MUNICIPALITY",
-    "name": "Venray"
-  },
-  {
-    "id": 464,
-    "type": "MUNICIPALITY",
-    "name": "Vijfheerenlanden"
-  },
-  {
-    "id": 380,
-    "type": "MUNICIPALITY",
-    "name": "Vlissingen"
-  },
-  {
-    "id": 432,
-    "type": "MUNICIPALITY",
-    "name": "Vlaardingen"
-  },
-  {
-    "id": 904,
-    "type": "MUNICIPALITY",
-    "name": "Voorne aan Zee"
-  },
-  {
-    "id": 433,
-    "type": "MUNICIPALITY",
-    "name": "Voorschoten"
-  },
-  {
-    "id": 217,
-    "type": "MUNICIPALITY",
-    "name": "Waalre"
-  },
-  {
-    "id": 91,
-    "type": "MUNICIPALITY",
-    "name": "Voorst"
-  },
-  {
-    "id": 216,
-    "type": "MUNICIPALITY",
-    "name": "Vught"
-  },
-  {
-    "id": 267,
-    "type": "MUNICIPALITY",
-    "name": "Weesp"
-  },
-  {
-    "id": 434,
-    "type": "MUNICIPALITY",
-    "name": "Waddinxveen"
-  },
-  {
-    "id": 92,
-    "type": "MUNICIPALITY",
-    "name": "Wageningen"
-  },
-  {
-    "id": 435,
-    "type": "MUNICIPALITY",
-    "name": "Wassenaar"
-  },
-  {
-    "id": 266,
-    "type": "MUNICIPALITY",
-    "name": "Waterland"
-  },
-  {
-    "id": 157,
-    "type": "MUNICIPALITY",
-    "name": "Weert"
-  },
-  {
-    "id": 463,
-    "type": "MUNICIPALITY",
-    "name": "West Betuwe"
-  },
-  {
-    "id": 93,
-    "type": "MUNICIPALITY",
-    "name": "West Maas en Waal"
-  },
-  {
-    "id": 94,
-    "type": "MUNICIPALITY",
-    "name": "Westervoort"
-  },
-  {
-    "id": 480,
-    "type": "MUNICIPALITY",
-    "name": "Westerkwartier"
-  },
-  {
-    "id": 436,
-    "type": "MUNICIPALITY",
-    "name": "Westland"
-  },
-  {
-    "id": 12,
-    "type": "MUNICIPALITY",
-    "name": "Westerveld"
-  },
-  {
-    "id": 220,
-    "type": "MUNICIPALITY",
-    "name": "Woensdrecht"
-  },
-  {
-    "id": 445,
-    "type": "MUNICIPALITY",
-    "name": "Westerwolde"
-  },
-  {
-    "id": 44,
-    "type": "MUNICIPALITY",
-    "name": "Weststellingwerf"
-  },
-  {
-    "id": 298,
-    "type": "MUNICIPALITY",
-    "name": "Wierden"
-  },
-  {
-    "id": 95,
-    "type": "MUNICIPALITY",
-    "name": "Wijchen"
-  },
-  {
-    "id": 268,
-    "type": "MUNICIPALITY",
-    "name": "Wijdemeren"
-  },
-  {
-    "id": 341,
-    "type": "MUNICIPALITY",
-    "name": "Wijk bij Duurstede"
-  },
-  {
-    "id": 96,
-    "type": "MUNICIPALITY",
-    "name": "Winterswijk"
-  },
-  {
-    "id": 342,
-    "type": "MUNICIPALITY",
-    "name": "Woerden"
-  },
-  {
-    "id": 269,
-    "type": "MUNICIPALITY",
-    "name": "Wormerland"
-  },
-  {
-    "id": 270,
-    "type": "MUNICIPALITY",
-    "name": "Zaanstad"
-  },
-  {
-    "id": 97,
-    "type": "MUNICIPALITY",
-    "name": "Zaltbommel"
-  },
-  {
-    "id": 271,
-    "type": "MUNICIPALITY",
-    "name": "Zandvoort"
-  },
-  {
-    "id": 19,
-    "type": "MUNICIPALITY",
-    "name": "Zeewolde"
-  },
-  {
-    "id": 344,
-    "type": "MUNICIPALITY",
-    "name": "Zeist"
-  },
-  {
-    "id": 98,
-    "type": "MUNICIPALITY",
-    "name": "Zevenaar"
-  },
-  {
-    "id": 439,
-    "type": "MUNICIPALITY",
-    "name": "Zoetermeer"
-  },
-  {
-    "id": 440,
-    "type": "MUNICIPALITY",
-    "name": "Zoeterwoude"
-  },
-  {
-    "id": 441,
-    "type": "MUNICIPALITY",
-    "name": "Zuidplas"
-  },
-  {
-    "id": 99,
-    "type": "MUNICIPALITY",
-    "name": "Zutphen"
-  },
-  {
-    "id": 222,
-    "type": "MUNICIPALITY",
-    "name": "Zundert"
-  },
-  {
-    "id": 299,
-    "type": "MUNICIPALITY",
-    "name": "Zwartewaterland"
-  },
-  {
-    "id": 442,
-    "type": "MUNICIPALITY",
-    "name": "Zwijndrecht"
-  },
-  {
-    "id": 300,
-    "type": "MUNICIPALITY",
-    "name": "Zwolle"
+    "id": 460,
+    "type": "SUBMUNICIPALITY",
+    "name": "'s-Gravenhage (Segbroek)"
   }
 ]

@@ -14,7 +14,9 @@ class ContactParser
             $object->name,
             $object->function,
             $object->email,
-            $object->organization
+            $object->organization,
+            $object->phone,
+            $object->public_phone
         );
     }
 }

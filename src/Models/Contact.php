@@ -11,6 +11,8 @@ class Contact
         public string $function,
         public string $email,
         public string $organization,
+        public ?string $phone,
+        public ?string $publicPhone,
     ) {
     }
 }
