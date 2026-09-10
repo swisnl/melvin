@@ -14,7 +14,9 @@ class AreaParser
         return new Area(
             $object->id,
             AreaType::from($object->type),
-            $object->name
+            $object->name,
+            $object->roadOperatorType ?? null,
+            $object->roadOperatorCode ?? null,
         );
     }
 }

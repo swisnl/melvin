@@ -12,6 +12,8 @@ class Area
         public int $id,
         public AreaType $type,
         public string $name,
+        public ?string $roadOperatorType,
+        public ?string $roadOperatorCode,
     ) {
     }
 }
