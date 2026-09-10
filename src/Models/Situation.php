@@ -59,6 +59,7 @@ class Situation
          */
         public array $detours,
         public ?string $permitId,
+        public ?int $allSituationId,
         public ?string $referenceId,
         /**
          * @var string[]
