@@ -6,6 +6,7 @@ namespace Swis\Melvin\Enums;
 
 enum WorkType: string
 {
+    case SeepingOfRoad = 'SWEEPING_OF_ROAD';
     case Construction = 'CONSTRUCTION';
     case Maintenance = 'MAINTENANCE';
     case Asphalting = 'ASPHALTING';
@@ -17,6 +18,10 @@ enum WorkType: string
     case Demolition = 'DEMOLITION';
     case Widening = 'WIDENING';
     case OverheadWorks = 'OVERHEAD_WORKS';
+    case Roadworks = 'ROADWORKS';
+    case InstallationWork = 'INSTALLATION_WORK';
+    case RepairWork = 'REPAIR_WORK';
+    case GrassCuttingWork = 'GRASS_CUTTING_WORK';
     case WaterwayMaintenance = 'WATERWAY_MAINTENANCE';
     case WaterwayPruning = 'WATERWAY_PRUNING';
     case Dredging = 'DREDGING';
@@ -33,6 +38,7 @@ enum WorkType: string
     public function getLabel(): string
     {
         return match ($this) {
+            self::SeepingOfRoad => 'Vegen van de rijbaan',
             self::Construction => 'Aanleg van ...',
             self::Maintenance => 'Herinrichting / onderhoud van ...',
             self::Asphalting => 'Asfalteringswerkzaamheden',
@@ -44,6 +50,10 @@ enum WorkType: string
             self::Demolition => 'Sloopwerkzaamheden',
             self::Widening => 'Wegverbreding',
             self::OverheadWorks => 'Bouw / Takel',
+            self::Roadworks => 'Wegwerkzaamheden',
+            self::InstallationWork => 'Installatiewerkzaamheden',
+            self::RepairWork => 'Reparatiewerkzaamheden',
+            self::GrassCuttingWork => 'Maaiwerkzaamheden',
             self::WaterwayMaintenance => 'Oever - Onderhoud cq. vervanging',
             self::WaterwayPruning => 'Oever - Maai werkzaamheden',
             self::Dredging => 'Bodem - Baggerwerk cq. vervanging',
