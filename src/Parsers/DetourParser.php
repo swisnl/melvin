@@ -8,6 +8,7 @@ use Swis\Melvin\Enums\BoatType;
 use Swis\Melvin\Enums\Direction;
 use Swis\Melvin\Enums\TransportMode;
 use Swis\Melvin\Enums\VehicleType;
+use Swis\Melvin\Enums\VehicleTypeSpecification;
 use Swis\Melvin\Models\Detour;
 
 class DetourParser
@@ -25,6 +26,7 @@ class DetourParser
             ($object->properties->name ?? '') ?: sprintf('Omleiding %d', $index + 1),
             Direction::from($object->properties->direction),
             !empty($object->properties->transportMode) ? TransportMode::from($object->properties->transportMode) : null,
+            !empty($object->properties->vehicleTypeSpecification) ? VehicleTypeSpecification::from($object->properties->vehicleTypeSpecification) : null,
             array_map([VehicleType::class, 'from'], $object->properties->vehicleTypes ?? []),
             array_map([BoatType::class, 'from'], $object->properties->boatTypes ?? [])
         );

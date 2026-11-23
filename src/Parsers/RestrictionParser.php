@@ -9,6 +9,7 @@ use Swis\Melvin\Enums\RestrictionType;
 use Swis\Melvin\Enums\RoadManagementType;
 use Swis\Melvin\Enums\TransportMode;
 use Swis\Melvin\Enums\VehicleType;
+use Swis\Melvin\Enums\VehicleTypeSpecification;
 use Swis\Melvin\Models\LaneInformation;
 use Swis\Melvin\Models\Restriction;
 use Swis\Melvin\Models\RestrictionExtraInfo;
@@ -56,6 +57,7 @@ class RestrictionParser
             Direction::from($object->properties->direction),
             !empty($object->properties->transportMode) ? TransportMode::from($object->properties->transportMode) : null,
             RestrictionType::from($object->properties->restrictionType),
+            !empty($object->properties->vehicleTypeSpecification) ? VehicleTypeSpecification::from($object->properties->vehicleTypeSpecification) : null,
             array_map([VehicleType::class, 'from'], $object->properties->vehicleTypes ?? $object->properties->vehicles ?? []),
             $emergencyServices,
             $publicTransport,

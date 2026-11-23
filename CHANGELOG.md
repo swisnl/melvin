@@ -6,6 +6,9 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 
 ## Unreleased
 
+### Added
+- Added vehicleTypeSpecification as an attribute to Restriction and Detour
+
 ### Fixed
 - Contact function, email and organization can be null.
 

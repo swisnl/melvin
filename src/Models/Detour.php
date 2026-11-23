@@ -7,6 +7,7 @@ namespace Swis\Melvin\Models;
 use GeoJson\Geometry\Geometry;
 use Swis\Melvin\Enums\Direction;
 use Swis\Melvin\Enums\TransportMode;
+use Swis\Melvin\Enums\VehicleTypeSpecification;
 
 class Detour
 {
@@ -17,6 +18,7 @@ class Detour
         public string $name,
         public Direction $direction,
         public ?TransportMode $transportMode,
+        public ?VehicleTypeSpecification $vehicleTypeSpecification,
         /**
          * @var \Swis\Melvin\Enums\VehicleType[]
          */

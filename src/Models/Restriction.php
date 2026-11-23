@@ -9,6 +9,7 @@ use Swis\Melvin\Enums\Direction;
 use Swis\Melvin\Enums\RestrictionType;
 use Swis\Melvin\Enums\RoadManagementType;
 use Swis\Melvin\Enums\TransportMode;
+use Swis\Melvin\Enums\VehicleTypeSpecification;
 
 class Restriction
 {
@@ -20,6 +21,7 @@ class Restriction
         public Direction $direction,
         public ?TransportMode $transportMode,
         public RestrictionType $restrictionType,
+        public ?VehicleTypeSpecification $vehicleTypeSpecification,
         /**
          * @var \Swis\Melvin\Enums\VehicleType[]
          */
