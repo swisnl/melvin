@@ -368,6 +368,9 @@
                         }
                     ]
                 },
+                "vehicleTypeSpecification": {
+                    "$ref": "#/definitions/VehicleTypeSpecification"
+                },
                 "emergencyServices": {
                     "$ref": "#/definitions/RestrictionExtraInfo"
                 },
@@ -1149,6 +1152,13 @@
                 "EMPTY"
             ],
             "title": "RoadAuthorityType"
+        },
+        "VehicleTypeSpecification": {
+            "type": "string",
+            "enum": [
+                "SPECIFIED",
+                "ALL_FOR_THIS_ROADTYPE"
+            ]
         },
         "RoadManagementType": {
             "type": "string",
