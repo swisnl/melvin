@@ -5,6 +5,9 @@ All notable changes to `swisnl\melvin` will be documented in this file.
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 ## Unreleased
+- Nothing.
+
+## [2.3.0] - 2026-11-23
 
 ### Added
 - Added vehicleTypeSpecification as an attribute to Restriction and Detour
