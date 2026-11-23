@@ -5,7 +5,9 @@ All notable changes to `swisnl\melvin` will be documented in this file.
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 ## Unreleased
-- Nothing.
+
+### Fixed
+- Contact function, email and organization can be null.
 
 ## [2.2.0] - 2026-09-10
 

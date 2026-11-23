@@ -8,9 +8,9 @@ class Contact
 {
     public function __construct(
         public string $name,
-        public string $function,
-        public string $email,
-        public string $organization,
+        public ?string $function,
+        public ?string $email,
+        public ?string $organization,
         public ?string $phone,
         public ?string $publicPhone,
     ) {
